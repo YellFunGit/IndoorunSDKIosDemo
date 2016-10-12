@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iPY-1c-OZy">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="avS-zq-wOB">
+            <objects>
+                <navigationController id="iPY-1c-OZy" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="q5a-fG-tl3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Y14-u8-SmV" kind="relationship" relationship="rootViewController" id="5Hb-WP-pE0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bGr-NP-7fa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-495" y="297"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vnk-TV-AvK">
+            <objects>
+                <viewController id="Y14-u8-SmV" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ef5-qZ-snr"/>
+                        <viewControllerLayoutGuide type="bottom" id="p0m-M8-OAm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pfn-q3-Ktk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMz-MH-wkR">
+                                <state key="normal" title="初始化"/>
+                                <connections>
+                                    <action selector="onEnterClick:" destination="Y14-u8-SmV" eventType="touchUpInside" id="NBL-au-CIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="SMz-MH-wkR" firstAttribute="centerY" secondItem="pfn-q3-Ktk" secondAttribute="centerY" id="Lxx-XJ-L8C"/>
+                            <constraint firstItem="SMz-MH-wkR" firstAttribute="centerX" secondItem="pfn-q3-Ktk" secondAttribute="centerX" id="sOS-Yi-isI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="THG-hH-fw6" customClass="I"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8s2-g0-Bpj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121" y="151"/>
+        </scene>
+    </scenes>
+</document>

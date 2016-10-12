@@ -1,0 +1,6 @@
+framework module IndoorunMap_Core {
+  umbrella header "IndoorunMap_Core.h"
+
+  export *
+  module * { export * }
+}
