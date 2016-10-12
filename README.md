@@ -57,15 +57,15 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 * ### 手动配置.framework形式开发包 
     1、从官网下载解压缩后的内容如下
       
-   <img src="/Users/yan/Desktop/sdk image/3.png" width="300">
+   <img src="imgs/3.png" width="300">
    将IndoorunMap_Core.framework与IndoorunMapKit.xcassets拖入工程中，注意选择`copy item if needed`，如下图
-    <img src="/Users/yan/Desktop/sdk image/4.png" width="300"> 
+    <img src="imgs/4.png" width="300"> 
     同理将thirdparty framework下的三方库也拖入工程中
     最终在工程中呈现如下图所示:   
-   <img src="/Users/yan/Desktop/sdk image/6.png" width="300">     
+   <img src="imgs/6.png" width="300">     
     在 TARGETS->Build Phases-> Copy File中点击“+”按钮，在弹出的窗口中点击选中之前导入的framework。
-   <img src="/Users/yan/Desktop/sdk image/7.png" width="300">     
-   <img src="/Users/yan/Desktop/sdk image/8.png" width="300">   
+   <img src="imgs/7.png" width="300">     
+   <img src="imgs/8.png" width="300">   
    至此，你已成功导入Indoorun iOS SDK。   
 
 
@@ -148,7 +148,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
     *marker:主要用来给地图上的相应位置打醒目的标签，在地图旋转缩放时，标记保持大小与方向不变*
     下图中的‘起’就是一个明显的marker
-    <img src="/Users/yan/Desktop/sdk image/marker.png" width="160">
+    <img src="imgs/marker.png" width="160">
     
     * #### 创建marker
 
