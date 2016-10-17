@@ -7,7 +7,6 @@
 //
 
 #import "DynamicNavigateVCTL.h"
-#import "IDRFloorListView.h"
 
 @interface DynamicNavigateVCTL ()<IDRMapViewDelegate, IDRNavigationServerDelegate, IDRLocationServerDelegate>
 
@@ -15,7 +14,6 @@
 @property (nonatomic, retain) IDRPosition *ep;
 @property (nonatomic, retain) IDRCarMarker *carMarker;
 @property (nonatomic, retain) IBOutlet UILabel *ibDebug;
-@property (nonatomic, retain) IDRFloorListView *floorListView;
 
 @end
 
@@ -42,24 +40,10 @@
     
     [self.view sendSubviewToBack:_mapView];
     
-//    [_mapView addDefaultFloorListView];
-    
-    [self initFloorView];
+    [_mapView addDefaultFloorListView];
     
     [_mapView addDefaultMapModeBtn];
 }
-
-- (void)initFloorView
-{
-    NSArray *floors = _region.floorList;
-    
-    _floorListView = [[IDRFloorListView alloc] initWithFloors:floors origionX:kScreenWidth - 45 origionY:97];
-    
-    [self.view addSubview:_floorListView];
-    
-    [_floorListView setMapView:_mapView];
-}
-
 
 - (void)locate {
     
@@ -100,11 +84,6 @@
         //动态导航，起点设置为nil
         [[IDRCoreManager navigationServer] startServer:_region navi:[IDRNaviParm createWith:nil end:_ep]];
     }
-}
-
-- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion *)region floor:(IDRFloor *)floor{
-    
-    [_floorListView setCurrentFloor:floor];
 }
 
 #pragma mark --LocationServer Delegate 

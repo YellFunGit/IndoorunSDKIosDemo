@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2C02443F1DACE87700999402 /* NavigateVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C02443D1DACE87700999402 /* NavigateVCTL.m */; };
 		2C0244401DACE87700999402 /* NavigateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C02443E1DACE87700999402 /* NavigateVCTL.xib */; };
 		2C0244431DACEAA500999402 /* DemoCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0244421DACEAA500999402 /* DemoCommon.m */; };
 		2C02444A1DACECF600999402 /* MapResponseVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0244481DACECF600999402 /* MapResponseVCTL.m */; };
@@ -39,7 +38,6 @@
 		2CAF866D1DADE7A80036D7BD /* MapUnitResponseVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF866B1DADE7A80036D7BD /* MapUnitResponseVCTL.xib */; };
 		2CAF866F1DADEAF20036D7BD /* LocateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF866E1DADEAF20036D7BD /* LocateVCTL.xib */; };
 		2CB2A1CF1DA8D40100A24A52 /* MyMapMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2A1CE1DA8D40100A24A52 /* MyMapMarker.m */; };
-		2CE450091D5B1DEE006940F2 /* IDRFloorListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CE450081D5B1DEE006940F2 /* IDRFloorListView.m */; };
 		58E04EDD86FF8B8279CE9438 /* libPods-IndoorunDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAF8403AB216140F164C969 /* libPods-IndoorunDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -66,8 +64,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2C02443C1DACE87700999402 /* NavigateVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigateVCTL.h; sourceTree = "<group>"; };
-		2C02443D1DACE87700999402 /* NavigateVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigateVCTL.m; sourceTree = "<group>"; };
 		2C02443E1DACE87700999402 /* NavigateVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigateVCTL.xib; sourceTree = "<group>"; };
 		2C0244411DACEAA500999402 /* DemoCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoCommon.h; sourceTree = "<group>"; };
 		2C0244421DACEAA500999402 /* DemoCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoCommon.m; sourceTree = "<group>"; };
@@ -119,8 +115,6 @@
 		2CB2A1CD1DA8D40100A24A52 /* MyMapMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapMarker.h; sourceTree = "<group>"; };
 		2CB2A1CE1DA8D40100A24A52 /* MyMapMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapMarker.m; sourceTree = "<group>"; };
 		2CC78A711D952982003B0687 /* IndoorunDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndoorunDemo-Bridging-Header.h"; sourceTree = "<group>"; };
-		2CE450071D5B1DEE006940F2 /* IDRFloorListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDRFloorListView.h; sourceTree = "<group>"; };
-		2CE450081D5B1DEE006940F2 /* IDRFloorListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDRFloorListView.m; sourceTree = "<group>"; };
 		617AEEC165F51A334C59DDC5 /* Pods-IndoorunDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorunDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorunDemo/Pods-IndoorunDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		7CAF8403AB216140F164C969 /* libPods-IndoorunDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IndoorunDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F1986A93FD4FE5956F0E08C6 /* Pods-IndoorunDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IndoorunDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-IndoorunDemo/Pods-IndoorunDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -191,8 +185,6 @@
 				2C032F881DACDB8400EF56FA /* UIColor+YFHexColor.m */,
 				2C4F06D61D3332150012BAEB /* AppDelegate.h */,
 				2C4F06D71D3332150012BAEB /* AppDelegate.m */,
-				2CE450071D5B1DEE006940F2 /* IDRFloorListView.h */,
-				2CE450081D5B1DEE006940F2 /* IDRFloorListView.m */,
 				2C4F06D91D3332150012BAEB /* ViewController.h */,
 				2C4F06DA1D3332150012BAEB /* ViewController.m */,
 				2C4F06DC1D3332150012BAEB /* Main.storyboard */,
@@ -215,8 +207,6 @@
 				2C032F961DACE4DB00EF56FA /* LocateVCTL.m */,
 				2C032F8D1DACDE4700EF56FA /* LoadMapVCTL.h */,
 				2C032F8E1DACDE4700EF56FA /* LoadMapVCTL.m */,
-				2C02443C1DACE87700999402 /* NavigateVCTL.h */,
-				2C02443D1DACE87700999402 /* NavigateVCTL.m */,
 				2C02443E1DACE87700999402 /* NavigateVCTL.xib */,
 				2C0244411DACEAA500999402 /* DemoCommon.h */,
 				2C0244421DACEAA500999402 /* DemoCommon.m */,
@@ -429,7 +419,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2CE450091D5B1DEE006940F2 /* IDRFloorListView.m in Sources */,
 				2C0244431DACEAA500999402 /* DemoCommon.m in Sources */,
 				2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */,
 				2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */,
@@ -440,7 +429,6 @@
 				2C4F06EC1D3334850012BAEB /* RegionListVCTL.m in Sources */,
 				2C0244581DACF06800999402 /* StaticNavigationVCTL.m in Sources */,
 				2C4F06DB1D3332150012BAEB /* ViewController.m in Sources */,
-				2C02443F1DACE87700999402 /* NavigateVCTL.m in Sources */,
 				2C4F06D81D3332150012BAEB /* AppDelegate.m in Sources */,
 				2C032F971DACE4DB00EF56FA /* LocateVCTL.m in Sources */,
 				2C032F8F1DACDE4700EF56FA /* LoadMapVCTL.m in Sources */,

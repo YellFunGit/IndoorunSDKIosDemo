@@ -8,13 +8,11 @@
 
 #import "MapMarkerResponseVCTL.h"
 #import "MyMapMarker.h"
-#import "IDRFloorListView.h"
 
 @interface MapMarkerResponseVCTL ()<IDRMapViewDelegate>
 
 @property (nonatomic, retain) IDRMapView *mapView;
 @property (nonatomic, retain) IBOutlet UILabel *ibDebug;
-@property (nonatomic, retain) IDRFloorListView *floorListView;
 
 @end
 
@@ -39,31 +37,12 @@
     
     [self.view sendSubviewToBack:_mapView];
     
-//    [_mapView addDefaultFloorListView];
-    
-    [self initFloorView];
+    [_mapView addDefaultFloorListView];
     
     [_mapView addDefaultMapModeBtn];
 }
 
-- (void)initFloorView
-{
-    NSArray *floors = _region.floorList;
-    
-    _floorListView = [[IDRFloorListView alloc] initWithFloors:floors origionX:kScreenWidth - 45 origionY:97];
-    
-    [self.view addSubview:_floorListView];
-    
-    [_floorListView setMapView:_mapView];
-}
-
 #pragma mark --MapView Delegate
-
-- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion *)region floor:(IDRFloor *)floor{
-    
-    [_floorListView setCurrentFloor:floor];
-}
-
 - (void)mapview:(IDRMapView *)mapView onClickMap:(IDRPosition *)pos {
     
     MyMapMarker *marker = [[MyMapMarker alloc] initWithPos:pos];

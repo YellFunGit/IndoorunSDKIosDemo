@@ -7,13 +7,11 @@
 //
 
 #import "LocateVCTL.h"
-#import "IDRFloorListView.h"
 
 @interface LocateVCTL ()<IDRLocationServerDelegate,IDRMapViewDelegate>
 
 @property (nonatomic, retain) IDRMapView *mapView;
 @property (nonatomic, retain) IBOutlet UILabel *ibDebug;
-@property (nonatomic, retain) IDRFloorListView *floorListView;
 
 @end
 
@@ -38,21 +36,9 @@
     
     [self.view addSubview:_mapView];
     
-//    [_mapView addDefaultFloorListView];
-    [self initFloorView];
-    
-    [_mapView addDefaultMapModeBtn];
-}
+    [_mapView addDefaultFloorListView];
 
-- (void)initFloorView
-{
-    NSArray *floors = _region.floorList;
-    
-    _floorListView = [[IDRFloorListView alloc] initWithFloors:floors origionX:kScreenWidth - 45 origionY:97];
-    
-    [self.view addSubview:_floorListView];
-    
-    [_floorListView setMapView:_mapView];
+    [_mapView addDefaultMapModeBtn];
 }
 
 - (void)locate {
@@ -78,11 +64,6 @@
 }
 
 #pragma mark --LocationServer Delegate
-
-- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion *)region floor:(IDRFloor *)floor{
-    
-    [_floorListView setCurrentFloor:floor];
-}
 
 - (void)location:(IDRLocationServer*)locationServer didLocationSuccess:(IDRUserLocation*)userLocation {
     

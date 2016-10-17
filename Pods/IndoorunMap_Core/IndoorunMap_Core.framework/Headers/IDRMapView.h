@@ -299,9 +299,14 @@
 @property (nonatomic, retain) UIButton *compassBtn;
 
 /**
- 左下角的地图状态按钮
+ 左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
  */
 @property (nonatomic, retain) IDRMapModeBtn *mapModeBtn;
+
+/**
+ 右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
+ */
+@property (nonatomic, retain) IDRFloorView *floorListView;
 
 /**
   是否能切换楼层

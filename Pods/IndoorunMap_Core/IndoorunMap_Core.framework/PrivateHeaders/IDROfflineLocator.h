@@ -20,6 +20,8 @@
 
 - (NSString*)getCorrectFloor:(NSArray*)beacons floorId:(NSString*)floorId;
 
+- (IDRPosition*)getOfflineLocation:(NSArray*)beacons floorId:(NSString*)maybeFloor;
+
 - (void)loadRegionData:(IDRRegion*)region;
 
 - (IDRPosition*)getOfflineLocation:(NSArray*)beacons floorId:(NSString*)maybeFloor;

@@ -17,10 +17,12 @@
 
 - (instancetype)initWithFloors:(NSArray*)floor origionX:(CGFloat)x origionY:(CGFloat)y;
 
-@property (nonatomic, retain) NSArray * floors;
-@property (nonatomic, retain) UITableView * table;
-@property (nonatomic, retain)UIButton    * button;
+@property (nonatomic, retain) NSArray *floors;
+
 @property (nonatomic, weak) IDRMapView *mapView;
-@property (nonatomic, assign) BOOL isShown;
+
+@property (nonatomic, retain) IDRFloor *currentFloor;
+
+@property (nonatomic, retain) IDRFloor *locatedFloor;
 
 @end
