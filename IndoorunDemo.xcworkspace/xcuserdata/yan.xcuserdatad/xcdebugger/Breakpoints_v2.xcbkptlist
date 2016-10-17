@@ -19,5 +19,53 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IndoorunDemo/RegionDetailVCTL.m"
+            timestampString = "498366495.441289"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "-showRegionDetail"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RegionDetailVCTL showRegionDetail]"
+                  moduleName = "IndoorunDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yan/work/IndoorunSDKIosDemo/IndoorunDemo/RegionDetailVCTL.m"
+                  timestampString = "498366495.667417"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "564">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[RegionDetailVCTL showRegionDetail]"
+                  moduleName = "IndoorunDemo"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yan/work/IndoorunSDKIosDemo/IndoorunDemo/RegionDetailVCTL.m"
+                  timestampString = "498366495.669332"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "63"
+                  endingLineNumber = "63"
+                  offsetFromSymbolStart = "588">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

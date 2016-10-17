@@ -1,14 +1,10 @@
-# sdk开发者文档
+# sdk开发者文档(ios)
 
 ## 注意事项
 1、由于iOS9改用更安全的https，为了能够在iOS9中正常使用地图SDK，请在"Info.plist"中进行如下配置，否则影响SDK的使用。
     
-```<key>NSAppTransportSecurity</key>
-    <dict>
-        <key>NSAllowsArbitraryLoads</key>
-        <true/>
-    </dict>
-```
+    1. 在Info.plist中添加NSAppTransportSecurity类型Dictionary。
+    2. 在NSAppTransportSecurity下添加NSAllowsArbitraryLoads类型Boolean,值设为YES
 
 2、开发者在使用过程中注意事项如下： 需要在info.plist里添加
 （以下二选一，两个都添加默认使用NSLocationWhenInUseUsageDescription）：
@@ -57,22 +53,15 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 * ### 手动配置.framework形式开发包 
     1、从官网下载解压缩后的内容如下
       
-   <img src="imgs/3.png" width="300">
-   
+   <img src="/Users/yan/Desktop/sdk image/3.png" width="300">
    将IndoorunMap_Core.framework与IndoorunMapKit.xcassets拖入工程中，注意选择`copy item if needed`，如下图
-   
-    <img src="imgs/4.png" width="300"> 
-    
+    <img src="/Users/yan/Desktop/sdk image/4.png" width="300"> 
     同理将thirdparty framework下的三方库也拖入工程中
     最终在工程中呈现如下图所示:   
-    
-   <img src="imgs/6.png" width="300">     
-   
+   <img src="/Users/yan/Desktop/sdk image/6.png" width="300">     
     在 TARGETS->Build Phases-> Copy File中点击“+”按钮，在弹出的窗口中点击选中之前导入的framework。
-    
-   <img src="imgs/7.png" width="300">     
-   <img src="imgs/8.png" width="300">   
-   
+   <img src="/Users/yan/Desktop/sdk image/7.png" width="300">     
+   <img src="/Users/yan/Desktop/sdk image/8.png" width="300">   
    至此，你已成功导入Indoorun iOS SDK。   
 
 
@@ -155,7 +144,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
     *marker:主要用来给地图上的相应位置打醒目的标签，在地图旋转缩放时，标记保持大小与方向不变*
     下图中的‘起’就是一个明显的marker
-    <img src="imgs/marker.png" width="160">
+    <img src="/Users/yan/Desktop/sdk image/marker.png" width="160">
     
     * #### 创建marker
 
@@ -253,7 +242,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
         1. 功能：更新marker的图标显示
         2. 函数体
 
-            `- (void)setMarkerImage:(NSString*)marker marker:(id<IDRMapMarkerProtocal>)marker;`
+            `- (BOOL)setMarkerImage:(NSString*)marker marker:(id<IDRMapMarkerProtocal>)marker;`
 
 
         3. 参数说明
@@ -278,13 +267,6 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
             | --- | --- | --- |
             | mapView |  IDRMapView| 地图view |
             | marker | id< IDRMapMarkerProtocal > |  选中的marker |
-            
-       4. 返回值
-            
-           | 返回值 | 类型 | 说明 |
-           | --- | --- | --- |
-           | YES | BOOL | 响应不再传递下去 |
-           | NO | BOOL | 响应继续传递下去（onClickUnit、onClickMap）会继续响应回调 |
 
 
     * #### 长按marker响应
@@ -302,13 +284,6 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
             | mapView |  IDRMapView| 地图view |
             | marker | id< IDRMapMarkerProtocal > |  选中的marker |
 
-        4. 返回值
-            
-           | 返回值 | 类型 | 说明 |
-           | --- | --- | --- |
-           | YES | BOOL | 响应不再传递下去 |
-           | NO | BOOL | 响应继续传递下去（onLongPressUnit、onLongPressMap）会继续响应回调 |
-
         
 * ### unit操作
    * #### 单击unit响应
@@ -325,13 +300,6 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
             | --- | --- | --- |
             | mapView |  IDRMapView| 地图view |
             | unit | IDRunit |  选中的unit |
-        
-        4. 返回值
-            
-           | 返回值 | 类型 | 说明 |
-           | --- | --- | --- |
-           | YES | BOOL | 响应不再传递下去 |
-           | NO | BOOL | 响应继续传递下去（onClickMap） |
 
 
     * #### 长按unit回调
@@ -344,17 +312,10 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
     
        3. 参数说明
     
-          | 参数  |类型  |说明  |
-          | --- | --- | --- |
-          | mapView |  IDRMapView| 地图view |
-          | unit | IDRunit |  选中的unit |
-
-        4. 返回值
-            
-           | 返回值 | 类型 | 说明 |
+           | 参数  |类型  |说明  |
            | --- | --- | --- |
-           | YES | BOOL | 响应不再传递下去 |
-           | NO | BOOL | 响应继续传递下去（onLongPressMap） |
+           | mapView |  IDRMapView| 地图view |
+           | unit | IDRunit |  选中的unit |
 
 
 * ### 地图响应
@@ -703,40 +664,34 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
     
 ## 6、UI模块
 
-    地图默认只包含左上角指南针控件，左下角地图状态控件与右上角的楼层列表控件需要用户自行添加或者使用sdk默认提供的
-
 * ### 指南针
 
        1. 功能：显示地图的朝向，点击时触发地图归位响应
        2. 函数体
     
-           `@property (nonatomic, retain) UIButton *compassBtn;`
-    
-    
-       3. 参数说明
-    
-      | 参数  |类型  |说明  |
- | --- | --- | --- |
- | compassBtn |  UIButton| 默认显示，用户可直接操作此UI控件 
+            /**
+             左上角的指南针按钮，默认显示
+             */
+            @property (nonatomic, retain) UIButton *compassBtn;
+
 
 * ### 地图状态按钮
 
        1. 功能：表示地图的状态(IDRMapMode)，点击时触发地图状态切换响应
        2. 函数体
     
-             /**
-             左下角的地图状态按钮(默认不添加，需要用户主动调用addDefaultMapModeBtn)
+            /**
+             左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
              */
-             @property (nonatomic, retain) IDRMapModeBtn *mapModeBtn;
-
+            @property (nonatomic, retain) IDRMapModeBtn *mapModeBtn;
+     
 * ### 楼层列表控件
 
-       1. 功能：显示当前楼层，在楼层之间进行切换
+       1. 功能：显示区域的楼层
        2. 函数体
-
-             /**
-             地图右上角楼层列表控件(默认不添加，需要用户主动调用addDefaultFloorListView)
+    
+            /**
+             右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
              */
-             @property (nonatomic, retain) IDRFloorView *floorListView;
-
+            @property (nonatomic, retain) IDRFloorView *floorListView;
 
