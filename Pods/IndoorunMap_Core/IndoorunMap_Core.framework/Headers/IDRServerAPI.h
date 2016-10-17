@@ -21,6 +21,9 @@
 
 #endif
 
+//#define APPBundleID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
+#define APPBundleID @"com.Yellfun.Cars"
+
 #define PhoneUUID [[[UIDevice currentDevice] identifierForVendor] UUIDString]
 
 #define SESSION_URL       [NSString stringWithFormat:@"%@/initAppSession.html", INTERFACE]
