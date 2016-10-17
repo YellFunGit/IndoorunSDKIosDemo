@@ -265,18 +265,16 @@
 - (void)showCompossRoute:(BOOL)show;
 
 /**
- 添加默认地图状态控件
-
- @return 地图状态控件
+ 添加默认定位按钮控件
  */
-- (IDRMapModeBtn *)addDefaultMapModeBtn;
+- (void)addDefaultMapModeBtn;
 
 /**
  添加默认楼层列表控件
 
  @return 楼层控件
  */
-- (IDRFloorView *)addDefaultFloorListView;
+- (IDRFloorView*)addDefaultFloorListView;
 
 /**
  在地图上加上一条字符串
@@ -301,14 +299,9 @@
 @property (nonatomic, retain) UIButton *compassBtn;
 
 /**
- 左下角的地图状态按钮(默认不添加，需要用户主动调用addDefaultMapModeBtn)
+ 左下角的地图状态按钮
  */
 @property (nonatomic, retain) IDRMapModeBtn *mapModeBtn;
-
-/**
- 地图右上角楼层列表控件(默认不添加，需要用户主动调用addDefaultFloorListView)
- */
-@property (nonatomic, retain) IDRFloorView *floorListView;
 
 /**
   是否能切换楼层

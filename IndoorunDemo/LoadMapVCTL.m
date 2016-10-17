@@ -7,10 +7,13 @@
 //
 
 #import "LoadMapVCTL.h"
+#import "IDRFloorListView.h"
 
 @interface LoadMapVCTL ()<IDRMapViewDelegate>
 
 @property (nonatomic, retain) IDRMapView *mapView;
+@property (nonatomic, retain) IDRFloorListView *floorListView;
+
 
 @end
 
@@ -33,7 +36,20 @@
     
     [self.view addSubview:_mapView];
     
-    [_mapView addDefaultFloorListView];
+//    [_mapView addDefaultFloorListView];
+    
+    [self initFloorView];
+}
+
+- (void)initFloorView
+{
+    NSArray *floors = _region.floorList;
+    
+    _floorListView = [[IDRFloorListView alloc] initWithFloors:floors origionX:kScreenWidth - 45 origionY:97];
+    
+    [self.view addSubview:_floorListView];
+    
+    [_floorListView setMapView:_mapView];
 }
 
 #pragma mark --mapviewdelegate
@@ -41,6 +57,8 @@
 - (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion *)region floor:(IDRFloor *)floor {
     
     NSLog(@"加载地图%@:%@成功", region.name, floor.title);
+    [_floorListView setCurrentFloor:floor];
+
 }
 
 @end

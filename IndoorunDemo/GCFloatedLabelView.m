@@ -7,7 +7,6 @@
 @property (nonatomic, retain) NSTimer* closeTimer;
 @property (nonatomic, assign) NSInteger lastTime;
 
-
 @end
 
 @implementation GCFloatedLabelView

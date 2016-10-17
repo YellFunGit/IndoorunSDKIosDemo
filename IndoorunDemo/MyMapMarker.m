@@ -18,7 +18,7 @@
         
         self.pos = pos;
         
-        self.icon = [UIImage imageNamed:@"YF_CarPosition"];
+        self.icon = [UIImage imageNamed:@"IndoorunMap_Resource.bundle/YF_CarPosition.png"];
     }
     
     return self;

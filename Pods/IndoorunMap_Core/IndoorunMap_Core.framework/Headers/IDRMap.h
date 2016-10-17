@@ -60,6 +60,8 @@
 
 - (void)resetAnchor;
 
+- (void)resetMapRotate;
+
 - (void)launching;
 
 - (void)forceRoute:(BOOL)force;
