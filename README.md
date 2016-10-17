@@ -54,14 +54,19 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
     1、从官网下载解压缩后的内容如下
       
    <img src="imgs/3.png" width="300">
+   
    将IndoorunMap_Core.framework与IndoorunMapKit.xcassets拖入工程中，注意选择`copy item if needed`，如下图
     <img src="imgs/4.png" width="300"> 
+    
     同理将thirdparty framework下的三方库也拖入工程中
     最终在工程中呈现如下图所示:   
    <img src="imgs/6.png" width="300">     
+   
     在 TARGETS->Build Phases-> Copy File中点击“+”按钮，在弹出的窗口中点击选中之前导入的framework。
-   <img src="imgs/7.png" width="300">     
+   <img src="imgs/7.png" width="300">  
+      
    <img src="imgs/8.png" width="300">   
+   
    至此，你已成功导入Indoorun iOS SDK。   
 
 
