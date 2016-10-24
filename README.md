@@ -55,12 +55,12 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
       
    <img src="imgs/3.png" width="300">
    
-   将IndoorunMap_Core.framework与IndoorunMapKit.xcassets拖入工程中，注意选择`copy item if needed`，如下图
+   将IndoorunMap_Core.framework与IndoorunMap_Resource.bundle拖入工程中，注意选择`copy item if needed`，如下图
     <img src="imgs/4.png" width="300"> 
     
-    同理将thirdparty framework下的三方库也拖入工程中
+    同理将thirdparty framework下的三方库(JSONModel、SSZipArchive)也拖入工程中
     最终在工程中呈现如下图所示:   
-   <img src="imgs/6.png" width="300">     
+   <img src="imgs/5.png" width="300">     
    
     在 TARGETS->Build Phases-> Copy File中点击“+”按钮，在弹出的窗口中点击选中之前导入的framework。
    <img src="imgs/7.png" width="300">  
@@ -162,12 +162,24 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
 
             ```
+            .h
+            #import <IndoorunMap_Core/IndoorunMap_Core.h>
+
             @interface MyMapMarker : NSObject<IDRMapMarkerProtocal>
             
+            @property (nonatomic) UIImage *icon;
+            
+            @property (nonatomic) IDRPosition *pos;
+            
+            @property (nonatomic) NSInteger Id;
+            
             - (id)initWithPos:(IDRPosition*)pos;
-            
+    
             @end
-            
+            ```
+
+            ```
+            .m
             @implementation MyMapMarker
     
             - (id)initWithPos:(IDRPosition*)pos {
@@ -247,7 +259,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
         1. 功能：更新marker的图标显示
         2. 函数体
 
-            `- (BOOL)setMarkerImage:(NSString*)marker marker:(id<IDRMapMarkerProtocal>)marker;`
+            `- (void)setMarkerImage:(NSString*)marker marker:(id<IDRMapMarkerProtocal>)marker;`
 
 
         3. 参数说明
@@ -258,7 +270,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
             | newImage |  NSString*| 新图标 |
             | marker | id< IDRMapMarkerProtocal > |  需要更新的marker|
 
-    * #### 单击marker响应
+    * #### 单击marker回调
 
         1. 功能：单击marker的回调
         2. 函数体
@@ -274,7 +286,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
             | marker | id< IDRMapMarkerProtocal > |  选中的marker |
 
 
-    * #### 长按marker响应
+    * #### 长按marker回调
 
         1. 功能：长按marker的回调
         2. 函数体
@@ -291,7 +303,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
         
 * ### unit操作
-   * #### 单击unit响应
+   * #### 单击unit回调
 
         1. 功能：单击地图上unit的响应
         2. 函数体
@@ -324,7 +336,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
 
 * ### 地图响应
-	* #### 单击地图
+	* #### 单击地图回调
 
       1. 功能：单击地图view的回调
       2. 函数体
@@ -340,7 +352,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
           | pos | IDRPosition |  点击的地图坐标 |
         
 
-	* #### 长按地图
+	* #### 长按地图回调
 
        1. 功能：长按地图view的回调
        2. 函数体
@@ -675,9 +687,15 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
        2. 函数体
     
             /**
-             左上角的指南针按钮，默认显示
+             左上角的指南针按钮是否显示
              */
-            @property (nonatomic, retain) UIButton *compassBtn;
+            @property (nonatomic) BOOL showCompassBtn;
+            
+            /**
+             左上角的指南针按钮坐标
+             */
+            @property (nonatomic) CGPoint compassBtnCenter;
+
 
 
 * ### 地图状态按钮

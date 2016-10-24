@@ -114,10 +114,6 @@
  *  广告列表
  */
 @property (nonatomic, retain) NSArray *advertList;
-/**
- *  数据最新更新时间
- */
-@property (nonatomic, retain) NSNumber *modifyTime;
 
 /**
  *  默认显示图片
@@ -133,6 +129,18 @@
  *  指纹数据更新时间
  */
 @property (nonatomic, retain) NSNumber *fingerDataUpdateTime;
+/**
+ *  数据最新更新时间
+ */
+@property (nonatomic, retain) NSNumber *modifyTime;
+/**
+ region全数据文件名称
+ */
+@property (nonatomic, copy) NSString *RegionWholeDataFileName;
+/**
+ region全数据大小
+ */
+@property (nonatomic, retain) NSNumber *RegionWholeDataFileSize;
 
 /**
  获取楼层

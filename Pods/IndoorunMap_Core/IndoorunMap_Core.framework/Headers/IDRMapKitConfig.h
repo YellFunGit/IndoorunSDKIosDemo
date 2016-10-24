@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define IDR_VERSION 2.0.32
+#define IDR_VERSION 2.0.12
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height

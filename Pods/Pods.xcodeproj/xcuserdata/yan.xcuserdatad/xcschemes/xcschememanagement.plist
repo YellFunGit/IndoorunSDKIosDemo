@@ -4,22 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>FMDB.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>JSONModel.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-IndoorunDemo.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<true/>
-		</dict>
-		<key>SQLCipher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,22 +22,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>370E2812B4E7FAC992131D5FCF4D9E9D</key>
+		<key>8053A89E44B1B06335FAA4C83DBAF5FE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5CCC59A3DA32DC4436DE29C5D16C0243</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>744E21235B07808846CE1A49AB0815AF</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>D638B9D6EB1F12C419CB5BCB69120921</key>
+		<key>B0F9437D5B90A5936B4AD9E2260CC7E4</key>
 		<dict>
 			<key>primary</key>
 			<true/>

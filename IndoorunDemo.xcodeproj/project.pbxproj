@@ -28,8 +28,6 @@
 		2C4F06EC1D3334850012BAEB /* RegionListVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06EB1D3334850012BAEB /* RegionListVCTL.m */; };
 		2C4F06EE1D3334980012BAEB /* RegionListVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F06ED1D3334980012BAEB /* RegionListVCTL.xib */; };
 		2C4F07011D33423B0012BAEB /* GCFloatedLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F07001D33423B0012BAEB /* GCFloatedLabelView.m */; };
-		2C969B581D65995100A08755 /* LE.vbf in Resources */ = {isa = PBXBuildFile; fileRef = 2C969B571D65995100A08755 /* LE.vbf */; };
-		2C969B611D6599F200A08755 /* glres in Resources */ = {isa = PBXBuildFile; fileRef = 2C969B601D6599F200A08755 /* glres */; };
 		2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF86541DADC5710036D7BD /* DynamicNavigateVCTL.m */; };
 		2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF86551DADC5710036D7BD /* DynamicNavigateVCTL.xib */; };
 		2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF86591DADC8C90036D7BD /* MapMarkerResponseVCTL.m */; };
@@ -100,8 +98,6 @@
 		2C4F06ED1D3334980012BAEB /* RegionListVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionListVCTL.xib; sourceTree = "<group>"; };
 		2C4F06FF1D33423B0012BAEB /* GCFloatedLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFloatedLabelView.h; sourceTree = "<group>"; };
 		2C4F07001D33423B0012BAEB /* GCFloatedLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFloatedLabelView.m; sourceTree = "<group>"; };
-		2C969B571D65995100A08755 /* LE.vbf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LE.vbf; sourceTree = "<group>"; };
-		2C969B601D6599F200A08755 /* glres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = glres; sourceTree = "<group>"; };
 		2CAF86531DADC5710036D7BD /* DynamicNavigateVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicNavigateVCTL.h; sourceTree = "<group>"; };
 		2CAF86541DADC5710036D7BD /* DynamicNavigateVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicNavigateVCTL.m; sourceTree = "<group>"; };
 		2CAF86551DADC5710036D7BD /* DynamicNavigateVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicNavigateVCTL.xib; sourceTree = "<group>"; };
@@ -179,8 +175,6 @@
 		2C4F06D21D3332150012BAEB /* IndoorunDemo */ = {
 			isa = PBXGroup;
 			children = (
-				2C969B601D6599F200A08755 /* glres */,
-				2C969B571D65995100A08755 /* LE.vbf */,
 				2C032F871DACDB8400EF56FA /* UIColor+YFHexColor.h */,
 				2C032F881DACDB8400EF56FA /* UIColor+YFHexColor.m */,
 				2C4F06D61D3332150012BAEB /* AppDelegate.h */,
@@ -304,7 +298,7 @@
 					};
 					2C4F06CF1D3332150012BAEB = {
 						CreatedOnToolsVersion = 7.3;
-						DevelopmentTeam = Q6Z456NZWT;
+						DevelopmentTeam = YKB66Z3T3Q;
 					};
 				};
 			};
@@ -345,11 +339,9 @@
 				2CAF865C1DADC8C90036D7BD /* MapMarkerResponseVCTL.xib in Resources */,
 				2C0244591DACF06800999402 /* StaticNavigationVCTL.xib in Resources */,
 				2C02444B1DACECF600999402 /* MapResponseVCTL.xib in Resources */,
-				2C969B611D6599F200A08755 /* glres in Resources */,
 				2C0244401DACE87700999402 /* NavigateVCTL.xib in Resources */,
 				2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */,
 				2CAF866D1DADE7A80036D7BD /* MapUnitResponseVCTL.xib in Resources */,
-				2C969B581D65995100A08755 /* LE.vbf in Resources */,
 				2C032F941DACE07000EF56FA /* RegionDetailVCTL.xib in Resources */,
 				2C4F06E01D3332150012BAEB /* Assets.xcassets in Resources */,
 				2C4F06DE1D3332150012BAEB /* Main.storyboard in Resources */,
@@ -583,7 +575,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				DEVELOPMENT_TEAM = Q6Z456NZWT;
+				DEVELOPMENT_TEAM = YKB66Z3T3Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -613,7 +605,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				DEVELOPMENT_TEAM = Q6Z456NZWT;
+				DEVELOPMENT_TEAM = YKB66Z3T3Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

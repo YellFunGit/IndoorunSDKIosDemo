@@ -9,7 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <IndoorunMap_Core/IndoorunMap_Core.h>
 
-@interface MyMapMarker : IDRMapMarker
+@interface MyMapMarker : NSObject<IDRMapMarkerProtocal>
+
+@property (nonatomic) UIImage *icon;
+
+@property (nonatomic) IDRPosition *pos;
+
+@property (nonatomic) NSInteger Id;
 
 - (id)initWithPos:(IDRPosition*)pos;
 

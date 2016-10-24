@@ -11,6 +11,8 @@
 
 @interface LoadMapVCTL : UIViewController
 
-@property (nonatomic, retain) IDRRegion *region;
+@property (nonatomic) IDRRegion *region;
+@property (nonatomic) NSString * outerLink;
+@property (nonatomic) NSString * exitName;
 
 @end

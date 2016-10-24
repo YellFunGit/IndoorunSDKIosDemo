@@ -12,7 +12,6 @@
 @class IDRPosition;
 @class IDRMapView;
 @class IDRPassUnit;
-@class IDRMapData;
 @class IDRFloor;
 @class IDRRegion;
 @class IDRNavigationServer;

@@ -21,8 +21,7 @@
 
 #endif
 
-//#define APPBundleID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
-#define APPBundleID @"com.Yellfun.Cars"
+#define APPBundleID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 
 #define PhoneUUID [[[UIDevice currentDevice] identifierForVendor] UUIDString]
 
@@ -55,5 +54,7 @@
 #define Mutilocating_URL   [NSString stringWithFormat:@"%@/getMultiLocating", LOCATING]
 
 #define Map_URL            [NSString stringWithFormat:@"%@/getFloorMapVbfZipData.html", INTERFACE]
+
+#define RegionZip_URL     [NSString stringWithFormat:@"%@/downloadZipRegionWholeData.html", INTERFACE]
 
 #endif /* IDRServerAPI_h */

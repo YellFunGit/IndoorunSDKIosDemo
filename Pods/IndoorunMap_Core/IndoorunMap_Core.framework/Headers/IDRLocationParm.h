@@ -11,17 +11,24 @@
 @class IDRPosition;
 @class CLHeading;
 
-@interface IDRLocationParm : NSObject
-
-@property(nonatomic,strong) NSString *regionId;
-@property(nonatomic,strong) NSString *floorId;
-
-@end
-
+/**
+ 定位结果
+ */
 @interface IDRUserLocation : NSObject
 
+/**
+ 坐标
+ */
 @property (nonatomic, retain) IDRPosition *pos;
+
+/**
+ 区域id
+ */
 @property (nonatomic, copy) NSString *regionId;
+
+/**
+ 设备偏北角
+ */
 @property (nonatomic, retain) CLHeading *heading;
 
 @end

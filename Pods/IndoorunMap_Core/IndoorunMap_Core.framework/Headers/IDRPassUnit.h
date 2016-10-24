@@ -8,16 +8,19 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 通道unit
+ */
 @interface IDRPassUnit : NSObject
 
 - (BOOL)equalFloorId:(NSString*)floorId;
 
-@property (nonatomic,copy)   NSString * floorName;
-@property (nonatomic,strong) NSNumber * unitTypeId;
-@property (nonatomic,copy)   NSString * unitId;
+@property (nonatomic,copy)   NSString * floorName;//楼层名
+@property (nonatomic,strong) NSNumber * unitTypeId;//通道类型（UnitType）
+@property (nonatomic,copy)   NSString * unitId;//unitid
 
-@property (nonatomic,copy)   NSString * floorId;
-@property (nonatomic,strong) NSNumber * x;
-@property (nonatomic,strong) NSNumber * y;
+@property (nonatomic,copy)   NSString * floorId;//楼层id
+@property (nonatomic,strong) NSNumber * x;//x坐标
+@property (nonatomic,strong) NSNumber * y;//y坐标
 
 @end

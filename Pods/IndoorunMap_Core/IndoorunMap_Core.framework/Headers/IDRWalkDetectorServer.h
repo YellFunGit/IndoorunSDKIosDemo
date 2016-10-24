@@ -9,9 +9,6 @@
 #import <Foundation/Foundation.h>
 #import <CoreMotion/CoreMotion.h>
 
-static const NSTimeInterval motionDelta = 0.02;
-static const int invalidMoveStatus = -1000;
-
 @class IDRWalkDetectorServer;
 
 @protocol IDRWalkDetectorServerDelegate <NSObject>

@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ 出口结构数据类型
+ */
 @interface IDRExtInfo : NSObject
 
 @property (nonatomic) BOOL outerExit;

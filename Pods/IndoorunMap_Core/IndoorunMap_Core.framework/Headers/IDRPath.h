@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 #import "IDRCalculate.h"
-#import "YFDataTransfer.h"
+
 #import "IDRPassUnit.h"
 
 @interface IDRPath : NSObject

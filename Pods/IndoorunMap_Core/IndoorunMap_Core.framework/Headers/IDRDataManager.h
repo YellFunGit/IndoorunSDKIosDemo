@@ -22,22 +22,6 @@
 
 + (instancetype)sharedInstance;
 
-/*
- * 获取Region下的总体数据
- */
-- (void)loadAllDataWithRegion:(IDRRegion *)region success:(void(^)(IDRRegionData *regionData))success failure:(void(^)())failure;
-
-/**
- *  获取离线定位数据
- *
- */
-- (void)loadLocateBaseData:(IDRRegion *)region success:(void(^)(NSDictionary *data))block failure:(void(^)())failure;
-
-/*
- * 获取Map数据
- */
-- (void)loadMapWithRegion:(IDRRegion *)region floor:(IDRFloor *)floor success:(void(^)(NSString * vbf))block;
-
 /**
  *  获取所有region
  *
@@ -45,5 +29,12 @@
  *  @param failure 对错误进行处理
  */
 - (void)loadTotalRegions:(void(^)(NSArray *regions))success failure:(void(^)())failure;
+
+/**
+ 加载region所有数据
+
+ @param region 对应region
+ */
+- (void)loadRegionAllData:(IDRRegion*)region success:(void(^)(IDRRegionData* regionAllInfo))success failure:(void(^)())failure;
 
 @end

@@ -154,6 +154,11 @@
 @property (nonatomic, assign) BOOL enableLongPress;
 
 /**
+ 地图的旋转角度
+ */
+@property (nonatomic, readonly) CGFloat mapRotate;
+
+/**
  定位点位置
  */
 @property (nonatomic, retain) IDRPosition *userPos;
@@ -195,6 +200,25 @@
 - (BOOL)changeFloor:(IDRFloor *)floor;
 
 /**
+ 获取最近的unit
+
+ @param pos  地图坐标
+ @param type unit类型
+
+ @return 最近的unit
+ */
+- (IDRUnit*)findUnit:(IDRPosition*)pos type:(UnitType)type;
+
+/**
+ 获取最近的marker
+
+ @param pos 地图坐标
+
+ @return 返回的marker
+ */
+- (id<IDRMapMarkerProtocal>)findMark:(IDRPosition*)pos;
+
+/**
  缩放
 
  @param targetScale 目标scale
@@ -215,11 +239,11 @@
 
 /**
  平移
-
  @param x x平移量(屏幕坐标)
  @param y y平移量(屏幕坐标)
+ @param anim 是否动画
  */
-- (void)scroll:(CGFloat)x y:(CGFloat)y;
+- (void)scroll:(CGFloat)x y:(CGFloat)y anim:(BOOL)anim;
 
 /**
  重置地图(地图的位置、旋转、缩放、倾斜等都重置为加载的默认状态)
@@ -294,9 +318,14 @@
 - (void)removeLabel:(NSInteger)Id;
 
 /**
- 左上角的指南针按钮
+ 左上角的指南针按钮是否显示
  */
-@property (nonatomic, retain) UIButton *compassBtn;
+@property (nonatomic) BOOL showCompassBtn;
+
+/**
+ 左上角的指南针按钮坐标
+ */
+@property (nonatomic) CGPoint compassBtnCenter;
 
 /**
  左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
@@ -330,6 +359,11 @@
  @return 地图坐标
  */
 - (IDRPosition*)getMapPos:(CGPoint)screenPoint;
+
+/**
+ 更新指南针角度
+ */
+- (void)updateNorthAngle;
 
 /**
  是否自动切换到定位点所在楼层

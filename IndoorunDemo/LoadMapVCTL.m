@@ -10,8 +10,7 @@
 
 @interface LoadMapVCTL ()<IDRMapViewDelegate>
 
-@property (nonatomic, retain) IDRMapView *mapView;
-
+@property (nonatomic) IDRMapView *mapView;
 
 @end
 
@@ -26,11 +25,11 @@
 
 - (void)loadMap {
     
-    _mapView = [[IDRMapView alloc] init];
-    
-    [_mapView loadMap:_region floor:_region.defaultFloor];
+    _mapView = [[IDRMapView alloc] initWithFrame:self.view.bounds];
     
     _mapView.delegate = self;
+    
+    [_mapView loadMap:_region floor:_region.defaultFloor];
     
     [self.view addSubview:_mapView];
     
@@ -42,7 +41,6 @@
 - (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion *)region floor:(IDRFloor *)floor {
     
     NSLog(@"加载地图%@:%@成功", region.name, floor.title);
-
 }
 
 @end

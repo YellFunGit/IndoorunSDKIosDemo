@@ -121,10 +121,17 @@
  */
 @property (nonatomic, copy  ) NSArray  *advertList;
 
+/**
+ 出口列表
+ */
 @property (nonatomic, copy  ) NSArray  *outerExitList;
-
+/**
+ region照片url
+ */
 @property (nonatomic, copy  ) NSString *photoUrl;
-
+/**
+ 是否可以动态导航定位
+ */
 @property (nonatomic, strong) NSNumber *enDyGuide;
 
 
@@ -155,10 +162,35 @@
  */
 - (IDRPath*)findPathByFloor:(NSString*)floorId;
 
+/**
+ 获取详细IDRfloor结构
+
+ @param floorId 楼层id
+
+ @return IFRFloor实例
+ */
 - (IDRFloor*)getFloorWithFloorId:(NSString*)floorId;
 
+/**
+ 获取能从起始层到目标层的所有通道数组
+
+ @param startFloorId 起始楼层id
+ @param endFloorId   终点楼层id
+ @param isCar        是否车行（人走可以走电梯、楼梯，车行必须走车行通道）
+
+ @return 通道数组
+ */
 - (NSArray*)getAllValidPassgroups:(NSString*)startFloorId endFloor:(NSString*)endFloorId car:(BOOL)isCar;
 
+/**
+ 获取起始点到终点的距离
+
+ @param startPos 起始点
+ @param endPos   终点
+ @param pass     所有的通道
+
+ @return 距离
+ */
 - (CGFloat)getDisWith:(IDRPosition*)startPos end:(IDRPosition*)endPos withPass:(NSArray<IDRPassUnit*>*)pass;
 
 @end
