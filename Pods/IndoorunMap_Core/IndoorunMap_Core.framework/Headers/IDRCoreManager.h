@@ -105,7 +105,7 @@ typedef float(^CalcDistance)(CLLocationCoordinate2D pos1, CLLocationCoordinate2D
 
 @property (nonatomic, copy, readonly) NSString *appiduuidsession;//appid+uuid+session
 
-@property (nonatomic, retain) NSArray<IDRRegion *> *regions;//账户对应的合法region list
+@property (nonatomic, retain) NSArray<IDRRegion *> *regions;//账户对应的所有region list
 
 @property (nonatomic, assign, getter = isInitSuccess) BOOL initSuccess;//init coreserver success
 

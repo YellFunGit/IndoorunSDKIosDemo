@@ -37,4 +37,32 @@
 
 @end
 
+//下面3中marker为sdk提供的默认marker，方便用户使用
+/**
+ *  车marker
+ */
+@interface IDRCarMarker : IDRMapMarker
+
+- (instancetype)initWith:(IDRPosition*)pos;
+
+@end
+
+/**
+ 起点marker
+ */
+@interface IDRStartMarker : IDRMapMarker
+
+- (id)initWith:(IDRPosition*)pos;
+
+@end
+
+/**
+  便利设施
+ */
+@interface IDRFacilitiesMarker : IDRMapMarker
+
+- (instancetype)initWith:(IDRPosition *)pos;
+
+@end
+
 

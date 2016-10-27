@@ -1,9 +1,9 @@
 //
 //  IDRPassData.h
-//  YFMapKit
+//  SDK
 //
-//  Created by Sincere on 16/3/15.
-//  Copyright © 2016年 Sincere. All rights reserved.
+//  Created by Indoorun
+//  Copyright © 2016年 Indoorun. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

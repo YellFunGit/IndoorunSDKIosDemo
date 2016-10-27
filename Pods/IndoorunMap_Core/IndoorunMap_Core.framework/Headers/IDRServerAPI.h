@@ -21,7 +21,7 @@
 
 #endif
 
-#define APPBundleID @"com.Yellfun.Cars"
+#define APPBundleID [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleIdentifier"]
 
 #define PhoneUUID [[[UIDevice currentDevice] identifierForVendor] UUIDString]
 

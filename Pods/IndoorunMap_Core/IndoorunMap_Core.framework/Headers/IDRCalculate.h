@@ -18,18 +18,23 @@
 @interface IDRCalculate : NSObject
 
 /**
- *  选择点
+ *  点到点距离
  *
- *  @param tapPoint 点击点
- *  @param points   点数组
+ *  @param pointA A点
+ *  @param pointB B点
+ *
+ *  @return distance 距离
  */
-+ (IDRPosition*)selectPointsWithPoint:(IDRPosition*)tapPoint
-                              points:(NSArray*)points;
++ (float)getPointDistanceWithPointA:(IDRPosition*)pointA PointB:(IDRPosition*)pointB;
 
-+ (float)getPointDistanceWithPointA:(IDRPosition*)pointA
-                             PointB:(IDRPosition*)pointB;
-
-+ (float)getLineDistanceWithPoint:(IDRPosition*)point
-                             line:(IDRLine*)line;
+/**
+ *  点到线的距离
+ *
+ *  @param point 点
+ *  @param line  线
+ *
+ *  @return 线
+ */
++ (float)getLineDistanceWithPoint:(IDRPosition*)point line:(IDRLine*)line;
 
 @end
