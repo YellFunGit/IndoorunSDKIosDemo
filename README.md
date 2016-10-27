@@ -549,9 +549,11 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
     
     
           ```
-          [[IDRCoreManager locationServer] startServer:_region];
+          IDRLocationServer *locator = [[IDRLocationServer alloc] init];
+          
+          [locator startServer:_region];
     
-            [[IDRCoreManager locationServer] setDelegate:self];
+            [locator setDelegate:self];
           ```
 
 
@@ -599,7 +601,16 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
 * ### 导航
          导航模块:IDRNavigationServer
-
+    * #### 类型介绍
+    
+        导航分为两种：
+        
+        1. 动态导航：起点会自动更新，同时有导航建议提示，到达终点时有回调
+        
+        2. 静态导航：起点与终点必须在导航开启前指定，没有导航建议提示，停止时，必须主动结束导航
+        3. 函数体
+            
+            `@property (nonatomic, readonly) BOOL isDynamicNavi;`
 
 	* #### 开启导航
 
@@ -621,8 +632,19 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
     
     
           ```
-          //开启导航，起始点为nil时是动态导航
-    [[IDRCoreManager navigationServer] startServer:someRegion navi:[IDRNaviParm createWith:startPos end:endPos]];
+            _navigator = [IDRNavigationServer instance];
+            
+            //设置代理
+            [_navigator setDelegate:self];
+            
+            //设置地图，不然不会显示导航线
+            [_navigator setMapView:_mapView];
+            
+            //动态导航需设置定位器
+            [_navigator setLocater:_locator];
+            
+            //动态导航，起点设置为nil
+            [_navigator startServer:_region navi:[IDRNaviParm createWith:nil end:endPos]];
           ```
 
 	* #### 导航开启响应
@@ -642,7 +664,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
            |naviParm|IDRNaviParm |导航参数
 
 
-	* #### 导航段结果
+	* #### 导航段结果（动态导航时有此响应）
 
        1. 功能：导航提示建议
        2. 函数体
@@ -664,8 +686,10 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
        2. 函数体
     
            `- (void)stopServer;`
+        
+       3. 注意事项：主动结束导航时，不论静态导航还是动态导航，都不会有下面的导航正常结束响应
     
-	* #### 导航正常结束响应
+	* #### 导航正常结束响应（动态导航时有此响应）
 
        1. 功能：到达目的地回调响应
        2. 函数体
@@ -684,7 +708,8 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 * ### 指南针
 
        1. 功能：显示地图的朝向，点击时触发地图归位响应
-       2. 函数体
+       2. 默认大小为36*36
+       3. 函数体
     
             /**
              左上角的指南针按钮是否显示

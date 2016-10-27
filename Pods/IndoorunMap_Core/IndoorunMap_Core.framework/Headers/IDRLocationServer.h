@@ -30,17 +30,11 @@ typedef NS_ENUM(NSInteger, LocateStartResult) {
  */
 @interface IDRLocationServer : NSObject
 
-/**
- *  单例实例变量
- *
- */
-+ (instancetype)sharedInstance;
++ (instancetype)instance;//实例变量
 
 @property (nonatomic, assign, readonly, getter = isServerStarted) BOOL serverStarted;
 
 @property (nonatomic, retain, readonly) IDRUserLocation *userLocation;
-
-@property (nonatomic, retain) IDRRegionData *regionData;
 
 //人行惯导
 @property (nonatomic, assign) BOOL useWalkFilter;

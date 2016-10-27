@@ -12,6 +12,7 @@
 
 @property (nonatomic, retain) IDRMapView *mapView;
 @property (nonatomic, retain) IBOutlet UILabel *ibDebug;
+@property (nonatomic) IDRLocationServer *server;
 
 @end
 
@@ -43,9 +44,11 @@
 
 - (void)locate {
     
-    [[IDRCoreManager locationServer] setDelegate:self];
+    _server = [IDRLocationServer instance];
     
-    LocateStartResult result = [[IDRCoreManager locationServer] startServer:_region];
+    _server.delegate = self;
+
+    LocateStartResult result = [_server startServer:_region];
     
     if (result == LocateStart_bluetoothDisable) {
         

@@ -23,6 +23,7 @@
 @class IDRUnit;
 @class IDRNaviSuggestion;
 @class IDRFloorView;
+@class IDRNavigationServer;
 
 @protocol IDRMapViewDelegate <NSObject>
 
@@ -381,6 +382,11 @@
  YES  导航状态
  */
 @property (nonatomic, assign) BOOL naviState;
+
+/**
+ 导航器
+ */
+@property (nonatomic, weak) IDRNavigationServer *navigator;
 
 @end
 

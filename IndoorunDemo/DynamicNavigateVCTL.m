@@ -14,6 +14,8 @@
 @property (nonatomic, retain) IDRPosition *ep;
 @property (nonatomic, retain) IDRCarMarker *carMarker;
 @property (nonatomic, retain) IBOutlet UILabel *ibDebug;
+@property (nonatomic, strong) IDRLocationServer *locator;
+@property (nonatomic, strong) IDRNavigationServer *navigator;
 
 @end
 
@@ -47,14 +49,19 @@
 
 - (void)locate {
     
-    [[IDRCoreManager locationServer] startServer:_region];
+    if (!_locator) {
+        
+        _locator = [IDRLocationServer instance];
+    }
     
-    [[IDRCoreManager locationServer] setDelegate:self];
+    [_locator startServer:_region];
+    
+    [_locator setDelegate:self];
 }
 
 - (IBAction)onStopNavigation:(id)sender {
     
-    [[IDRCoreManager navigationServer] stopServer];
+    [_navigator stopServer];
     
     [_mapView removeMarker:_carMarker];
     
@@ -76,13 +83,20 @@
         
         [_mapView addMarker:_carMarker];
         
-        [[IDRCoreManager navigationServer] setDelegate:self];
+        if (!_navigator) {
+            
+            _navigator = [IDRNavigationServer instance];
+        }
+        
+        [_navigator setDelegate:self];
         
         //设置地图，不然不会显示导航线
-        [[IDRCoreManager navigationServer] setMapView:_mapView];
+        [_navigator setMapView:_mapView];
         
+        //动态导航需设置定位器
+        [_navigator setLocater:_locator];
         //动态导航，起点设置为nil
-        [[IDRCoreManager navigationServer] startServer:_region navi:[IDRNaviParm createWith:nil end:_ep]];
+        [_navigator startServer:_region navi:[IDRNaviParm createWith:nil end:_ep]];
     }
 }
 

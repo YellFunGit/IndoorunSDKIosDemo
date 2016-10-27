@@ -75,21 +75,10 @@ typedef float(^CalcDistance)(CLLocationCoordinate2D pos1, CLLocationCoordinate2D
 - (void)leaveRegion;
 
 /**
- *  获取定位服务
- */
-+ (IDRLocationServer*)locationServer;
+ 查找region
 
-/**
- *  获取导航服务
+ @param regionId region ID
  */
-+ (IDRNavigationServer*)navigationServer;
-
-/**
- *  静止切步行检测
- *
- */
-+ (IDRWalkDetectorServer*)walkDetectorServer;
-
 - (IDRRegion*)retriveRegion:(NSString*)regionId;
 
 /**
@@ -99,16 +88,25 @@ typedef float(^CalcDistance)(CLLocationCoordinate2D pos1, CLLocationCoordinate2D
  */
 - (IDRRegion*)loadNearRegionData:(CLLocationCoordinate2D)userLocation inRegions:(NSArray*)regions block:(CalcDistance)calcDistance;
 
+/**
+ 获取一组最近的region
+
+ @param userLocation 当前经纬度
+ @param regions      查询的region数组
+ @param calcDistance 计算距离block
+
+ @return 最近的regions
+ */
 - (NSMutableArray*)loadNearRegions:(CLLocationCoordinate2D)userLocation inRegions:(NSArray*)regions block:(CalcDistance)calcDistance;
 
 @property (nonatomic, weak) id <IDRCoreManagerDelegate> delegate;
 
-@property (nonatomic, copy) NSString *sessionKey;
+@property (nonatomic, copy) NSString *sessionKey;//sessionkey
 
-@property (nonatomic, copy, readonly) NSString *appiduuidsession;
+@property (nonatomic, copy, readonly) NSString *appiduuidsession;//appid+uuid+session
 
-@property (nonatomic, retain) NSArray<IDRRegion *> *regions;
+@property (nonatomic, retain) NSArray<IDRRegion *> *regions;//账户对应的合法region list
 
-@property (nonatomic, assign, getter = isInitSuccess) BOOL initSuccess;
+@property (nonatomic, assign, getter = isInitSuccess) BOOL initSuccess;//init coreserver success
 
 @end

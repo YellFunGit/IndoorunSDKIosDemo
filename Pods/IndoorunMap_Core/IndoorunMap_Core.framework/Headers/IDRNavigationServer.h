@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "IDRLocationServer.h"
 
 @class IDRPosition;
 @class IDRMapView;
@@ -90,11 +91,7 @@ typedef NS_ENUM(NSInteger, NaviServerStartStatus) {
  */
 @interface IDRNavigationServer : NSObject
 
-/**
- *  导航服务
- *
- */
-+ (instancetype)sharedInstance;
++ (instancetype)instance;//实例变量
 
 @property (nonatomic, weak) id<IDRNavigationServerDelegate> delegate;
 
@@ -117,6 +114,11 @@ typedef NS_ENUM(NSInteger, NaviServerStartStatus) {
  *  是否是动态导航
  */
 @property (nonatomic, readonly) BOOL isDynamicNavi;
+
+/**
+ 动态导航时需要设置定位器
+ */
+@property (nonatomic, weak) IDRLocationServer *locater;
 
 /**
  *  开始导航
