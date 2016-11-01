@@ -1,4 +1,4 @@
-# sdk开发者文档(ios)
+# sdk开发者文档(ios)(version 2.0.13)
 
 ## 注意事项
 1、由于iOS9改用更安全的https，为了能够在iOS9中正常使用地图SDK，请在"Info.plist"中进行如下配置，否则影响SDK的使用。
@@ -119,7 +119,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
         4. 示例代码  
         
             ```
-            _mapView = [[IDRMapView alloc] init];
+            _mapView = [[IDRMapView alloc] initWithFrame:frame];
     
             _mapView.delegate = self;
             
