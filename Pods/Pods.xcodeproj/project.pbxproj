@@ -7,184 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		005DACBD25BB2B97992E8007DAC5F4C3 /* aes_via_ace.h in Headers */ = {isa = PBXBuildFile; fileRef = 56508813521D2874EA1F760D301AA8C1 /* aes_via_ace.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		030A58CA70AEF4AF9A430C1AFD50D6AF /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = 65F4B823007B6A44FDAED9C16602EEEA /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		043AC185028983B9D6E75D48D9B5E9E6 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = 8491CB360C9BE4C8AF1E93258BC49BE2 /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		0D6D35EEAE1EE431865DD5290DE4D827 /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 075958260C53927C97371882D5529FDC /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		17558F84F4FA146EE3E47B5BD450ECF7 /* JSONValueTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = D290E5113CDEC220DC02DE6254F03DD2 /* JSONValueTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1769714E49C7249C817CCBFE6E21AAA7 /* JSONAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DCE6ACFF98DC956CFFE3F1CE4984261 /* JSONAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1CC0376DB89270D5041806053DEE22C1 /* JSONModelClassProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = 00DE4B4F3B19DBB195ED320DA2899969 /* JSONModelClassProperty.m */; };
-		2697F5AC9F4D3F9AE78823BD4354FDF6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		33AD9D71B9E471187556B1A968632797 /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = CADDB53C64CEC3000D5B900081FDA351 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		3A9D96515F2891F178E3BFB5705F6515 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = A197DB77CFE9C9960BDF68C6F89FCE94 /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		3D04B978FE170B01B86EB16CA5A476CA /* JSONAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = AFC68322D261B77D4041DBBB5C233921 /* JSONAPI.m */; };
-		3F84CD8AAF4A335FE904839B2182A04E /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = DC8FA664EF4699B70ACA45C5505C00ED /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4043DCFE5A7471E4F1BB79218E42435F /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = 04BD278B7F37D08220FA67530ED694C0 /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		47A4D4A5A2E45553CD38F57025ACDC43 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = F24F2D214E25F659E976EB7528E60739 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		4C4C7C48327D2064FB0E8497A8327DF3 /* JSONModelError.h in Headers */ = {isa = PBXBuildFile; fileRef = 9C5E21518B3404834F1016ECBD5D1D7C /* JSONModelError.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C9E7E9C1AAF7905500CBEC0716FBC4A /* JSONHTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 65A60D0CD9164B02118E518EBB814432 /* JSONHTTPClient.m */; };
-		50E5E6A7E222AB5312D8559761A3884A /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = D324C7CBA86B7D60314CDA32CFFE1889 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		58BBD2F2D9CF6252A6F4BE5308425C16 /* JSONModel+networking.h in Headers */ = {isa = PBXBuildFile; fileRef = F678DA06E089E2935098677501C15E9C /* JSONModel+networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5AB2DE413E1740A552F8ADAD99F78A8B /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 5EA7316EA731074D1EFD65181AF6ABA0 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		5AE3B96ACEBB4D594A335E38291B8F1D /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = DF6CD6A136A095A19A4E73CB8EB8D3B3 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		64C19891C123E95D0470078F91F60AB2 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 8E4997C83C7016436FA371D1338E84CD /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		6D91206A99344A90F813C17D8FE3C8C2 /* JSONModelError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1099EBB22C1E39F43E9AB95B3577BD0C /* JSONModelError.m */; };
-		73553EA560012A9178EC28B5C8B6DAF8 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 79AF7C11F071B07EC46BCE9B40D5676E /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		752A166FF6F741FF2D6C558619787616 /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = BDABA1EC9F2F6B9E3E7695184A3CD936 /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		767B42A0CBE714521951B3FCF0D1DA30 /* JSONModel+networking.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C6B53E7C33FBD45985DE71FC95C740 /* JSONModel+networking.m */; };
-		76CBC4DBC10BC323A35E4C7454D8A279 /* JSONModelClassProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACA322861F1D28E72279432E3168DD0 /* JSONModelClassProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		819F15B40E1D68356E1C929C86B02786 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = BABDF224A739A336E30F887AE40E28AA /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8962B5DAEFA40A04B3CB5D56148A732D /* Pods-IndoorunDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9BF431324F104EB08F13028C68C253 /* Pods-IndoorunDemo-dummy.m */; };
-		8A1CBD47A4B5FE08ABCF8868CE295FAF /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D41212452D2A578CD379ED49CCB46A2A /* SSZipArchive-dummy.m */; };
-		8B69F750720E347D16BA62D5A02B6ACB /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = 86222886E029E9DF5B8AB3CB7CBD44B2 /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		8B713F6CAD9DB8D881512A8897FEE5BD /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 2BBE447F8BEAB521EA55D6FBBB967071 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		91D02283F69578CA56592EC7C9B526C4 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 8466CEFE2BF3D41B898C6DA08230C4B3 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		93AE27E3AF0887499F89F083848B5231 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FD307FCE93E94007D1372CCB05F2DA8 /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		965BFEAAA7325BA087D4432FA196CDB9 /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = F8C56FE2FC2E856CE757F17D9D8947E1 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		98CCF9671F81D9A8BCA61D7BCF6297DD /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 51AB11DD71B35120100AEDEF88AEAAC4 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		9D4C51AB354D29A1BCFEC004EDD7EF5A /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = F187786B4657A78F18C24F0D71F175B7 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		A9176D26FE282983AA616CDF3BE0442B /* JSONKeyMapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 7EDE1B17A06CCDF4745EF6C5869EDA8A /* JSONKeyMapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A9F2DF4887C95A668171A641FE9E9798 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F9AA8C046CCC6B45D19C519CFEC2CF1 /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		B071B655411CB5862AC8E26D50374621 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 809768CC7905F193D5C12A1667D3E586 /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		B0C2AED164C0F7722A5CC4995B57F199 /* JSONValueTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C10092C6EC41ADEA20698E95D795F91 /* JSONValueTransformer.m */; };
-		B7E4A427F219BBE56BB6B23B039522FF /* JSONModel-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9656B23791E598C06E3F057FB1EE7452 /* JSONModel-dummy.m */; };
-		BE0479D3D5A18140D1A6EF692DB15C17 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		C066BD05C135A9A641B712D92E4AD146 /* JSONKeyMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = D210D291F2D9C9C5D5BF065B106A9764 /* JSONKeyMapper.m */; };
-		C68D0D1181C7A19AEB77A6B0C338BD7C /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B5106B526E2D308C4F56773F115138 /* entropy.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CA9D980EA09EC5B6C6DB8468866B6D2F /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 923B9210AB127CB9880BCD8DE5E07AF6 /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		CDDD5E4668847223D4A8F3215331D82B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		D2CBC11E7FEFC6CA8EFBB13A6D97312E /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = EB4604D1C88FDE4A39813B468D4C2D38 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		D7BD8111F103E103F970FF9049F959C9 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = EDC7A68828D09DD9C07CCDA126667172 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		DB8999CAE436BCEEBB613E466F313DB4 /* JSONModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BE3DBD4D0363DA40D828ED115E9514B /* JSONModel.m */; };
-		DBA1B0C09930C27BD83FD59D63C26FF6 /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 30644FF4A7333059E056B25EA98306E8 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		DF352FE063E8E7E6B0EA922718F95256 /* JSONModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D31A1D5B499BD428F97103CBE2651DFB /* JSONModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DFF437C031F6FF0C5294F70F41A0EF29 /* JSONModelLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E35FC5C7D84B0BF861BDBDE023B857 /* JSONModelLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E5257D94EE2402BE8CEDBC24CFFAEE71 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 97461730657F46F562C2E2108FA7521C /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E770949D6B2B219FC776359408B9063B /* JSONHTTPClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 7979091AF2211CF4FC137CE401F3EC3B /* JSONHTTPClient.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E90A5E3385E3294CBB10CEDE489AC6FA /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 96A8FE6DB37389AF5F67CA401CAE35C2 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		EFA6723A0EE2C3EFC5DE50BBF261DE82 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 8770646B4147D4AEE7560FE21B323363 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		F3A90C6D050F73CDF3EAC63CE014B1CB /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = ED483068B75F62428C32B8E92A10ED7C /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		0510BBC3654E38751D0E2BFB0370669F /* ioapi.h in Headers */ = {isa = PBXBuildFile; fileRef = 66BC425B694167527317270F3338B67C /* ioapi.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		081D0B6CD67AE3ADA5B878D0A59DC9DC /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = 43774685A0C93F884664710E139CCF16 /* mztools.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		10A6070B4F6DE1B2352D0347106C1080 /* entropy.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E458CB59AC891C39C7EA1B5E01EF05F /* entropy.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1FDBB70827DDB904649EF0B13335095C /* zip.h in Headers */ = {isa = PBXBuildFile; fileRef = CC52B607E709EE139127B4E901E79EAB /* zip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		23A1F26378BB1735018E4564B6FB723D /* sha1.h in Headers */ = {isa = PBXBuildFile; fileRef = 14B44978AE3F02D5B5BDF397065F8585 /* sha1.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2D5C94A230FE972D740A982A3A062BD9 /* crypt.h in Headers */ = {isa = PBXBuildFile; fileRef = 7ED1750D8BD4B20482D046BCB48CF73A /* crypt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		45602B833630E1C15657184D9A1FB898 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = ADCBEB9BC33C50053B15B46E9BAA793A /* fileenc.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		464F8BDD14E6F7F0AD3A1A25F45EE771 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = 476311A7AB4AFCF2A466BA971D1C89F5 /* prng.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		50154BA5B02DB6F13A66D23A07B817EA /* aes_via_ace.h in Headers */ = {isa = PBXBuildFile; fileRef = 352772CF8E9D819C9BAA5EBC96104285 /* aes_via_ace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51F4937D42E038CCE5728D81133D6613 /* prng.h in Headers */ = {isa = PBXBuildFile; fileRef = 44ABC60D986940F120342EB145C00467 /* prng.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		628EAAF4B7CD9B07AE88B8E0903E5212 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		6EEB2B9695BC663829BD94F0E1C9DE98 /* SSZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = D55530C246507AED21028D9E55316C8D /* SSZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7627D0615F0AF50BB3102FD4A021FA14 /* brg_types.h in Headers */ = {isa = PBXBuildFile; fileRef = 234C757651A95736A4DDAC91782BFC72 /* brg_types.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7DC8B9CB6829AD230F430BD074DE960F /* aes.h in Headers */ = {isa = PBXBuildFile; fileRef = 209EBD8445AB69255B2E73322AF6FC37 /* aes.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8EF1BD4D71DEAA9B5062DC8DA0439AF2 /* SSZipArchive-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D6781DBE3864AF5088FC9D95F73F6DA /* SSZipArchive-dummy.m */; };
+		91BE10C18090C8F8D318DFD0202FEA23 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 9E1375B3903A6CB857FB457C1F25E624 /* sha1.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		9CCAA16492CCF08FA7298F49FC798642 /* SSZipCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DAE821887FD349EAA76DC99DBB3E885 /* SSZipCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DEB4C7754F876C298A924CE729742BD /* ZipArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C26B3280C7E2DB71C9E20B88C3C6E15 /* ZipArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A1882D61F11E721091AB3F27037E6DAC /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = 889CE36832AFB958BD036432F0924351 /* aeskey.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		A745A197997FBB0801017971F347459B /* aestab.h in Headers */ = {isa = PBXBuildFile; fileRef = 39AF98A96BCD4CF49A37ABD63EBA6BC0 /* aestab.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		AF720767736DBE8398C17C0A2218E509 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = 826D29E896A3C45F197C1B53B80C7A62 /* entropy.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B1205E3E946DF2D2B44A9EA7DE9B1BD8 /* hmac.h in Headers */ = {isa = PBXBuildFile; fileRef = 27B1CCDEB4138B8AA9D7BFA6F425B1C7 /* hmac.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B71B53CECD65B62368F34EAF83E5FA35 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = 3F91CC8EC5A467A7173FB32327B47603 /* aescrypt.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C1BFF06D1FC737C053602DE34261E5B2 /* pwd2key.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAC7A6EE10BFCEEAE2CBD54D729567D /* pwd2key.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C3F1361F68A15D8787CC7F71BB97A24C /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = EFDBBAEA76C4DB3444ED2B9261C86202 /* SSZipArchive.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C81542B92B57E0A2CF310C2856D0DF00 /* unzip.h in Headers */ = {isa = PBXBuildFile; fileRef = B37B93F166AEE84340F3C9319846D77C /* unzip.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D22B66532EC579264A21B8EF5071157A /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = 270F4411C2FA3BCC671657FF5BE637DA /* pwd2key.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		D4DEE3C8D7C9DD8A666E4816C52BE349 /* Pods-IndoorunDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CB9BF431324F104EB08F13028C68C253 /* Pods-IndoorunDemo-dummy.m */; };
+		D559041667BEE9AE899FCB525EF40855 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = 7D321ABD91AE5CD5D89473D6C9CAA125 /* aestab.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		DD6F1341BB14AC549BCC06148B2E8931 /* aesopt.h in Headers */ = {isa = PBXBuildFile; fileRef = ADE9E0AC5C350781D618391105C167EB /* aesopt.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E53B5A4829ED821DE782282303BDF89D /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = C834AA52B442671AD384E7316DBEC8C4 /* ioapi.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EB4F82541BBD500FBD104D4C57F91E2D /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = 737A04453F12571C72242E59835B1D74 /* unzip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		EC324FD58B8BC78DC0F334FF785ADE77 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = 79C47D74BF14DD3B195477B9AC537BFF /* zip.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		ED189C42F069C0F6C603DB453D168E11 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		EF8DE3BD9303EBF5C70DF9E66B74D7D3 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = FAFB5DFE094B60BF291677344D89A0AE /* hmac.c */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		F499D16264D15D064B65C1BC1E9D7C8C /* brg_endian.h in Headers */ = {isa = PBXBuildFile; fileRef = F1B69204A5F3CB112C793AB96AC6A1A9 /* brg_endian.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F564FBE75E1F0E2721EA321DA48AD64E /* fileenc.h in Headers */ = {isa = PBXBuildFile; fileRef = C56A52C53B05003E7BB6FEB414881995 /* fileenc.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA4B8FFC8469C5E170EDCB80F48E152A /* mztools.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CA7B6D41CAF00F7A8117D9C76A39DB6 /* mztools.h */; settings = {ATTRIBUTES = (Project, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		22B15DDE17016BE4FABE73626CA023FC /* PBXContainerItemProxy */ = {
+		55D180F3B39AA1B0AB77B28CAA6766A6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E89EA0620E22EDB775A7C107518644DD;
-			remoteInfo = JSONModel;
-		};
-		3CA06CD97C0617973943AF50552B8A00 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8053A89E44B1B06335FAA4C83DBAF5FE;
+			remoteGlobalIDString = 0426B7090029A4DEBEEF08BB78810476;
 			remoteInfo = SSZipArchive;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		00DE4B4F3B19DBB195ED320DA2899969 /* JSONModelClassProperty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelClassProperty.m; path = JSONModel/JSONModel/JSONModelClassProperty.m; sourceTree = "<group>"; };
-		04BD278B7F37D08220FA67530ED694C0 /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/aes/pwd2key.h; sourceTree = "<group>"; };
 		05D1ED7CA2CB6BCFA433C735A5E5FDD3 /* Pods-IndoorunDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-IndoorunDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
-		075958260C53927C97371882D5529FDC /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
-		0ACA322861F1D28E72279432E3168DD0 /* JSONModelClassProperty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelClassProperty.h; path = JSONModel/JSONModel/JSONModelClassProperty.h; sourceTree = "<group>"; };
-		0F9AA8C046CCC6B45D19C519CFEC2CF1 /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/aes/aesopt.h; sourceTree = "<group>"; };
-		1099EBB22C1E39F43E9AB95B3577BD0C /* JSONModelError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModelError.m; path = JSONModel/JSONModel/JSONModelError.m; sourceTree = "<group>"; };
-		1BE3DBD4D0363DA40D828ED115E9514B /* JSONModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONModel.m; path = JSONModel/JSONModel/JSONModel.m; sourceTree = "<group>"; };
-		1DCE6ACFF98DC956CFFE3F1CE4984261 /* JSONAPI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONAPI.h; path = JSONModel/JSONModelNetworking/JSONAPI.h; sourceTree = "<group>"; };
-		27B5106B526E2D308C4F56773F115138 /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = SSZipArchive/aes/entropy.h; sourceTree = "<group>"; };
-		2BBE447F8BEAB521EA55D6FBBB967071 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
-		2FD307FCE93E94007D1372CCB05F2DA8 /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
-		30644FF4A7333059E056B25EA98306E8 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
-		31B4D8D1AAD13098C9509100E9293A95 /* IndoorunMap_Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IndoorunMap_Core.framework; sourceTree = "<group>"; };
+		0CA7B6D41CAF00F7A8117D9C76A39DB6 /* mztools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mztools.h; path = SSZipArchive/minizip/mztools.h; sourceTree = "<group>"; };
+		14B44978AE3F02D5B5BDF397065F8585 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/aes/sha1.h; sourceTree = "<group>"; };
+		187A814DFFC5AC244DB59365386C78D8 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
+		1C26B3280C7E2DB71C9E20B88C3C6E15 /* ZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ZipArchive.h; path = SSZipArchive/ZipArchive.h; sourceTree = "<group>"; };
+		209EBD8445AB69255B2E73322AF6FC37 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/aes/aes.h; sourceTree = "<group>"; };
+		234C757651A95736A4DDAC91782BFC72 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
+		270F4411C2FA3BCC671657FF5BE637DA /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
+		27B1CCDEB4138B8AA9D7BFA6F425B1C7 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/aes/hmac.h; sourceTree = "<group>"; };
 		3389315DCF34D7B60F4456B37649521E /* Pods-IndoorunDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IndoorunDemo-frameworks.sh"; sourceTree = "<group>"; };
-		34AA11E0D3DC40BC19892E652A14D81D /* JSONModel.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JSONModel.xcconfig; sourceTree = "<group>"; };
-		3E942301BC566B93A8AB4C2EA4BFDB72 /* libJSONModel.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJSONModel.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		352772CF8E9D819C9BAA5EBC96104285 /* aes_via_ace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = SSZipArchive/aes/aes_via_ace.h; sourceTree = "<group>"; };
+		39AF98A96BCD4CF49A37ABD63EBA6BC0 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/aes/aestab.h; sourceTree = "<group>"; };
+		3F91CC8EC5A467A7173FB32327B47603 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
+		43774685A0C93F884664710E139CCF16 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
+		44ABC60D986940F120342EB145C00467 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/aes/prng.h; sourceTree = "<group>"; };
+		476311A7AB4AFCF2A466BA971D1C89F5 /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
 		4CF8C1158830FB3980F5DE8FBD37404A /* Pods-IndoorunDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-IndoorunDemo-resources.sh"; sourceTree = "<group>"; };
-		51AB11DD71B35120100AEDEF88AEAAC4 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
-		56508813521D2874EA1F760D301AA8C1 /* aes_via_ace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes_via_ace.h; path = SSZipArchive/aes/aes_via_ace.h; sourceTree = "<group>"; };
-		5BC7F967132BBEADE3123F2088FA99AA /* libPods-IndoorunDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-IndoorunDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5EA7316EA731074D1EFD65181AF6ABA0 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
-		65A60D0CD9164B02118E518EBB814432 /* JSONHTTPClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONHTTPClient.m; path = JSONModel/JSONModelNetworking/JSONHTTPClient.m; sourceTree = "<group>"; };
-		65F4B823007B6A44FDAED9C16602EEEA /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
-		74FC9C6C124CFB5FA3E3FAB06D6197C4 /* IndoorunMap_Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = IndoorunMap_Resource.bundle; sourceTree = "<group>"; };
-		7979091AF2211CF4FC137CE401F3EC3B /* JSONHTTPClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONHTTPClient.h; path = JSONModel/JSONModelNetworking/JSONHTTPClient.h; sourceTree = "<group>"; };
-		79AF7C11F071B07EC46BCE9B40D5676E /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		4DAE821887FD349EAA76DC99DBB3E885 /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
+		5772B1164031DC267D35C2B39E34441D /* libPods-IndoorunDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-IndoorunDemo.a"; path = "libPods-IndoorunDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B234D2660A52122711C89AFC43EFB56 /* IndoorunMap_Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IndoorunMap_Core.framework; sourceTree = "<group>"; };
+		5D6781DBE3864AF5088FC9D95F73F6DA /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
+		66BC425B694167527317270F3338B67C /* ioapi.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = ioapi.h; path = SSZipArchive/minizip/ioapi.h; sourceTree = "<group>"; };
+		72262F6E9066A6AA36D391AFEAEF477A /* IndoorunMap_Resource.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; path = IndoorunMap_Resource.bundle; sourceTree = "<group>"; };
+		737A04453F12571C72242E59835B1D74 /* unzip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = unzip.c; path = SSZipArchive/minizip/unzip.c; sourceTree = "<group>"; };
+		79C47D74BF14DD3B195477B9AC537BFF /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
+		7D321ABD91AE5CD5D89473D6C9CAA125 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
 		7E3A99C609BA1280A2E9BE2DAC95DC2A /* Pods-IndoorunDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-IndoorunDemo-acknowledgements.plist"; sourceTree = "<group>"; };
-		7EDE1B17A06CCDF4745EF6C5869EDA8A /* JSONKeyMapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONKeyMapper.h; path = JSONModel/JSONModelTransformations/JSONKeyMapper.h; sourceTree = "<group>"; };
-		809768CC7905F193D5C12A1667D3E586 /* zip.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = zip.c; path = SSZipArchive/minizip/zip.c; sourceTree = "<group>"; };
-		8466CEFE2BF3D41B898C6DA08230C4B3 /* aestab.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aestab.c; path = SSZipArchive/aes/aestab.c; sourceTree = "<group>"; };
-		8491CB360C9BE4C8AF1E93258BC49BE2 /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
-		86222886E029E9DF5B8AB3CB7CBD44B2 /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
-		8770646B4147D4AEE7560FE21B323363 /* brg_types.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_types.h; path = SSZipArchive/aes/brg_types.h; sourceTree = "<group>"; };
-		8E4997C83C7016436FA371D1338E84CD /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
-		923B9210AB127CB9880BCD8DE5E07AF6 /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9656B23791E598C06E3F057FB1EE7452 /* JSONModel-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JSONModel-dummy.m"; sourceTree = "<group>"; };
-		96A8FE6DB37389AF5F67CA401CAE35C2 /* aestab.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aestab.h; path = SSZipArchive/aes/aestab.h; sourceTree = "<group>"; };
-		97461730657F46F562C2E2108FA7521C /* SSZipCommon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipCommon.h; path = SSZipArchive/SSZipCommon.h; sourceTree = "<group>"; };
-		99E35FC5C7D84B0BF861BDBDE023B857 /* JSONModelLib.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelLib.h; path = JSONModel/JSONModelLib.h; sourceTree = "<group>"; };
-		9C10092C6EC41ADEA20698E95D795F91 /* JSONValueTransformer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONValueTransformer.m; path = JSONModel/JSONModelTransformations/JSONValueTransformer.m; sourceTree = "<group>"; };
-		9C5E21518B3404834F1016ECBD5D1D7C /* JSONModelError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModelError.h; path = JSONModel/JSONModel/JSONModelError.h; sourceTree = "<group>"; };
-		A197DB77CFE9C9960BDF68C6F89FCE94 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
-		AFC68322D261B77D4041DBBB5C233921 /* JSONAPI.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONAPI.m; path = JSONModel/JSONModelNetworking/JSONAPI.m; sourceTree = "<group>"; };
-		B2C1663F9DB1B7C405B7D51F504EF795 /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
-		BABDF224A739A336E30F887AE40E28AA /* prng.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = prng.c; path = SSZipArchive/aes/prng.c; sourceTree = "<group>"; };
-		BDABA1EC9F2F6B9E3E7695184A3CD936 /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
-		C5397411EDB2F80F1379DC16DFDFB687 /* SSZipArchive-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SSZipArchive-prefix.pch"; sourceTree = "<group>"; };
-		CADDB53C64CEC3000D5B900081FDA351 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/aes/fileenc.h; sourceTree = "<group>"; };
+		7E458CB59AC891C39C7EA1B5E01EF05F /* entropy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = entropy.h; path = SSZipArchive/aes/entropy.h; sourceTree = "<group>"; };
+		7ED1750D8BD4B20482D046BCB48CF73A /* crypt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = crypt.h; path = SSZipArchive/minizip/crypt.h; sourceTree = "<group>"; };
+		826D29E896A3C45F197C1B53B80C7A62 /* entropy.c */ = {isa = PBXFileReference; includeInIndex = 1; name = entropy.c; path = SSZipArchive/aes/entropy.c; sourceTree = "<group>"; };
+		889CE36832AFB958BD036432F0924351 /* aeskey.c */ = {isa = PBXFileReference; includeInIndex = 1; name = aeskey.c; path = SSZipArchive/aes/aeskey.c; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		99D3F275776B2C0F55CD7527D39746FD /* SSZipArchive.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SSZipArchive.xcconfig; sourceTree = "<group>"; };
+		9E1375B3903A6CB857FB457C1F25E624 /* sha1.c */ = {isa = PBXFileReference; includeInIndex = 1; name = sha1.c; path = SSZipArchive/aes/sha1.c; sourceTree = "<group>"; };
+		ADCBEB9BC33C50053B15B46E9BAA793A /* fileenc.c */ = {isa = PBXFileReference; includeInIndex = 1; name = fileenc.c; path = SSZipArchive/aes/fileenc.c; sourceTree = "<group>"; };
+		ADE9E0AC5C350781D618391105C167EB /* aesopt.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aesopt.h; path = SSZipArchive/aes/aesopt.h; sourceTree = "<group>"; };
+		AEAC7A6EE10BFCEEAE2CBD54D729567D /* pwd2key.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = pwd2key.h; path = SSZipArchive/aes/pwd2key.h; sourceTree = "<group>"; };
+		B37B93F166AEE84340F3C9319846D77C /* unzip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = unzip.h; path = SSZipArchive/minizip/unzip.h; sourceTree = "<group>"; };
+		C56A52C53B05003E7BB6FEB414881995 /* fileenc.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = fileenc.h; path = SSZipArchive/aes/fileenc.h; sourceTree = "<group>"; };
+		C834AA52B442671AD384E7316DBEC8C4 /* ioapi.c */ = {isa = PBXFileReference; includeInIndex = 1; name = ioapi.c; path = SSZipArchive/minizip/ioapi.c; sourceTree = "<group>"; };
 		CB9BF431324F104EB08F13028C68C253 /* Pods-IndoorunDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-IndoorunDemo-dummy.m"; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D210D291F2D9C9C5D5BF065B106A9764 /* JSONKeyMapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JSONKeyMapper.m; path = JSONModel/JSONModelTransformations/JSONKeyMapper.m; sourceTree = "<group>"; };
-		D290E5113CDEC220DC02DE6254F03DD2 /* JSONValueTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONValueTransformer.h; path = JSONModel/JSONModelTransformations/JSONValueTransformer.h; sourceTree = "<group>"; };
-		D2C6B53E7C33FBD45985DE71FC95C740 /* JSONModel+networking.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "JSONModel+networking.m"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.m"; sourceTree = "<group>"; };
-		D31A1D5B499BD428F97103CBE2651DFB /* JSONModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JSONModel.h; path = JSONModel/JSONModel/JSONModel.h; sourceTree = "<group>"; };
-		D324C7CBA86B7D60314CDA32CFFE1889 /* aes.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = aes.h; path = SSZipArchive/aes/aes.h; sourceTree = "<group>"; };
-		D41212452D2A578CD379ED49CCB46A2A /* SSZipArchive-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SSZipArchive-dummy.m"; sourceTree = "<group>"; };
-		DC8FA664EF4699B70ACA45C5505C00ED /* pwd2key.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = pwd2key.c; path = SSZipArchive/aes/pwd2key.c; sourceTree = "<group>"; };
+		CC52B607E709EE139127B4E901E79EAB /* zip.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = zip.h; path = SSZipArchive/minizip/zip.h; sourceTree = "<group>"; };
+		D1E48553655B3DFB5E355BFE1B4F46A4 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libSSZipArchive.a; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D55530C246507AED21028D9E55316C8D /* SSZipArchive.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SSZipArchive.h; path = SSZipArchive/SSZipArchive.h; sourceTree = "<group>"; };
 		DEC494B84AE41A88BB1EC137A3C59737 /* Pods-IndoorunDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IndoorunDemo.debug.xcconfig"; sourceTree = "<group>"; };
-		DF6CD6A136A095A19A4E73CB8EB8D3B3 /* hmac.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = hmac.h; path = SSZipArchive/aes/hmac.h; sourceTree = "<group>"; };
-		E3369F88C6DE664564493CAC64B3AEA0 /* JSONModel-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JSONModel-prefix.pch"; sourceTree = "<group>"; };
-		EB4604D1C88FDE4A39813B468D4C2D38 /* sha1.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = sha1.h; path = SSZipArchive/aes/sha1.h; sourceTree = "<group>"; };
-		ED483068B75F62428C32B8E92A10ED7C /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
-		EDC7A68828D09DD9C07CCDA126667172 /* mztools.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mztools.c; path = SSZipArchive/minizip/mztools.c; sourceTree = "<group>"; };
-		F187786B4657A78F18C24F0D71F175B7 /* prng.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = prng.h; path = SSZipArchive/aes/prng.h; sourceTree = "<group>"; };
-		F24F2D214E25F659E976EB7528E60739 /* aescrypt.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = aescrypt.c; path = SSZipArchive/aes/aescrypt.c; sourceTree = "<group>"; };
-		F678DA06E089E2935098677501C15E9C /* JSONModel+networking.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "JSONModel+networking.h"; path = "JSONModel/JSONModelNetworking/JSONModel+networking.h"; sourceTree = "<group>"; };
-		F75A0230DE5EFEC176EBB6CA5F0C4787 /* libSSZipArchive.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSSZipArchive.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8C56FE2FC2E856CE757F17D9D8947E1 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/aes/brg_endian.h; sourceTree = "<group>"; };
+		EFDBBAEA76C4DB3444ED2B9261C86202 /* SSZipArchive.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SSZipArchive.m; path = SSZipArchive/SSZipArchive.m; sourceTree = "<group>"; };
+		F1B69204A5F3CB112C793AB96AC6A1A9 /* brg_endian.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = brg_endian.h; path = SSZipArchive/aes/brg_endian.h; sourceTree = "<group>"; };
+		FAFB5DFE094B60BF291677344D89A0AE /* hmac.c */ = {isa = PBXFileReference; includeInIndex = 1; name = hmac.c; path = SSZipArchive/aes/hmac.c; sourceTree = "<group>"; };
 		FC38F9EA7A03A9314B2BA0F6E3500896 /* Pods-IndoorunDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-IndoorunDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		625B4EC54C2F01C948FA3C7D199D3CC8 /* Frameworks */ = {
+		1C78386434000C5E324B55E1FF6558C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CDDD5E4668847223D4A8F3215331D82B /* Foundation.framework in Frameworks */,
+				ED189C42F069C0F6C603DB453D168E11 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DA85434E0C717820A2C0C5552632EC6 /* Frameworks */ = {
+		DDA9698E3582B0E8451FEA6137F2D4FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2697F5AC9F4D3F9AE78823BD4354FDF6 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9F2BDE62E4F22DAD7653E0A5864A9A73 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BE0479D3D5A18140D1A6EF692DB15C17 /* Foundation.framework in Frameworks */,
+				628EAAF4B7CD9B07AE88B8E0903E5212 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		144A8D5F778A73A431B32055117F3DA1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5772B1164031DC267D35C2B39E34441D /* libPods-IndoorunDemo.a */,
+				D1E48553655B3DFB5E355BFE1B4F46A4 /* libSSZipArchive.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		37717645B40CEB810B4465DE55509CCB /* Pods-IndoorunDemo */ = {
 			isa = PBXGroup;
 			children = (
@@ -200,64 +154,32 @@
 			path = "Target Support Files/Pods-IndoorunDemo";
 			sourceTree = "<group>";
 		};
-		39C6423060794FE7923EF9D2A1779CB7 /* Frameworks */ = {
+		5A81F0D3153144D6913780B7EF9C8200 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				31B4D8D1AAD13098C9509100E9293A95 /* IndoorunMap_Core.framework */,
+				72262F6E9066A6AA36D391AFEAEF477A /* IndoorunMap_Resource.bundle */,
 			);
-			name = Frameworks;
+			name = Resources;
 			sourceTree = "<group>";
 		};
-		4E91B4BFD5D8C69D0228DD5874120BE0 /* SSZipArchive */ = {
+		6269A4F091E327BF17FEE45CBC80653B /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D324C7CBA86B7D60314CDA32CFFE1889 /* aes.h */,
-				56508813521D2874EA1F760D301AA8C1 /* aes_via_ace.h */,
-				F24F2D214E25F659E976EB7528E60739 /* aescrypt.c */,
-				5EA7316EA731074D1EFD65181AF6ABA0 /* aeskey.c */,
-				0F9AA8C046CCC6B45D19C519CFEC2CF1 /* aesopt.h */,
-				8466CEFE2BF3D41B898C6DA08230C4B3 /* aestab.c */,
-				96A8FE6DB37389AF5F67CA401CAE35C2 /* aestab.h */,
-				F8C56FE2FC2E856CE757F17D9D8947E1 /* brg_endian.h */,
-				8770646B4147D4AEE7560FE21B323363 /* brg_types.h */,
-				923B9210AB127CB9880BCD8DE5E07AF6 /* crypt.h */,
-				8E4997C83C7016436FA371D1338E84CD /* entropy.c */,
-				27B5106B526E2D308C4F56773F115138 /* entropy.h */,
-				86222886E029E9DF5B8AB3CB7CBD44B2 /* fileenc.c */,
-				CADDB53C64CEC3000D5B900081FDA351 /* fileenc.h */,
-				ED483068B75F62428C32B8E92A10ED7C /* hmac.c */,
-				DF6CD6A136A095A19A4E73CB8EB8D3B3 /* hmac.h */,
-				65F4B823007B6A44FDAED9C16602EEEA /* ioapi.c */,
-				075958260C53927C97371882D5529FDC /* ioapi.h */,
-				EDC7A68828D09DD9C07CCDA126667172 /* mztools.c */,
-				30644FF4A7333059E056B25EA98306E8 /* mztools.h */,
-				BABDF224A739A336E30F887AE40E28AA /* prng.c */,
-				F187786B4657A78F18C24F0D71F175B7 /* prng.h */,
-				DC8FA664EF4699B70ACA45C5505C00ED /* pwd2key.c */,
-				04BD278B7F37D08220FA67530ED694C0 /* pwd2key.h */,
-				A197DB77CFE9C9960BDF68C6F89FCE94 /* sha1.c */,
-				EB4604D1C88FDE4A39813B468D4C2D38 /* sha1.h */,
-				2FD307FCE93E94007D1372CCB05F2DA8 /* SSZipArchive.h */,
-				79AF7C11F071B07EC46BCE9B40D5676E /* SSZipArchive.m */,
-				97461730657F46F562C2E2108FA7521C /* SSZipCommon.h */,
-				51AB11DD71B35120100AEDEF88AEAAC4 /* unzip.c */,
-				8491CB360C9BE4C8AF1E93258BC49BE2 /* unzip.h */,
-				809768CC7905F193D5C12A1667D3E586 /* zip.c */,
-				BDABA1EC9F2F6B9E3E7695184A3CD936 /* zip.h */,
-				2BBE447F8BEAB521EA55D6FBBB967071 /* ZipArchive.h */,
-				81186B74E8DD522664E44915B0EE6C93 /* Support Files */,
+				BE3B8735B3B89CAC4F793390B2831A3F /* IndoorunMap_Core */,
+				CD9032280F9137921B527C65202A0796 /* SSZipArchive */,
 			);
-			path = SSZipArchive;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		64DE9C1BCA3BE38D05C05AA64F121EA3 /* Products */ = {
+		747AEDEC0257C7DBB9F9A9B17F9FF74F /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3E942301BC566B93A8AB4C2EA4BFDB72 /* libJSONModel.a */,
-				5BC7F967132BBEADE3123F2088FA99AA /* libPods-IndoorunDemo.a */,
-				F75A0230DE5EFEC176EBB6CA5F0C4787 /* libSSZipArchive.a */,
+				99D3F275776B2C0F55CD7527D39746FD /* SSZipArchive.xcconfig */,
+				5D6781DBE3864AF5088FC9D95F73F6DA /* SSZipArchive-dummy.m */,
+				187A814DFFC5AC244DB59365386C78D8 /* SSZipArchive-prefix.pch */,
 			);
-			name = Products;
+			name = "Support Files";
+			path = "../Target Support Files/SSZipArchive";
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -273,21 +195,10 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				D45A4FE8F80ABF42BF62BA09B6998914 /* Pods */,
-				64DE9C1BCA3BE38D05C05AA64F121EA3 /* Products */,
+				6269A4F091E327BF17FEE45CBC80653B /* Pods */,
+				144A8D5F778A73A431B32055117F3DA1 /* Products */,
 				EEBA66BA89B9D675D74CE8C8247FF181 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		81186B74E8DD522664E44915B0EE6C93 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				B2C1663F9DB1B7C405B7D51F504EF795 /* SSZipArchive.xcconfig */,
-				D41212452D2A578CD379ED49CCB46A2A /* SSZipArchive-dummy.m */,
-				C5397411EDB2F80F1379DC16DFDFB687 /* SSZipArchive-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SSZipArchive";
 			sourceTree = "<group>";
 		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
@@ -298,56 +209,65 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C0FD8E794A34DE7FA08E0AC86F7A022D /* IndoorunMap_Core */ = {
+		BE3B8735B3B89CAC4F793390B2831A3F /* IndoorunMap_Core */ = {
 			isa = PBXGroup;
 			children = (
-				39C6423060794FE7923EF9D2A1779CB7 /* Frameworks */,
-				D5EB49936418F0DE653C9DA80AE5C2F4 /* Resources */,
+				E8BBA0C4B719F5A27100717872BB2AD3 /* Frameworks */,
+				5A81F0D3153144D6913780B7EF9C8200 /* Resources */,
 			);
+			name = IndoorunMap_Core;
 			path = IndoorunMap_Core;
 			sourceTree = "<group>";
 		};
-		C57E3C4AFE0383F2323C930B2F63F34F /* JSONModel */ = {
+		CD9032280F9137921B527C65202A0796 /* SSZipArchive */ = {
 			isa = PBXGroup;
 			children = (
-				1DCE6ACFF98DC956CFFE3F1CE4984261 /* JSONAPI.h */,
-				AFC68322D261B77D4041DBBB5C233921 /* JSONAPI.m */,
-				7979091AF2211CF4FC137CE401F3EC3B /* JSONHTTPClient.h */,
-				65A60D0CD9164B02118E518EBB814432 /* JSONHTTPClient.m */,
-				7EDE1B17A06CCDF4745EF6C5869EDA8A /* JSONKeyMapper.h */,
-				D210D291F2D9C9C5D5BF065B106A9764 /* JSONKeyMapper.m */,
-				D31A1D5B499BD428F97103CBE2651DFB /* JSONModel.h */,
-				1BE3DBD4D0363DA40D828ED115E9514B /* JSONModel.m */,
-				F678DA06E089E2935098677501C15E9C /* JSONModel+networking.h */,
-				D2C6B53E7C33FBD45985DE71FC95C740 /* JSONModel+networking.m */,
-				0ACA322861F1D28E72279432E3168DD0 /* JSONModelClassProperty.h */,
-				00DE4B4F3B19DBB195ED320DA2899969 /* JSONModelClassProperty.m */,
-				9C5E21518B3404834F1016ECBD5D1D7C /* JSONModelError.h */,
-				1099EBB22C1E39F43E9AB95B3577BD0C /* JSONModelError.m */,
-				99E35FC5C7D84B0BF861BDBDE023B857 /* JSONModelLib.h */,
-				D290E5113CDEC220DC02DE6254F03DD2 /* JSONValueTransformer.h */,
-				9C10092C6EC41ADEA20698E95D795F91 /* JSONValueTransformer.m */,
-				F7AE8EA10ADCE90085ACF9CAB3ADAB7C /* Support Files */,
+				209EBD8445AB69255B2E73322AF6FC37 /* aes.h */,
+				352772CF8E9D819C9BAA5EBC96104285 /* aes_via_ace.h */,
+				3F91CC8EC5A467A7173FB32327B47603 /* aescrypt.c */,
+				889CE36832AFB958BD036432F0924351 /* aeskey.c */,
+				ADE9E0AC5C350781D618391105C167EB /* aesopt.h */,
+				7D321ABD91AE5CD5D89473D6C9CAA125 /* aestab.c */,
+				39AF98A96BCD4CF49A37ABD63EBA6BC0 /* aestab.h */,
+				F1B69204A5F3CB112C793AB96AC6A1A9 /* brg_endian.h */,
+				234C757651A95736A4DDAC91782BFC72 /* brg_types.h */,
+				7ED1750D8BD4B20482D046BCB48CF73A /* crypt.h */,
+				826D29E896A3C45F197C1B53B80C7A62 /* entropy.c */,
+				7E458CB59AC891C39C7EA1B5E01EF05F /* entropy.h */,
+				ADCBEB9BC33C50053B15B46E9BAA793A /* fileenc.c */,
+				C56A52C53B05003E7BB6FEB414881995 /* fileenc.h */,
+				FAFB5DFE094B60BF291677344D89A0AE /* hmac.c */,
+				27B1CCDEB4138B8AA9D7BFA6F425B1C7 /* hmac.h */,
+				C834AA52B442671AD384E7316DBEC8C4 /* ioapi.c */,
+				66BC425B694167527317270F3338B67C /* ioapi.h */,
+				43774685A0C93F884664710E139CCF16 /* mztools.c */,
+				0CA7B6D41CAF00F7A8117D9C76A39DB6 /* mztools.h */,
+				476311A7AB4AFCF2A466BA971D1C89F5 /* prng.c */,
+				44ABC60D986940F120342EB145C00467 /* prng.h */,
+				270F4411C2FA3BCC671657FF5BE637DA /* pwd2key.c */,
+				AEAC7A6EE10BFCEEAE2CBD54D729567D /* pwd2key.h */,
+				9E1375B3903A6CB857FB457C1F25E624 /* sha1.c */,
+				14B44978AE3F02D5B5BDF397065F8585 /* sha1.h */,
+				D55530C246507AED21028D9E55316C8D /* SSZipArchive.h */,
+				EFDBBAEA76C4DB3444ED2B9261C86202 /* SSZipArchive.m */,
+				4DAE821887FD349EAA76DC99DBB3E885 /* SSZipCommon.h */,
+				737A04453F12571C72242E59835B1D74 /* unzip.c */,
+				B37B93F166AEE84340F3C9319846D77C /* unzip.h */,
+				79C47D74BF14DD3B195477B9AC537BFF /* zip.c */,
+				CC52B607E709EE139127B4E901E79EAB /* zip.h */,
+				1C26B3280C7E2DB71C9E20B88C3C6E15 /* ZipArchive.h */,
+				747AEDEC0257C7DBB9F9A9B17F9FF74F /* Support Files */,
 			);
-			path = JSONModel;
+			name = SSZipArchive;
+			path = SSZipArchive;
 			sourceTree = "<group>";
 		};
-		D45A4FE8F80ABF42BF62BA09B6998914 /* Pods */ = {
+		E8BBA0C4B719F5A27100717872BB2AD3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				C0FD8E794A34DE7FA08E0AC86F7A022D /* IndoorunMap_Core */,
-				C57E3C4AFE0383F2323C930B2F63F34F /* JSONModel */,
-				4E91B4BFD5D8C69D0228DD5874120BE0 /* SSZipArchive */,
+				5B234D2660A52122711C89AFC43EFB56 /* IndoorunMap_Core.framework */,
 			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		D5EB49936418F0DE653C9DA80AE5C2F4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				74FC9C6C124CFB5FA3E3FAB06D6197C4 /* IndoorunMap_Resource.bundle */,
-			);
-			name = Resources;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		EEBA66BA89B9D675D74CE8C8247FF181 /* Targets Support Files */ = {
@@ -358,73 +278,46 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		F7AE8EA10ADCE90085ACF9CAB3ADAB7C /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				34AA11E0D3DC40BC19892E652A14D81D /* JSONModel.xcconfig */,
-				9656B23791E598C06E3F057FB1EE7452 /* JSONModel-dummy.m */,
-				E3369F88C6DE664564493CAC64B3AEA0 /* JSONModel-prefix.pch */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/JSONModel";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		1750B7FBB3CB07640B5ACD18AB96A774 /* Headers */ = {
+		6C9914549293CF31580265D52DE7E658 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1769714E49C7249C817CCBFE6E21AAA7 /* JSONAPI.h in Headers */,
-				E770949D6B2B219FC776359408B9063B /* JSONHTTPClient.h in Headers */,
-				A9176D26FE282983AA616CDF3BE0442B /* JSONKeyMapper.h in Headers */,
-				58BBD2F2D9CF6252A6F4BE5308425C16 /* JSONModel+networking.h in Headers */,
-				DF352FE063E8E7E6B0EA922718F95256 /* JSONModel.h in Headers */,
-				76CBC4DBC10BC323A35E4C7454D8A279 /* JSONModelClassProperty.h in Headers */,
-				4C4C7C48327D2064FB0E8497A8327DF3 /* JSONModelError.h in Headers */,
-				DFF437C031F6FF0C5294F70F41A0EF29 /* JSONModelLib.h in Headers */,
-				17558F84F4FA146EE3E47B5BD450ECF7 /* JSONValueTransformer.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CC04307C34EAC0F1BC6756B5E87C0ACC /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				50E5E6A7E222AB5312D8559761A3884A /* aes.h in Headers */,
-				005DACBD25BB2B97992E8007DAC5F4C3 /* aes_via_ace.h in Headers */,
-				A9F2DF4887C95A668171A641FE9E9798 /* aesopt.h in Headers */,
-				E90A5E3385E3294CBB10CEDE489AC6FA /* aestab.h in Headers */,
-				965BFEAAA7325BA087D4432FA196CDB9 /* brg_endian.h in Headers */,
-				EFA6723A0EE2C3EFC5DE50BBF261DE82 /* brg_types.h in Headers */,
-				CA9D980EA09EC5B6C6DB8468866B6D2F /* crypt.h in Headers */,
-				C68D0D1181C7A19AEB77A6B0C338BD7C /* entropy.h in Headers */,
-				33AD9D71B9E471187556B1A968632797 /* fileenc.h in Headers */,
-				5AE3B96ACEBB4D594A335E38291B8F1D /* hmac.h in Headers */,
-				0D6D35EEAE1EE431865DD5290DE4D827 /* ioapi.h in Headers */,
-				DBA1B0C09930C27BD83FD59D63C26FF6 /* mztools.h in Headers */,
-				9D4C51AB354D29A1BCFEC004EDD7EF5A /* prng.h in Headers */,
-				4043DCFE5A7471E4F1BB79218E42435F /* pwd2key.h in Headers */,
-				D2CBC11E7FEFC6CA8EFBB13A6D97312E /* sha1.h in Headers */,
-				93AE27E3AF0887499F89F083848B5231 /* SSZipArchive.h in Headers */,
-				E5257D94EE2402BE8CEDBC24CFFAEE71 /* SSZipCommon.h in Headers */,
-				043AC185028983B9D6E75D48D9B5E9E6 /* unzip.h in Headers */,
-				752A166FF6F741FF2D6C558619787616 /* zip.h in Headers */,
-				8B713F6CAD9DB8D881512A8897FEE5BD /* ZipArchive.h in Headers */,
+				7DC8B9CB6829AD230F430BD074DE960F /* aes.h in Headers */,
+				50154BA5B02DB6F13A66D23A07B817EA /* aes_via_ace.h in Headers */,
+				DD6F1341BB14AC549BCC06148B2E8931 /* aesopt.h in Headers */,
+				A745A197997FBB0801017971F347459B /* aestab.h in Headers */,
+				F499D16264D15D064B65C1BC1E9D7C8C /* brg_endian.h in Headers */,
+				7627D0615F0AF50BB3102FD4A021FA14 /* brg_types.h in Headers */,
+				2D5C94A230FE972D740A982A3A062BD9 /* crypt.h in Headers */,
+				10A6070B4F6DE1B2352D0347106C1080 /* entropy.h in Headers */,
+				F564FBE75E1F0E2721EA321DA48AD64E /* fileenc.h in Headers */,
+				B1205E3E946DF2D2B44A9EA7DE9B1BD8 /* hmac.h in Headers */,
+				0510BBC3654E38751D0E2BFB0370669F /* ioapi.h in Headers */,
+				FA4B8FFC8469C5E170EDCB80F48E152A /* mztools.h in Headers */,
+				51F4937D42E038CCE5728D81133D6613 /* prng.h in Headers */,
+				C1BFF06D1FC737C053602DE34261E5B2 /* pwd2key.h in Headers */,
+				23A1F26378BB1735018E4564B6FB723D /* sha1.h in Headers */,
+				6EEB2B9695BC663829BD94F0E1C9DE98 /* SSZipArchive.h in Headers */,
+				9CCAA16492CCF08FA7298F49FC798642 /* SSZipCommon.h in Headers */,
+				C81542B92B57E0A2CF310C2856D0DF00 /* unzip.h in Headers */,
+				1FDBB70827DDB904649EF0B13335095C /* zip.h in Headers */,
+				9DEB4C7754F876C298A924CE729742BD /* ZipArchive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8053A89E44B1B06335FAA4C83DBAF5FE /* SSZipArchive */ = {
+		0426B7090029A4DEBEEF08BB78810476 /* SSZipArchive */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D8484247691550B866E5A0C97ABC245C /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
+			buildConfigurationList = F4A0054A17F9222CF595075C10091FD2 /* Build configuration list for PBXNativeTarget "SSZipArchive" */;
 			buildPhases = (
-				3C2B4CA985808E4C66BA952685B7F32F /* Sources */,
-				9F2BDE62E4F22DAD7653E0A5864A9A73 /* Frameworks */,
-				CC04307C34EAC0F1BC6756B5E87C0ACC /* Headers */,
+				1CE154C2E122E56354DA755D89EFF636 /* Sources */,
+				1C78386434000C5E324B55E1FF6558C6 /* Frameworks */,
+				6C9914549293CF31580265D52DE7E658 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -432,42 +325,24 @@
 			);
 			name = SSZipArchive;
 			productName = SSZipArchive;
-			productReference = F75A0230DE5EFEC176EBB6CA5F0C4787 /* libSSZipArchive.a */;
+			productReference = D1E48553655B3DFB5E355BFE1B4F46A4 /* libSSZipArchive.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		B0F9437D5B90A5936B4AD9E2260CC7E4 /* Pods-IndoorunDemo */ = {
+		EEDF09E23086C098962E86D04FB598E5 /* Pods-IndoorunDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E99E7D667C199AE198219DEBF116FB13 /* Build configuration list for PBXNativeTarget "Pods-IndoorunDemo" */;
+			buildConfigurationList = 9DE0252A63F404B6F44E37B73DEB9C29 /* Build configuration list for PBXNativeTarget "Pods-IndoorunDemo" */;
 			buildPhases = (
-				E31AE131BD50C0710CBE214B3C872027 /* Sources */,
-				7DA85434E0C717820A2C0C5552632EC6 /* Frameworks */,
+				19236B0EC4D7A842C5E05F630AC3DB21 /* Sources */,
+				DDA9698E3582B0E8451FEA6137F2D4FD /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				69F6633B3ADDB8A70950315630E4873B /* PBXTargetDependency */,
-				498A2FA4F161BAD69D4926739FE59FEC /* PBXTargetDependency */,
+				6C83A7547B0235174FBEA97D68DA2FF7 /* PBXTargetDependency */,
 			);
 			name = "Pods-IndoorunDemo";
 			productName = "Pods-IndoorunDemo";
-			productReference = 5BC7F967132BBEADE3123F2088FA99AA /* libPods-IndoorunDemo.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		E89EA0620E22EDB775A7C107518644DD /* JSONModel */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 4EBFCF7B69D105B5164B11357C0CF7A2 /* Build configuration list for PBXNativeTarget "JSONModel" */;
-			buildPhases = (
-				4A0F220177D465375EDB0F379278B7DA /* Sources */,
-				625B4EC54C2F01C948FA3C7D199D3CC8 /* Frameworks */,
-				1750B7FBB3CB07640B5ACD18AB96A774 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = JSONModel;
-			productName = JSONModel;
-			productReference = 3E942301BC566B93A8AB4C2EA4BFDB72 /* libJSONModel.a */;
+			productReference = 5772B1164031DC267D35C2B39E34441D /* libPods-IndoorunDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -487,95 +362,72 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 64DE9C1BCA3BE38D05C05AA64F121EA3 /* Products */;
+			productRefGroup = 144A8D5F778A73A431B32055117F3DA1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E89EA0620E22EDB775A7C107518644DD /* JSONModel */,
-				B0F9437D5B90A5936B4AD9E2260CC7E4 /* Pods-IndoorunDemo */,
-				8053A89E44B1B06335FAA4C83DBAF5FE /* SSZipArchive */,
+				EEDF09E23086C098962E86D04FB598E5 /* Pods-IndoorunDemo */,
+				0426B7090029A4DEBEEF08BB78810476 /* SSZipArchive */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		3C2B4CA985808E4C66BA952685B7F32F /* Sources */ = {
+		19236B0EC4D7A842C5E05F630AC3DB21 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47A4D4A5A2E45553CD38F57025ACDC43 /* aescrypt.c in Sources */,
-				5AB2DE413E1740A552F8ADAD99F78A8B /* aeskey.c in Sources */,
-				91D02283F69578CA56592EC7C9B526C4 /* aestab.c in Sources */,
-				64C19891C123E95D0470078F91F60AB2 /* entropy.c in Sources */,
-				8B69F750720E347D16BA62D5A02B6ACB /* fileenc.c in Sources */,
-				F3A90C6D050F73CDF3EAC63CE014B1CB /* hmac.c in Sources */,
-				030A58CA70AEF4AF9A430C1AFD50D6AF /* ioapi.c in Sources */,
-				D7BD8111F103E103F970FF9049F959C9 /* mztools.c in Sources */,
-				819F15B40E1D68356E1C929C86B02786 /* prng.c in Sources */,
-				3F84CD8AAF4A335FE904839B2182A04E /* pwd2key.c in Sources */,
-				3A9D96515F2891F178E3BFB5705F6515 /* sha1.c in Sources */,
-				8A1CBD47A4B5FE08ABCF8868CE295FAF /* SSZipArchive-dummy.m in Sources */,
-				73553EA560012A9178EC28B5C8B6DAF8 /* SSZipArchive.m in Sources */,
-				98CCF9671F81D9A8BCA61D7BCF6297DD /* unzip.c in Sources */,
-				B071B655411CB5862AC8E26D50374621 /* zip.c in Sources */,
+				D4DEE3C8D7C9DD8A666E4816C52BE349 /* Pods-IndoorunDemo-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4A0F220177D465375EDB0F379278B7DA /* Sources */ = {
+		1CE154C2E122E56354DA755D89EFF636 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D04B978FE170B01B86EB16CA5A476CA /* JSONAPI.m in Sources */,
-				4C9E7E9C1AAF7905500CBEC0716FBC4A /* JSONHTTPClient.m in Sources */,
-				C066BD05C135A9A641B712D92E4AD146 /* JSONKeyMapper.m in Sources */,
-				767B42A0CBE714521951B3FCF0D1DA30 /* JSONModel+networking.m in Sources */,
-				B7E4A427F219BBE56BB6B23B039522FF /* JSONModel-dummy.m in Sources */,
-				DB8999CAE436BCEEBB613E466F313DB4 /* JSONModel.m in Sources */,
-				1CC0376DB89270D5041806053DEE22C1 /* JSONModelClassProperty.m in Sources */,
-				6D91206A99344A90F813C17D8FE3C8C2 /* JSONModelError.m in Sources */,
-				B0C2AED164C0F7722A5CC4995B57F199 /* JSONValueTransformer.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E31AE131BD50C0710CBE214B3C872027 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8962B5DAEFA40A04B3CB5D56148A732D /* Pods-IndoorunDemo-dummy.m in Sources */,
+				B71B53CECD65B62368F34EAF83E5FA35 /* aescrypt.c in Sources */,
+				A1882D61F11E721091AB3F27037E6DAC /* aeskey.c in Sources */,
+				D559041667BEE9AE899FCB525EF40855 /* aestab.c in Sources */,
+				AF720767736DBE8398C17C0A2218E509 /* entropy.c in Sources */,
+				45602B833630E1C15657184D9A1FB898 /* fileenc.c in Sources */,
+				EF8DE3BD9303EBF5C70DF9E66B74D7D3 /* hmac.c in Sources */,
+				E53B5A4829ED821DE782282303BDF89D /* ioapi.c in Sources */,
+				081D0B6CD67AE3ADA5B878D0A59DC9DC /* mztools.c in Sources */,
+				464F8BDD14E6F7F0AD3A1A25F45EE771 /* prng.c in Sources */,
+				D22B66532EC579264A21B8EF5071157A /* pwd2key.c in Sources */,
+				91BE10C18090C8F8D318DFD0202FEA23 /* sha1.c in Sources */,
+				8EF1BD4D71DEAA9B5062DC8DA0439AF2 /* SSZipArchive-dummy.m in Sources */,
+				C3F1361F68A15D8787CC7F71BB97A24C /* SSZipArchive.m in Sources */,
+				EB4F82541BBD500FBD104D4C57F91E2D /* unzip.c in Sources */,
+				EC324FD58B8BC78DC0F334FF785ADE77 /* zip.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		498A2FA4F161BAD69D4926739FE59FEC /* PBXTargetDependency */ = {
+		6C83A7547B0235174FBEA97D68DA2FF7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SSZipArchive;
-			target = 8053A89E44B1B06335FAA4C83DBAF5FE /* SSZipArchive */;
-			targetProxy = 3CA06CD97C0617973943AF50552B8A00 /* PBXContainerItemProxy */;
-		};
-		69F6633B3ADDB8A70950315630E4873B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = JSONModel;
-			target = E89EA0620E22EDB775A7C107518644DD /* JSONModel */;
-			targetProxy = 22B15DDE17016BE4FABE73626CA023FC /* PBXContainerItemProxy */;
+			target = 0426B7090029A4DEBEEF08BB78810476 /* SSZipArchive */;
+			targetProxy = 55D180F3B39AA1B0AB77B28CAA6766A6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0123A239F354821F305666BE19268B35 /* Debug */ = {
+		519B2624C7E79083D89DC465C4354001 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C1663F9DB1B7C405B7D51F504EF795 /* SSZipArchive.xcconfig */;
+			baseConfigurationReference = 99D3F275776B2C0F55CD7527D39746FD /* SSZipArchive.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
 				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PRIVATE_HEADERS_FOLDER_PATH = "";
@@ -584,32 +436,9 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
-			name = Debug;
-		};
-		06E6FB05097CD5FCA43CA5F6E68900AD /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FC38F9EA7A03A9314B2BA0F6E3500896 /* Pods-IndoorunDemo.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
-				MACH_O_TYPE = staticlib;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
 			name = Release;
 		};
-		5105A029D10AAB5440A0630B54F3029B /* Debug */ = {
+		623BBE0AB97D01E3D14825A5995266AC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DEC494B84AE41A88BB1EC137A3C59737 /* Pods-IndoorunDemo.debug.xcconfig */;
 			buildSettings = {
@@ -632,9 +461,9 @@
 			};
 			name = Debug;
 		};
-		7AA96316EED55CDF7F5DE6F7A4239DA2 /* Debug */ = {
+		9FD9F15C79F3808ACFB2692E5B50EDC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34AA11E0D3DC40BC19892E652A14D81D /* JSONModel.xcconfig */;
+			baseConfigurationReference = 99D3F275776B2C0F55CD7527D39746FD /* SSZipArchive.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -642,8 +471,8 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
@@ -654,29 +483,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
-		};
-		95FBB1471C2A49CA1A538C48A25AB92A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 34AA11E0D3DC40BC19892E652A14D81D /* JSONModel.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/JSONModel/JSONModel-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
 		};
 		A435E3C35B2666C25C53422D898980A7 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -762,9 +568,9 @@
 			};
 			name = Release;
 		};
-		FD239684170FCE6748AE7B3BAA3E1C5F /* Release */ = {
+		F8803595BFE58A22435708FA2477BBC5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B2C1663F9DB1B7C405B7D51F504EF795 /* SSZipArchive.xcconfig */;
+			baseConfigurationReference = FC38F9EA7A03A9314B2BA0F6E3500896 /* Pods-IndoorunDemo.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -772,14 +578,14 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SSZipArchive/SSZipArchive-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MACH_O_TYPE = staticlib;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 			};
@@ -797,29 +603,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		4EBFCF7B69D105B5164B11357C0CF7A2 /* Build configuration list for PBXNativeTarget "JSONModel" */ = {
+		9DE0252A63F404B6F44E37B73DEB9C29 /* Build configuration list for PBXNativeTarget "Pods-IndoorunDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7AA96316EED55CDF7F5DE6F7A4239DA2 /* Debug */,
-				95FBB1471C2A49CA1A538C48A25AB92A /* Release */,
+				623BBE0AB97D01E3D14825A5995266AC /* Debug */,
+				F8803595BFE58A22435708FA2477BBC5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D8484247691550B866E5A0C97ABC245C /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
+		F4A0054A17F9222CF595075C10091FD2 /* Build configuration list for PBXNativeTarget "SSZipArchive" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0123A239F354821F305666BE19268B35 /* Debug */,
-				FD239684170FCE6748AE7B3BAA3E1C5F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		E99E7D667C199AE198219DEBF116FB13 /* Build configuration list for PBXNativeTarget "Pods-IndoorunDemo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5105A029D10AAB5440A0630B54F3029B /* Debug */,
-				06E6FB05097CD5FCA43CA5F6E68900AD /* Release */,
+				9FD9F15C79F3808ACFB2692E5B50EDC7 /* Debug */,
+				519B2624C7E79083D89DC465C4354001 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

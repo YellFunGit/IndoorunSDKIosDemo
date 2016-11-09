@@ -1,4 +1,4 @@
-# sdk开发者文档(ios)(version 2.0.13)
+# sdk开发者文档(ios)(version 2.1.0)
 
 ## 注意事项
 1、由于iOS9改用更安全的https，为了能够在iOS9中正常使用地图SDK，请在"Info.plist"中进行如下配置，否则影响SDK的使用。
@@ -136,6 +136,15 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
            ` - (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;`
                 
         3. 说明:  表示建筑物的对应楼层加载成功，地图应该能正常显示
+        
+   * #### 地图加载失败响应
+
+       1. 功能: 地图加载失败响应
+       2. 函数体：
+
+          ` - (void)mapViewLoadFailure:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;`
+
+       3. 说明: 表示建筑物的对应楼层加载失败
 
     * #### 切换楼层
         1. 功能：切换到指定的楼层

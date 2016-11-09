@@ -9,14 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class IDRRegion;
-@class IDRFloor;
-@class IDRUnit;
-@class IDRPath;
-@class IDRPosition;
-@class IDRPassUnit;
-@class IDRPassData;
 @class IDRRegionData;
-@class IDRAllRegionsTimestamp;
 
 @interface IDRDataManager : NSObject
 
@@ -25,8 +18,8 @@
 /**
  *  获取所有region
  *
- *  @param success 处理所有正确regions
- *  @param failure 对错误进行处理
+ *  @param success success block
+ *  @param failure failure block
  */
 - (void)loadTotalRegions:(void(^)(NSArray *regions))success failure:(void(^)())failure;
 

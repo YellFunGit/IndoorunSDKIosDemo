@@ -39,6 +39,15 @@
 - (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;
 
 /**
+地图加载失败
+
+ @param mapView 地图view
+ @param region 加载的区域
+ @param floor 加载的楼层
+ */
+- (void)mapViewLoadFailure:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;
+
+/**
  地图状态切换
 
  @param mapView    地图view

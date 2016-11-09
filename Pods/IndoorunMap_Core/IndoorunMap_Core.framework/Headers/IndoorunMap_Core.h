@@ -8,7 +8,6 @@
 #import <IndoorunMap_Core/IDRMapKitConfig.h>
 #import <IndoorunMap_Core/IDRCoreManager.h>
 #import <IndoorunMap_Core/IDRMapView.h>
-#import <IndoorunMap_Core/IDRServerAPI.h>
 #import <IndoorunMap_Core/IDRLocationServer.h>
 #import <IndoorunMap_Core/IDRNavigationServer.h>
 #import <IndoorunMap_Core/IDRWalkDetectorServer.h>
@@ -17,7 +16,6 @@
 #import <IndoorunMap_Core/IDRPrelocateManager.h>
 #import <IndoorunMap_Core/IDRLocationParm.h>
 #import <IndoorunMap_Core/IDRDataManager.h>
-#import <IndoorunMap_Core/IDRLogManager.h>
 #import <IndoorunMap_Core/IDRReachability.h>
 #import <IndoorunMap_Core/IDRUnitSearchManager.h>
 #import <IndoorunMap_Core/IDRWalkDetectorServer.h>

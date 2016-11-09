@@ -4,11 +4,6 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>JSONModel.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 		<key>Pods-IndoorunDemo.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,17 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>8053A89E44B1B06335FAA4C83DBAF5FE</key>
+		<key>0426B7090029A4DEBEEF08BB78810476</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>B0F9437D5B90A5936B4AD9E2260CC7E4</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>E89EA0620E22EDB775A7C107518644DD</key>
+		<key>EEDF09E23086C098962E86D04FB598E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
