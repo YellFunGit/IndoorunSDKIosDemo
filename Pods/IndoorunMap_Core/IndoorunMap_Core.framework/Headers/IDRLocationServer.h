@@ -78,7 +78,7 @@ typedef NS_ENUM(NSInteger, LocateStartResult) {
 - (void)location:(IDRLocationServer*)locationServer didLocationSuccess:(IDRUserLocation*)userLocation;
 
 /**
- *  离线定位error
+ *  定位error
  *
  *  @param regionId 对应的regionid
  */
