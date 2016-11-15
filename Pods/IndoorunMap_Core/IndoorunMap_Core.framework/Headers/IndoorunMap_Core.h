@@ -30,6 +30,7 @@
 
 //-------
 #import <IndoorunMap_Core/IDRServerAPI.h>
+#import <IndoorunMap_Core/IDRWalkInsManager.h>
 #import <IndoorunMap_Core/IDRLogManager.h>
 #import <IndoorunMap_Core/IDRNetworkManager.h>
 #import <IndoorunMap_Core/IDRMap.h>

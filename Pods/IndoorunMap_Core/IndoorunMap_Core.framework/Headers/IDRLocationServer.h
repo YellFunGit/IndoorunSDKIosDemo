@@ -42,6 +42,10 @@ typedef NS_ENUM(NSInteger, LocateStartResult) {
 //车行惯导
 @property (nonatomic, assign) BOOL useCarFilter;
 
+@property (nonatomic) IDRPosition *startPos;
+
+@property (nonatomic) NSTimeInterval timeInterval;
+
 /**
  *  delegate
  */

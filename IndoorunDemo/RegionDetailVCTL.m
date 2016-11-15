@@ -14,6 +14,7 @@
 #import "MapResponseVCTL.h"
 #import "MapMarkerResponseVCTL.h"
 #import "MapUnitResponseVCTL.h"
+#import "IndoorunDemo-Swift.h"
 
 typedef NS_ENUM(NSInteger, FunctionType) {
     
@@ -30,6 +31,8 @@ typedef NS_ENUM(NSInteger, FunctionType) {
     onStaticNavigate,//静态导航
     
     onDynamicNavigate,//动态导航
+    
+    onGuanDaoTest,//惯导测试
     
     FunctionType_Max
 };
@@ -93,6 +96,8 @@ typedef NS_ENUM(NSInteger, FunctionType) {
             return @"静态导航";
         case onDynamicNavigate:
             return @"动态导航";
+        case onGuanDaoTest:
+            return @"惯导测试";
         
         default:
             return @"";
@@ -179,6 +184,15 @@ typedef NS_ENUM(NSInteger, FunctionType) {
         DynamicNavigateVCTL *vctl = [[DynamicNavigateVCTL alloc] init];
         
         vctl.region = _region;
+        
+        [self.navigationController pushViewController:vctl animated:YES];
+    }
+    
+    if (indexPath.row == onGuanDaoTest) {
+        
+        GuanDaoTestVCTL *vctl = [[GuanDaoTestVCTL alloc] init];
+        
+        vctl._region = _region;
         
         [self.navigationController pushViewController:vctl animated:YES];
     }

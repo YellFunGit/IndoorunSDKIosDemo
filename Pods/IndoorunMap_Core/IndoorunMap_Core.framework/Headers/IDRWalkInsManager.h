@@ -23,4 +23,8 @@
 
 - (CGFloat)getMagnetism;
 
+- (NSInteger)getStepCount;
+
+- (CGFloat)getWalkDistance;
+
 @end
