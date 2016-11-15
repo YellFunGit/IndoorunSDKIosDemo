@@ -96,7 +96,7 @@
         //动态导航需设置定位器
         [_navigator setLocater:_locator];
         //动态导航，起点设置为nil
-        [_navigator startServer:_region navi:[IDRNaviParm createWith:nil end:_ep]];
+        [_navigator startServer:_region navi:[IDRNaviParm createWith:nil end:_ep car:NO]];
     }
 }
 

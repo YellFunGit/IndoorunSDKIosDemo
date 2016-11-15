@@ -94,7 +94,7 @@
         //设置地图，不然不会显示导航线
         [_navigator setMapView:_mapView];
         
-        [_navigator startServer:_region navi:[IDRNaviParm createWith:_sp end:_ep]];
+        [_navigator startServer:_region navi:[IDRNaviParm createWith:_sp end:_ep car:NO]];
     }
 }
 

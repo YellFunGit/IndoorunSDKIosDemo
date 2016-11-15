@@ -43,13 +43,15 @@ typedef NS_ENUM(NSInteger, NaviServerStartStatus) {
  */
 @interface IDRNaviParm : NSObject
 
-+ (instancetype)createWith:(IDRPosition*)start end:(IDRPosition*)end;
++ (instancetype)createWith:(IDRPosition*)start end:(IDRPosition*)end car:(BOOL)carNavi;
 
-- (instancetype)initWith:(IDRPosition*)start end:(IDRPosition*)end;
+- (instancetype)initWith:(IDRPosition*)start end:(IDRPosition*)end car:(BOOL)carNavi;
 
 @property (nonatomic, retain) IDRPosition *startPos;//起点
 
 @property (nonatomic, retain) IDRPosition *endPos;//终点
+
+@property (nonatomic) BOOL isCarNavi;//是否车行
 
 @end
 

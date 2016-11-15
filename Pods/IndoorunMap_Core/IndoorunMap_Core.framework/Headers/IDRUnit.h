@@ -68,6 +68,8 @@
 
 @property (nonatomic, retain) IDRExtInfo * extInfo;
 
+@property (nonatomic) int color;//unit颜色
+
 /**
  *  根据比例获取unit的Frame
  *

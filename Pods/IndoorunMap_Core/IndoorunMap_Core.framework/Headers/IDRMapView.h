@@ -220,6 +220,14 @@
 - (IDRUnit*)findUnit:(IDRPosition*)pos type:(UnitType)type;
 
 /**
+ 根据名称获取unit数组
+
+ @param unitNames 名字数组
+ @return unit数组
+ */
+- (NSArray<IDRUnit*>*)findUnits:(NSArray<NSString*>*)unitNames;
+
+/**
  获取最近的marker
 
  @param pos 地图坐标
@@ -230,12 +238,12 @@
 
 /**
  缩放
-
- @param targetScale 目标scale
- @param anchor      设置的锚点
+ 
+ @param zoomScale   放大的倍数
+ @param anchor      锚点(地图坐标)
  @param anim        是否渐进动画
  */
-- (void)zoom:(CGFloat)targetScale anchor:(CGPoint)anchor anim:(BOOL)anim;
+- (void)zoom:(CGFloat)zoomScale anchor:(CGPoint)anchor anim:(BOOL)anim;
 
 /**
  放大一级比例尺
@@ -246,6 +254,22 @@
  缩小一级比例尺
  */
 - (void)zoomOut;
+
+/**
+ 地图缩放比例
+ @return 缩放比例
+ */
+- (CGFloat)mapScale;
+
+/**
+ 地图宽
+ */
+- (CGFloat)mapWidth;
+
+/**
+ 地图高
+ */
+- (CGFloat)mapHeight;
 
 /**
  平移
@@ -348,9 +372,20 @@
 @property (nonatomic, retain) IDRFloorView *floorListView;
 
 /**
+ 左上角的指南针按钮，默认添加，如用户需要修改，则请自行添加并调用addNorthAngleBtn
+ */
+@property (nonatomic, retain) UIView *compassBtn;
+/**
   是否能切换楼层
  */
 @property (nonatomic, assign) BOOL enableChangeFloor;
+
+/**
+ 添加指南针按钮
+
+ @param view 按钮view
+ */
+- (void)addNorthAngleBtn:(UIView*)view;
 
 /**
  根据地图坐标，获取屏幕坐标
@@ -450,4 +485,21 @@
 
 @end
 
+@interface IDRMapView (UnitAPI)
+
+/**
+ 更新unit颜色
+
+ @param unit unit
+ */
+- (void)updateUnitColor:(IDRUnit*)unit;
+
+/**
+ 更新一组Units的颜色
+
+ @param units units数组
+ */
+- (void)updateUnitsColor:(NSArray<IDRUnit*>*)units;
+
+@end
 

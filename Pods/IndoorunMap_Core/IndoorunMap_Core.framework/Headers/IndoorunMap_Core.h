@@ -28,6 +28,21 @@
 #import <IndoorunMap_Core/IDRExtInfo.h>
 #import <IndoorunMap_Core/IDRPassData.h>
 
+//-------
+#import <IndoorunMap_Core/IDRServerAPI.h>
+#import <IndoorunMap_Core/IDRLogManager.h>
+#import <IndoorunMap_Core/IDRNetworkManager.h>
+#import <IndoorunMap_Core/IDRMap.h>
+#import <IndoorunMap_Core/IDRLengthPre.h>
+#import <IndoorunMap_Core/IDRLine.h>
+#import <IndoorunMap_Core/IDRBaseLocationServer.h>
+#import <IndoorunMap_Core/IDRDebugManager.h>
+#import <IndoorunMap_Core/IDREnum.h>
+#import <IndoorunMap_Core/IDRUserPointMarker.h>
+#import <IndoorunMap_Core/IDRDownLoadManager.h>
+#import <IndoorunMap_Core/IDRLocationSimulateManager.h>
+#import <IndoorunMap_Core/IDRMultiLocateModul.h>
+
 //! Project version number for IndoorunMap_Core.
 FOUNDATION_EXPORT double IndoorunMap_CoreVersionNumber;
 

@@ -28,6 +28,22 @@
 		2C4F06EC1D3334850012BAEB /* RegionListVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06EB1D3334850012BAEB /* RegionListVCTL.m */; };
 		2C4F06EE1D3334980012BAEB /* RegionListVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F06ED1D3334980012BAEB /* RegionListVCTL.xib */; };
 		2C4F07011D33423B0012BAEB /* GCFloatedLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F07001D33423B0012BAEB /* GCFloatedLabelView.m */; };
+		2C50BF6C1DDAB4B7000F96FE /* GuanDaoTestVCTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF6A1DDAB4B7000F96FE /* GuanDaoTestVCTL.swift */; };
+		2C50BF6D1DDAB4B7000F96FE /* GuanDaoTestVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C50BF6B1DDAB4B7000F96FE /* GuanDaoTestVCTL.xib */; };
+		2C50BF701DDAB735000F96FE /* FloorPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF6E1DDAB735000F96FE /* FloorPath.cpp */; };
+		2C50BF731DDAB740000F96FE /* PassUnit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF711DDAB740000F96FE /* PassUnit.cpp */; };
+		2C50BF761DDAB752000F96FE /* PathBrief.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF741DDAB752000F96FE /* PathBrief.cpp */; };
+		2C50BF791DDAB75E000F96FE /* PathLengthPreIndex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF771DDAB75E000F96FE /* PathLengthPreIndex.cpp */; };
+		2C50BF7C1DDAB767000F96FE /* PathResult.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF7A1DDAB767000F96FE /* PathResult.cpp */; };
+		2C50BF7F1DDAB772000F96FE /* PathStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF7D1DDAB772000F96FE /* PathStructure.cpp */; };
+		2C50BF821DDAB77C000F96FE /* Position.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF801DDAB77C000F96FE /* Position.cpp */; };
+		2C50BF851DDAB786000F96FE /* PositionDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF831DDAB786000F96FE /* PositionDistance.cpp */; };
+		2C50BF881DDAB78F000F96FE /* RegionPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF861DDAB78F000F96FE /* RegionPath.cpp */; };
+		2C50BF8B1DDAB797000F96FE /* Segment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF891DDAB797000F96FE /* Segment.cpp */; };
+		2C50BF8E1DDAB7A2000F96FE /* ThroughPathStructure.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF8C1DDAB7A2000F96FE /* ThroughPathStructure.cpp */; };
+		2C50BF911DDAB848000F96FE /* Comparable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF8F1DDAB848000F96FE /* Comparable.cpp */; };
+		2C50BF971DDAD496000F96FE /* PathUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF951DDAD496000F96FE /* PathUtil.cpp */; };
+		2C50BF9A1DDAD631000F96FE /* PathSearch.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2C50BF981DDAD631000F96FE /* PathSearch.cpp */; };
 		2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF86541DADC5710036D7BD /* DynamicNavigateVCTL.m */; };
 		2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF86551DADC5710036D7BD /* DynamicNavigateVCTL.xib */; };
 		2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF86591DADC8C90036D7BD /* MapMarkerResponseVCTL.m */; };
@@ -98,6 +114,36 @@
 		2C4F06ED1D3334980012BAEB /* RegionListVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionListVCTL.xib; sourceTree = "<group>"; };
 		2C4F06FF1D33423B0012BAEB /* GCFloatedLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFloatedLabelView.h; sourceTree = "<group>"; };
 		2C4F07001D33423B0012BAEB /* GCFloatedLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFloatedLabelView.m; sourceTree = "<group>"; };
+		2C50BF6A1DDAB4B7000F96FE /* GuanDaoTestVCTL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GuanDaoTestVCTL.swift; sourceTree = "<group>"; };
+		2C50BF6B1DDAB4B7000F96FE /* GuanDaoTestVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GuanDaoTestVCTL.xib; sourceTree = "<group>"; };
+		2C50BF6E1DDAB735000F96FE /* FloorPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FloorPath.cpp; sourceTree = "<group>"; };
+		2C50BF6F1DDAB735000F96FE /* FloorPath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FloorPath.hpp; sourceTree = "<group>"; };
+		2C50BF711DDAB740000F96FE /* PassUnit.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PassUnit.cpp; sourceTree = "<group>"; };
+		2C50BF721DDAB740000F96FE /* PassUnit.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PassUnit.hpp; sourceTree = "<group>"; };
+		2C50BF741DDAB752000F96FE /* PathBrief.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathBrief.cpp; sourceTree = "<group>"; };
+		2C50BF751DDAB752000F96FE /* PathBrief.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathBrief.hpp; sourceTree = "<group>"; };
+		2C50BF771DDAB75E000F96FE /* PathLengthPreIndex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathLengthPreIndex.cpp; sourceTree = "<group>"; };
+		2C50BF781DDAB75E000F96FE /* PathLengthPreIndex.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathLengthPreIndex.hpp; sourceTree = "<group>"; };
+		2C50BF7A1DDAB767000F96FE /* PathResult.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathResult.cpp; sourceTree = "<group>"; };
+		2C50BF7B1DDAB767000F96FE /* PathResult.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathResult.hpp; sourceTree = "<group>"; };
+		2C50BF7D1DDAB772000F96FE /* PathStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathStructure.cpp; sourceTree = "<group>"; };
+		2C50BF7E1DDAB772000F96FE /* PathStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathStructure.hpp; sourceTree = "<group>"; };
+		2C50BF801DDAB77C000F96FE /* Position.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Position.cpp; sourceTree = "<group>"; };
+		2C50BF811DDAB77C000F96FE /* Position.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Position.hpp; sourceTree = "<group>"; };
+		2C50BF831DDAB786000F96FE /* PositionDistance.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PositionDistance.cpp; sourceTree = "<group>"; };
+		2C50BF841DDAB786000F96FE /* PositionDistance.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PositionDistance.hpp; sourceTree = "<group>"; };
+		2C50BF861DDAB78F000F96FE /* RegionPath.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RegionPath.cpp; sourceTree = "<group>"; };
+		2C50BF871DDAB78F000F96FE /* RegionPath.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = RegionPath.hpp; sourceTree = "<group>"; };
+		2C50BF891DDAB797000F96FE /* Segment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Segment.cpp; sourceTree = "<group>"; };
+		2C50BF8A1DDAB797000F96FE /* Segment.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Segment.hpp; sourceTree = "<group>"; };
+		2C50BF8C1DDAB7A2000F96FE /* ThroughPathStructure.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ThroughPathStructure.cpp; sourceTree = "<group>"; };
+		2C50BF8D1DDAB7A2000F96FE /* ThroughPathStructure.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ThroughPathStructure.hpp; sourceTree = "<group>"; };
+		2C50BF8F1DDAB848000F96FE /* Comparable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Comparable.cpp; sourceTree = "<group>"; };
+		2C50BF901DDAB848000F96FE /* Comparable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Comparable.hpp; sourceTree = "<group>"; };
+		2C50BF951DDAD496000F96FE /* PathUtil.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathUtil.cpp; sourceTree = "<group>"; };
+		2C50BF961DDAD496000F96FE /* PathUtil.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathUtil.hpp; sourceTree = "<group>"; };
+		2C50BF981DDAD631000F96FE /* PathSearch.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PathSearch.cpp; sourceTree = "<group>"; };
+		2C50BF991DDAD631000F96FE /* PathSearch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = PathSearch.hpp; sourceTree = "<group>"; };
 		2CAF86531DADC5710036D7BD /* DynamicNavigateVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicNavigateVCTL.h; sourceTree = "<group>"; };
 		2CAF86541DADC5710036D7BD /* DynamicNavigateVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicNavigateVCTL.m; sourceTree = "<group>"; };
 		2CAF86551DADC5710036D7BD /* DynamicNavigateVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicNavigateVCTL.xib; sourceTree = "<group>"; };
@@ -155,6 +201,34 @@
 		2C4F06C71D3332150012BAEB = {
 			isa = PBXGroup;
 			children = (
+				2C50BF981DDAD631000F96FE /* PathSearch.cpp */,
+				2C50BF991DDAD631000F96FE /* PathSearch.hpp */,
+				2C50BF951DDAD496000F96FE /* PathUtil.cpp */,
+				2C50BF961DDAD496000F96FE /* PathUtil.hpp */,
+				2C50BF8F1DDAB848000F96FE /* Comparable.cpp */,
+				2C50BF901DDAB848000F96FE /* Comparable.hpp */,
+				2C50BF8C1DDAB7A2000F96FE /* ThroughPathStructure.cpp */,
+				2C50BF8D1DDAB7A2000F96FE /* ThroughPathStructure.hpp */,
+				2C50BF891DDAB797000F96FE /* Segment.cpp */,
+				2C50BF8A1DDAB797000F96FE /* Segment.hpp */,
+				2C50BF861DDAB78F000F96FE /* RegionPath.cpp */,
+				2C50BF871DDAB78F000F96FE /* RegionPath.hpp */,
+				2C50BF831DDAB786000F96FE /* PositionDistance.cpp */,
+				2C50BF841DDAB786000F96FE /* PositionDistance.hpp */,
+				2C50BF801DDAB77C000F96FE /* Position.cpp */,
+				2C50BF811DDAB77C000F96FE /* Position.hpp */,
+				2C50BF7D1DDAB772000F96FE /* PathStructure.cpp */,
+				2C50BF7E1DDAB772000F96FE /* PathStructure.hpp */,
+				2C50BF7A1DDAB767000F96FE /* PathResult.cpp */,
+				2C50BF7B1DDAB767000F96FE /* PathResult.hpp */,
+				2C50BF771DDAB75E000F96FE /* PathLengthPreIndex.cpp */,
+				2C50BF781DDAB75E000F96FE /* PathLengthPreIndex.hpp */,
+				2C50BF741DDAB752000F96FE /* PathBrief.cpp */,
+				2C50BF751DDAB752000F96FE /* PathBrief.hpp */,
+				2C50BF711DDAB740000F96FE /* PassUnit.cpp */,
+				2C50BF721DDAB740000F96FE /* PassUnit.hpp */,
+				2C50BF6E1DDAB735000F96FE /* FloorPath.cpp */,
+				2C50BF6F1DDAB735000F96FE /* FloorPath.hpp */,
 				2C4F06D21D3332150012BAEB /* IndoorunDemo */,
 				2C0DFC401D9A6FC800125C09 /* IndoorunDemoUITests */,
 				2C4F06D11D3332150012BAEB /* Products */,
@@ -220,6 +294,8 @@
 				2CAF866A1DADE7A80036D7BD /* MapUnitResponseVCTL.m */,
 				2CAF866B1DADE7A80036D7BD /* MapUnitResponseVCTL.xib */,
 				2CAF866E1DADEAF20036D7BD /* LocateVCTL.xib */,
+				2C50BF6A1DDAB4B7000F96FE /* GuanDaoTestVCTL.swift */,
+				2C50BF6B1DDAB4B7000F96FE /* GuanDaoTestVCTL.xib */,
 			);
 			path = IndoorunDemo;
 			sourceTree = "<group>";
@@ -294,11 +370,13 @@
 				TargetAttributes = {
 					2C0DFC3E1D9A6FC800125C09 = {
 						CreatedOnToolsVersion = 7.3;
+						LastSwiftMigration = 0810;
 						TestTargetID = 2C4F06CF1D3332150012BAEB;
 					};
 					2C4F06CF1D3332150012BAEB = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = YKB66Z3T3Q;
+						LastSwiftMigration = 0810;
 					};
 				};
 			};
@@ -339,6 +417,7 @@
 				2CAF865C1DADC8C90036D7BD /* MapMarkerResponseVCTL.xib in Resources */,
 				2C0244591DACF06800999402 /* StaticNavigationVCTL.xib in Resources */,
 				2C02444B1DACECF600999402 /* MapResponseVCTL.xib in Resources */,
+				2C50BF6D1DDAB4B7000F96FE /* GuanDaoTestVCTL.xib in Resources */,
 				2C0244401DACE87700999402 /* NavigateVCTL.xib in Resources */,
 				2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */,
 				2CAF866D1DADE7A80036D7BD /* MapUnitResponseVCTL.xib in Resources */,
@@ -412,21 +491,36 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C0244431DACEAA500999402 /* DemoCommon.m in Sources */,
+				2C50BF6C1DDAB4B7000F96FE /* GuanDaoTestVCTL.swift in Sources */,
+				2C50BF821DDAB77C000F96FE /* Position.cpp in Sources */,
 				2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */,
+				2C50BF731DDAB740000F96FE /* PassUnit.cpp in Sources */,
+				2C50BF701DDAB735000F96FE /* FloorPath.cpp in Sources */,
 				2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */,
 				2CAF866C1DADE7A80036D7BD /* MapUnitResponseVCTL.m in Sources */,
+				2C50BF971DDAD496000F96FE /* PathUtil.cpp in Sources */,
+				2C50BF911DDAB848000F96FE /* Comparable.cpp in Sources */,
 				2C02444A1DACECF600999402 /* MapResponseVCTL.m in Sources */,
 				2C032F921DACE04100EF56FA /* RegionDetailVCTL.m in Sources */,
 				2C4F07011D33423B0012BAEB /* GCFloatedLabelView.m in Sources */,
 				2C4F06EC1D3334850012BAEB /* RegionListVCTL.m in Sources */,
+				2C50BF7C1DDAB767000F96FE /* PathResult.cpp in Sources */,
 				2C0244581DACF06800999402 /* StaticNavigationVCTL.m in Sources */,
+				2C50BF7F1DDAB772000F96FE /* PathStructure.cpp in Sources */,
 				2C4F06DB1D3332150012BAEB /* ViewController.m in Sources */,
 				2C4F06D81D3332150012BAEB /* AppDelegate.m in Sources */,
 				2C032F971DACE4DB00EF56FA /* LocateVCTL.m in Sources */,
+				2C50BF761DDAB752000F96FE /* PathBrief.cpp in Sources */,
+				2C50BF791DDAB75E000F96FE /* PathLengthPreIndex.cpp in Sources */,
+				2C50BF8E1DDAB7A2000F96FE /* ThroughPathStructure.cpp in Sources */,
+				2C50BF881DDAB78F000F96FE /* RegionPath.cpp in Sources */,
 				2C032F8F1DACDE4700EF56FA /* LoadMapVCTL.m in Sources */,
 				2CB2A1CF1DA8D40100A24A52 /* MyMapMarker.m in Sources */,
 				2C032F891DACDB8400EF56FA /* UIColor+YFHexColor.m in Sources */,
 				2C4F06D51D3332150012BAEB /* main.m in Sources */,
+				2C50BF9A1DDAD631000F96FE /* PathSearch.cpp in Sources */,
+				2C50BF851DDAB786000F96FE /* PositionDistance.cpp in Sources */,
+				2C50BF8B1DDAB797000F96FE /* Segment.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,10 +557,12 @@
 		2C0DFC471D9A6FC800125C09 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = IndoorunDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.IndoorunDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = IndoorunDemo;
 			};
 			name = Debug;
@@ -474,10 +570,12 @@
 		2C0DFC481D9A6FC800125C09 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = IndoorunDemoUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.IndoorunDemoUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = IndoorunDemo;
 			};
 			name = Release;
@@ -597,6 +695,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IndoorunDemo/IndoorunDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Debug;
 		};
@@ -627,6 +726,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.yellfun.YFTCS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "IndoorunDemo/IndoorunDemo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0.1;
 			};
 			name = Release;
 		};
