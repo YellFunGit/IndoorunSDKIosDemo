@@ -1,4 +1,23 @@
-# sdk开发者文档(ios)(version 2.1.0)
+# sdk开发者文档(ios)
+
+更新日志
+> iOS SDK (version 2.3.0)
+> 2017年1月9日
+> 【新增功能】
+> 提高楼层切换效率
+> 提高地图加载效率
+> 提高地图渲染效率
+> 改进数据缓存机制
+> 优化文字显示效果
+> 优化碰撞检测算法
+> 简化定位与导航启动接口
+> 增加地图比例尺控件
+> 增加地图围栏功能
+> 支持跨楼层导航过程中楼层不直达的寻路
+>    
+> 修复
+> 1：地图数据加载缓慢的问题
+> 2：动态导航过程中剩余距离不准确问题
 
 ## 注意事项
 1、由于iOS9改用更安全的https，为了能够在iOS9中正常使用地图SDK，请在"Info.plist"中进行如下配置，否则影响SDK的使用。
@@ -13,6 +32,7 @@
 NSLocationWhenInUseUsageDescription ，允许在前台使用时获取GPS的描述
 NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 ```
+==3、需要在TARGETS->Build Settings中设置Always Embed Swift Standard Libraries为YES==
 
 
 ## 1、配置
@@ -33,16 +53,16 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
         pod install （这个可能比较慢，请耐心等待……）
     成功后，会出现以下信息
 
+        Update all pods
+        Updating local specs repositories
+        Analyzing dependencies
         Downloading dependencies
-        Using FMDB (2.6.2)
-        Using IndoorunMap_Core (2.0.3)
-        Using JSONModel (1.7.0)
-        Using SQLCipher (3.4.0)
+        Installing IndoorunMap_Core 2.3.0 (was 2.1.0)
         Using SSZipArchive (1.6.2)
         Generating Pods project
         Integrating client project
         Sending stats
-        Pod installation complete! There is 1 dependency from the Podfile and 5 total pods installed.
+        Pod installation complete! There are 2 dependencies from the Podfile and 2 total pods installed.
 
 
     恭喜你已成功导入Indoorun iOS SDK，现在就可以打开xcworkspace文件，在你的项目中使用Indoorun地图SDK了,使用时，需包含以下头文件
@@ -58,7 +78,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
    将IndoorunMap_Core.framework与IndoorunMap_Resource.bundle拖入工程中，注意选择`copy item if needed`，如下图
     <img src="imgs/4.png" width="300"> 
     
-    同理将thirdparty framework下的三方库(JSONModel、SSZipArchive)也拖入工程中
+    同理将thirdparty framework下的三方库(SSZipArchive)也拖入工程中
     最终在工程中呈现如下图所示:   
    <img src="imgs/5.png" width="300">     
    
@@ -115,7 +135,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
         2. 函数体：
 
             `- (void)loadMap:(IDRRegion*)region floor:(IDRFloor*)floor；`
-        3. 说明：该接口同时设置区域和楼层，不调用此接口，地图将不能加载
+        3. 说明：该接口加载地图的所有相关数据，不调用此接口，地图将不能加载
         4. 示例代码  
         
             ```
@@ -123,7 +143,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
     
             _mapView.delegate = self;
             
-            [_mapView loadMap:_region floor:_region.defaultFloor];
+            [_mapView loadMap:_region];
             
             [self.view addSubview:_mapView];
             ```
@@ -133,18 +153,18 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
         1. 功能: 地图加载成功响应
         2. 函数体：
         
-           ` - (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;`
+           ==` - (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegionEx*)regionEx;`==
                 
-        3. 说明:  表示建筑物的对应楼层加载成功，地图应该能正常显示
+        3. 说明:  表示建筑物的所有数据加载成功
         
    * #### 地图加载失败响应
 
        1. 功能: 地图加载失败响应
        2. 函数体：
 
-          ` - (void)mapViewLoadFailure:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;`
+          ` - (void)mapViewLoadFailure:(IDRMapView *)mapView region:(IDRRegion*)region;`
 
-       3. 说明: 表示建筑物的对应楼层加载失败
+       3. 说明: 表示建筑物加载失败
 
     * #### 切换楼层
         1. 功能：切换到指定的楼层
@@ -152,7 +172,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
 
             `- (BOOL)changeFloor:(IDRFloor *)floor;`
 
-        3. 说明：如果地图有多楼层时，可以在楼层之间相互切换，如何获取建筑的楼层信息，请参考IDRRegion结构
+        3. 说明：如果地图有多楼层时，可以在楼层之间相互切换，如何获取建筑的楼层信息，请参考IDRRegionEx结构
             
 * ### marker操作
 
@@ -537,7 +557,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
        1. 功能：启动定位
        2. 函数体
     
-           `- (LocateStartResult)startServer:(IDRRegion*)region;`
+           `- (LocateStartResult)startServer:(IDRMapView*)mapView;
     
     
        3. 参数说明
@@ -626,14 +646,14 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
        1. 功能：启动导航服务
        2. 函数体
     
-           `- (void)startServer:(IDRRegion*)region navi:(IDRNaviParm*)naviParm;`
+           `- (void)startServer:(IDRMapView*)mapView navi:(IDRNaviParm*)naviParm;`
     
     
        3. 参数说明
     
            | 参数  |类型  |说明  |
            | --- | --- | --- |
-           | region |  IDRRegion| 开启导航服务的region |
+           | mapView |  IDRMapView| 开启导航服务的region |
            | naviParm | IDRNaviParm |  导航参数 |
     
     
@@ -645,9 +665,6 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
             
             //设置代理
             [_navigator setDelegate:self];
-            
-            //设置地图，不然不会显示导航线
-            [_navigator setMapView:_mapView];
             
             //动态导航需设置定位器
             [_navigator setLocater:_locator];
@@ -697,21 +714,7 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
            `- (void)stopServer;`
         
        3. 注意事项：主动结束导航时，不论静态导航还是动态导航，都不会有下面的导航正常结束响应
-    
-	* #### 导航正常结束响应（动态导航时有此响应）
-
-       1. 功能：到达目的地回调响应
-       2. 函数体
-    
-           `- (void)navigationDidFinish:(IDRNavigationServer *)server;`
-    
-    
-       3. 参数说明
-    
-          | 参数  |类型  |说明  |
-          | --- | --- | --- |
-          | server |  IDRNavigationServer| 导航服务 |
-    
+        
 ## 6、UI模块
 
 * ### 指南针
@@ -751,4 +754,14 @@ NSLocationAlwaysUsageDescription ，允许永久使用GPS的描述
              右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
              */
             @property (nonatomic, retain) IDRFloorView *floorListView;
+        
+* ### 地图比例尺
+
+       1. 功能：控制比例尺的显示与位置
+       2. 函数体
+    
+            @property (nonatomic) BOOL showPlotingScale;//是否显示比例尺
+
+            @property (nonatomic) CGPoint scaleOrigin;//比例尺位置
+
 
