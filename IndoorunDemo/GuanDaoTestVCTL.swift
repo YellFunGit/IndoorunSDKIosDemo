@@ -20,7 +20,7 @@ class GuanDaoTestVCTL: UIViewController, IDRMapViewDelegate, IDRLocationServerDe
     
     var _start = false
     
-    @IBOutlet weak var _label:UILabel?
+    weak var _label:UILabel?
 
     override func viewDidLoad() {
         
