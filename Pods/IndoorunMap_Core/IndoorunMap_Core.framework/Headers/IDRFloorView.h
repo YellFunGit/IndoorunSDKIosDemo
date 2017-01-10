@@ -15,14 +15,14 @@
 
 @interface IDRFloorView : UIView<UITableViewDataSource,UITableViewDelegate>
 
-- (instancetype)initWithFloors:(NSArray*)floor origionX:(CGFloat)x origionY:(CGFloat)y;
+- (instancetype)initWithFloors:(NSArray<IDRFloor*>*)floor origionX:(CGFloat)x origionY:(CGFloat)y;
 
-@property (nonatomic, retain) NSArray *floors;
+@property (nonatomic, copy) NSArray<IDRFloor*> *floors;
 
 @property (nonatomic, weak) IDRMapView *mapView;
 
-@property (nonatomic, retain) IDRFloor *currentFloor;
+@property (nonatomic, strong) IDRFloor *currentFloor;
 
-@property (nonatomic, retain) IDRFloor *locatedFloor;
+@property (nonatomic, strong) IDRFloor *locatedFloor;
 
 @end

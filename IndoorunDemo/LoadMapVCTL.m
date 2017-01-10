@@ -29,18 +29,20 @@
     
     _mapView.delegate = self;
     
-    [_mapView loadMap:_region floor:_region.defaultFloor];
+    [_mapView loadMap:_region];
     
     [self.view addSubview:_mapView];
-    
-    [_mapView addDefaultFloorListView];
 }
 
 #pragma mark --mapviewdelegate
 
-- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion *)region floor:(IDRFloor *)floor {
+- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegionEx *)regionEx {
     
-    NSLog(@"加载地图%@:%@成功", region.name, floor.title);
+    NSLog(@"加载地图%@成功", regionEx.name);
+    
+    [_mapView addDefaultFloorListView];
+    
+    [_mapView changeFloor:regionEx.defaultFloorId];
 }
 
 @end

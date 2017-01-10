@@ -14,6 +14,8 @@
 
 @interface IDRPosition : NSObject
 
+- (id)initWithJson:(NSDictionary*)jsonData;
+
 /**
  x坐标
  */

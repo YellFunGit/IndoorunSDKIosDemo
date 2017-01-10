@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 
 @class IDRRegion;
-@class IDRRegionData;
+@class IDRRegionEx;
 
 @interface IDRDataManager : NSObject
 
@@ -28,6 +28,6 @@
 
  @param region 对应region
  */
-- (void)loadRegionAllData:(IDRRegion*)region success:(void(^)(IDRRegionData* regionAllInfo))success failure:(void(^)())failure;
+- (void)loadRegionAllData:(IDRRegion*)region success:(void(^)(IDRRegionEx* regionAllInfo))success failure:(void(^)())failure;
 
 @end

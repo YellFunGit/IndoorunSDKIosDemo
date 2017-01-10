@@ -65,4 +65,10 @@
 
 @end
 
+@interface IDRTestMarker : IDRMapMarker
+
+- (instancetype)initWith:(IDRPosition *)pos;
+
+@end
+
 

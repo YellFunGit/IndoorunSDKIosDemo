@@ -21,6 +21,10 @@
                 success:(void (^)(NSDictionary *responseData, NSData *data))success
                 failure:(void (^)(NSDictionary *responseData))failure;
 
+- (void)asyncServerCall:(NSString *)urlString timeout:(NSInteger)timeoutInterval jsonData:(NSData *)parameters
+                success:(void (^)(NSDictionary *responseData, NSData *data))success
+                failure:(void (^)(NSDictionary *responseData))failure;
+
 - (void)asyncServerCallData:(NSString *)urlString success:(void (^)(NSData *data))success failure:(void (^)(NSError *error))failure;
 
 @end

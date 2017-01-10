@@ -34,40 +34,21 @@ typedef NS_ENUM(int, NextSuggestion) {
 
 @interface IDRNaviSuggestion : NSObject
 
-/**
- 建议为YES时候有效
- */
-@property(nonatomic, assign) bool validate;
+@property(nonatomic, assign) bool validate;//YES时，所有属性有效
 
-/**
- 当前路径的长度
- */
-@property(nonatomic, assign) float serialdist;
+@property(nonatomic, assign) float serialdist;//当前路径的长度
 
-/**
- 错误距离长度
- */
-@property(nonatomic, assign) float errordist;
+@property(nonatomic, assign) float errordist;//错误距离长度
 
-/**
- 下一段路径的长度
- */
-@property(nonatomic, assign) float nextserialdist;
+@property(nonatomic, assign) float nextserialdist;//下一段路径的长度
 
-/**
- 路径索引
- */
-@property(nonatomic, assign) int segindex;
+@property(nonatomic) int segindex;//路径索引
 
-/**
- 当前路径建议
- */
-@property(nonatomic, assign) enum CurrentSuggestion curSuggestion;
+@property(nonatomic) enum CurrentSuggestion curSuggestion;//当前路径建议
 
-/**
- 下一段路径建议
- */
-@property(nonatomic, assign) enum NextSuggestion nextSuggestion;
+@property(nonatomic) enum NextSuggestion nextSuggestion;//下一段路径建议
+
+@property(nonatomic) float totalDis;//导航剩余距离
 
 /**
  获取格式化提示字符串，例如:直行10米，左转15米

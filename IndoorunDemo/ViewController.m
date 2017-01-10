@@ -28,10 +28,11 @@
     
 //    [[IDRCoreManager sharedInstance] initWith:@"yf645309714" appkey:@"Y4rSCI27NF3t7Ru76KNq60PQIjgP06L4"];
     
-    [[IDRCoreManager sharedInstance] initWith:@"2b497ada3b2711e4b60500163e0e2e6b" appkey:@"3d256f0e0ebd51f6176358abd62c1ae0"];
+    [[IDRMapKitConfig sharedInstance] setFormalServer:NO];//使用测试服
     
-    //com.Yellfun.Cars
-    //com.yellfun.demo
+    [[IDRMapKitConfig sharedInstance] setAppBoundleId:@"com.Yellfun.Cars"];
+    
+    [[IDRCoreManager sharedInstance] initWith:@"2b497ada3b2711e4b60500163e0e2e6b" appkey:@"3d256f0e0ebd51f6176358abd62c1ae0"];
 }
 
 - (void)idrCoreManager:(IDRCoreManager*)sender didServerStartSuccess:(BOOL)success regions:(NSArray*)regions {

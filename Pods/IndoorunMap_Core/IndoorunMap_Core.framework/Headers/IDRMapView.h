@@ -12,6 +12,7 @@
 
 
 @class IDRRegion;
+@class IDRRegionEx;
 @class IDRFloor;
 @class IDRPosition;
 @class IDRMapModeBtn;
@@ -24,6 +25,8 @@
 @class IDRNaviSuggestion;
 @class IDRFloorView;
 @class IDRNavigationServer;
+@class IDRRouteResult;
+@class IDRLine;
 
 @protocol IDRMapViewDelegate <NSObject>
 
@@ -36,7 +39,7 @@
  @param region  加载的区域
  @param floor   加载的楼层
  */
-- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;
+- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegionEx*)regionEx;
 
 /**
 地图加载失败
@@ -45,7 +48,15 @@
  @param region 加载的区域
  @param floor 加载的楼层
  */
-- (void)mapViewLoadFailure:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;
+- (void)mapViewLoadFailure:(IDRMapView *)mapView region:(IDRRegion*)region;
+
+/**
+ 切换楼层完毕
+
+ @param mapView 地图view
+ @param floor 切换的楼层
+ */
+- (void)mapViewFinishChangeFloor:(IDRMapView *)mapView floor:(IDRFloor*)floor;
 
 /**
  地图状态切换
@@ -124,6 +135,14 @@
  */
 - (void)mapview:(IDRMapView *)mapView onLongPressMap:(IDRPosition*)pos;
 
+/**
+ 点击定位按钮触发此回调
+
+ @param mapView 地图view
+ @param sender button
+ */
+- (void)mapview:(IDRMapView *)mapView onLocateClick:(IDRMapModeBtn*)sender;
+
 @end
 
 /**
@@ -131,52 +150,27 @@
  */
 @interface IDRMapView : UIView
 
-/**
- *  地图当前mode(自由，定位，跟随)
- */
-@property (nonatomic, assign) IDRMapMode mapMode;
+@property (nonatomic, assign) IDRMapMode mapMode;//地图当前mode(自由，定位，跟随)
 
 @property (nonatomic, weak) id<IDRMapViewDelegate> delegate;
 
-/**
- 地图显示的区域
- */
-@property (nonatomic, retain) IDRRegion *region;
+@property (nonatomic, retain) IDRRegionEx *regionEx;//地图显示的区域
 
-/**
- 当前显示的楼层
- */
-@property (nonatomic, retain) IDRFloor *currentFloor;
+@property (nonatomic, retain) IDRFloor *currentFloor;//当前显示的楼层
 
-/**
- 是否支持旋转缩放平移手势
- */
-@property (nonatomic, assign) BOOL enableTransform;
+@property (nonatomic, assign) BOOL enableTransform;//是否支持旋转缩放平移手势
 
-/**
- 是否支持点击响应
- */
-@property (nonatomic, assign) BOOL enableClick;
+@property (nonatomic, assign) BOOL enableClick;//是否支持点击响应
 
-/**
- 是否支持长按响应
- */
-@property (nonatomic, assign) BOOL enableLongPress;
+@property (nonatomic, assign) BOOL enableLongPress;//是否支持长按响应
 
-/**
- 地图的旋转角度
- */
-@property (nonatomic, readonly) CGFloat mapRotate;
+@property (nonatomic, assign) BOOL enableDoubleFingerSinglePress;//是否支持双指单击缩小
 
-/**
- 定位点位置
- */
-@property (nonatomic, retain) IDRPosition *userPos;
+@property (nonatomic, readonly) CGFloat mapRotate;//地图的旋转角度
 
-/**
- opengles地图
- */
-@property (nonatomic, retain) IDRMap *glesMap;
+@property (nonatomic, retain) IDRPosition *userPos;//定位点位置
+
+@property (nonatomic, retain) IDRMap *glesMap;//opengles地图
 
 /**
  设置当前的位置与方向
@@ -196,18 +190,15 @@
  加载地图view
 
  @param region 加载的region
- @param floor  加载的floor
  */
-- (void)loadMap:(IDRRegion*)region floor:(IDRFloor*)floor;
+- (void)loadMap:(IDRRegion*)region;
 
 /**
  切换楼层
 
- @param floor 对应楼层数据,可以从IDRRegion中取得
-
- @return 是否进行切换，切换成功后的回调为- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegion*)region floor:(IDRFloor*)floor;
- */
-- (BOOL)changeFloor:(IDRFloor *)floor;
+ @param floor 对应楼层数据, 可以从IDRRegion中取得
+*/
+- (BOOL)changeFloor:(NSString*)floorId;
 
 /**
  获取最近的unit
@@ -217,7 +208,15 @@
 
  @return 最近的unit
  */
-- (IDRUnit*)findUnit:(IDRPosition*)pos type:(UnitType)type;
+- (IDRUnit*)findMostNearUnit:(IDRPosition*)pos type:(UnitType)type;
+
+/**
+ 根据Ids获取unit数组
+
+ @param unitIds 名字数组
+ @return unit数组
+ */
+- (NSArray<IDRUnit*>*)findUnits:(NSArray<NSString*>*)unitIds;
 
 /**
  获取最近的marker
@@ -230,12 +229,12 @@
 
 /**
  缩放
-
- @param targetScale 目标scale
- @param anchor      设置的锚点
+ 
+ @param zoomScale   放大的倍数
+ @param anchor      锚点(地图坐标)
  @param anim        是否渐进动画
  */
-- (void)zoom:(CGFloat)targetScale anchor:(CGPoint)anchor anim:(BOOL)anim;
+- (void)zoom:(CGFloat)zoomScale anchor:(CGPoint)anchor anim:(BOOL)anim;
 
 /**
  放大一级比例尺
@@ -246,6 +245,29 @@
  缩小一级比例尺
  */
 - (void)zoomOut;
+
+/**
+ 地图缩放比例
+ @return 缩放比例,单位（逻辑像素/米）
+ */
+- (CGFloat)mapScale;
+
+/**
+ 地图宽
+ */
+- (CGFloat)mapWidth;
+
+/**
+ 地图高
+ */
+- (CGFloat)mapHeight;
+
+/**
+ 地图中心点
+ */
+- (CGPoint)mapCenter;
+
+- (void)mapOnTranform;
 
 /**
  平移
@@ -259,6 +281,16 @@
  重置地图(地图的位置、旋转、缩放、倾斜等都重置为加载的默认状态)
  */
 - (void)resetMap;
+
+/**
+ 停止地图渲染
+ */
+- (void)pause;
+
+/**
+ 恢复地图渲染
+ */
+- (void)resume;
 
 /**
  鸟瞰地图（缩放地图以至能完全显示导航线）
@@ -299,6 +331,20 @@
 - (void)showCompossRoute:(BOOL)show;
 
 /**
+ 显示导航引导线
+
+ @param show 是否显示
+ */
+- (void)showRouteDirectLine:(BOOL)show;
+
+/**
+ 是否强制投影点至导航线
+
+ @param force 是否强制投影
+ */
+- (void)forceRoute:(BOOL)force;
+
+/**
  添加默认定位按钮控件
  */
 - (void)addDefaultMapModeBtn;
@@ -327,30 +373,30 @@
  */
 - (void)removeLabel:(NSInteger)Id;
 
-/**
- 左上角的指南针按钮是否显示
- */
-@property (nonatomic) BOOL showCompassBtn;
+@property (nonatomic) BOOL showPlotingScale;//是否显示比例尺
+
+@property (nonatomic) CGPoint scaleOrigin;//比例尺位置
+
+@property (nonatomic) BOOL showCompassBtn;//左上角的指南针按钮是否显示
+
+@property (nonatomic) CGPoint compassBtnCenter;//左上角的指南针按钮坐标
+
+@property (nonatomic) IDRMapModeBtn *mapModeBtn;//左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
+
+@property (nonatomic) IDRFloorView *floorListView;//右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
+
+@property (nonatomic) UIView *compassBtn;//左上角的指南针按钮，默认添加，如用户需要修改，则请自行添加并调用addNorthAngleBtn
+
+@property (nonatomic) BOOL enableChangeFloor;//是否能切换楼层
+
+@property (nonatomic) UIColor *backColor;//地图背景色
 
 /**
- 左上角的指南针按钮坐标
- */
-@property (nonatomic) CGPoint compassBtnCenter;
+ 添加指南针按钮
 
-/**
- 左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
+ @param view 按钮view
  */
-@property (nonatomic, retain) IDRMapModeBtn *mapModeBtn;
-
-/**
- 右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
- */
-@property (nonatomic, retain) IDRFloorView *floorListView;
-
-/**
-  是否能切换楼层
- */
-@property (nonatomic, assign) BOOL enableChangeFloor;
+- (void)addNorthAngleBtn:(UIView*)view;
 
 /**
  根据地图坐标，获取屏幕坐标
@@ -381,9 +427,9 @@
 @property (nonatomic, assign) BOOL autoChangeToUserFloor;
 
 /**
- 当前mapView中所有的marker
+ 当前mapView中所有的marker{floorId:markerarray, ...}
  */
-@property (nonatomic, retain) NSMutableArray *markers;
+@property (nonatomic, retain) NSMutableDictionary *markers;
 
 /**
  NavState:地图的导航状态（普通状态、导航状态）
@@ -450,4 +496,100 @@
 
 @end
 
+//---------------------------------------------------------------------
+@interface IDRMapView (UnitAPI)
+
+/**
+ 更新一组Units的颜色
+
+ @param units units数组
+ */
+- (void)updateUnitsColor:(NSArray<IDRUnit*>*)units;
+
+/**
+ 清除当前楼层所有的units颜色
+ */
+- (void)clearAllUnitsColor;
+
+@end
+
+//---------------------------------------------------------------------
+/**
+ 路径规划，查找相关
+ */
+@interface IDRMapView (RouteAPI)
+
+- (IDRUnit*)getUnitWithName:(NSString*)name floorId:(NSString*)floorId;
+/**
+ *  根据楼层获取楼层的Units
+ *
+ *  @param floor 楼层
+ *
+ *  @return Unit数组
+ */
+- (NSArray*)getUnitsWithFloor:(NSString*)floorId;
+
+/**
+ 获取详细IDRfloor结构
+ 
+ @param floorId 楼层id
+ 
+ @return IFRFloor实例
+ */
+- (IDRFloor*)getFloorWithFloorId:(NSString*)floorId;
+
+/**
+ 获取路径
+ 
+ @param floorId 楼层id
+ @return 路径数组
+ */
+- (NSArray<IDRLine*>*)getPath:(NSString*)floorId;
+
+/**
+ 路径搜索
+ 
+ @param p0 起始点
+ @param p1 终点
+ @param car 是否车行（跨楼层有影响）
+ @return 搜索结果
+ */
+- (IDRRouteResult*)route:(IDRPosition*)p0 to:(IDRPosition*)p1 car:(BOOL)car;
+/**
+ 从近到远排列所有unit
+ 
+ @param pos 位置pos
+ @param units 目标units
+ @param isCar 是否按照车行搜索路径
+ @return 按离pos的路径距离从近到远排列
+ */
+- (NSArray<IDRUnit*>*)sortWithRouteDistance:(IDRPosition*)pos inTarget:(NSArray<IDRUnit*>*)units car:(BOOL)isCar;
+/**
+ 获取最近的units
+ 
+ @param pos 输入pos
+ @param units unit列表
+ @param isCar 是否按照车行搜索路径
+ @return 最近的unit
+ */
+- (IDRUnit*)findMostNearUnit:(IDRPosition*)pos inTarget:(NSArray<IDRUnit*>*)units car:(BOOL)isCar;
+
+/**
+ 获取路径距离
+ @param p0 起始点
+ @param p1 终点
+ @param car 是否车行（跨楼层有影响）
+ @return 搜索结果
+ */
+- (CGFloat)routeDistance:(IDRPosition*)p0 to:(IDRPosition*)p1 car:(BOOL)car;
+
+/**
+ 获取最近的导航线
+ 
+ @param pos 位置
+ @return 导航线
+ */
+- (IDRLine*)findMostNearLine:(IDRPosition*)pos;
+
+@end
 

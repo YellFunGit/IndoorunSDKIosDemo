@@ -33,7 +33,7 @@
     
     _mapView = [[IDRMapView alloc] init];
     
-    [_mapView loadMap:_region floor:_region.defaultFloor];
+    [_mapView loadMap:_region];
     
     _mapView.delegate = self;
     
@@ -63,6 +63,15 @@
 
 #pragma mark --MapView Delegate
 
+- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegionEx *)regionEx {
+    
+    NSLog(@"加载地图%@成功", regionEx.name);
+    
+    [_mapView addDefaultFloorListView];
+    
+    [_mapView changeFloor:regionEx.defaultFloorId];
+}
+
 - (void)mapview:(IDRMapView *)mapView onClickMap:(IDRPosition *)pos {
     
     if (!_sp) {
@@ -91,10 +100,7 @@
         
         [_navigator setDelegate:self];
         
-        //设置地图，不然不会显示导航线
-        [_navigator setMapView:_mapView];
-        
-        [_navigator startServer:_region navi:[IDRNaviParm createWith:_sp end:_ep]];
+        [_navigator startServer:_mapView navi:[IDRNaviParm createWith:_sp end:_ep car:NO]];
     }
 }
 

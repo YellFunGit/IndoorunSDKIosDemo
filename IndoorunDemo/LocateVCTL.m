@@ -23,15 +23,13 @@
     [super viewDidLoad];
     
     [self loadMap];
-    
-    [self locate];
 }
 
 - (void)loadMap {
     
     _mapView = [[IDRMapView alloc] init];
     
-    [_mapView loadMap:_region floor:_region.defaultFloor];
+    [_mapView loadMap:_region];
     
     [_mapView setDelegate:self];
     
@@ -44,11 +42,11 @@
 
 - (void)locate {
     
-    _server = [IDRLocationServer instance];
+    _server = [[IDRLocationServer alloc] init];
     
     _server.delegate = self;
 
-    LocateStartResult result = [_server startServer:_region];
+    LocateStartResult result = [_server startServer:_mapView];
     
     if (result == LocateStart_bluetoothDisable) {
         
@@ -67,6 +65,16 @@
 }
 
 #pragma mark --LocationServer Delegate
+- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegionEx *)regionEx {
+    
+    NSLog(@"加载地图%@成功", regionEx.name);
+    
+    [_mapView addDefaultFloorListView];
+    
+    [_mapView changeFloor:regionEx.defaultFloorId];
+    
+    [self locate];
+}
 
 - (void)location:(IDRLocationServer*)locationServer didLocationSuccess:(IDRUserLocation*)userLocation {
     

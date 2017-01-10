@@ -22,11 +22,31 @@
 #import <IndoorunMap_Core/IDRFloorView.h>
 #import <IndoorunMap_Core/IDRMapModeBtn.h>
 #import <IndoorunMap_Core/IDRRegion.h>
-#import <IndoorunMap_Core/IDRRegionData.h>
+#import <IndoorunMap_Core/IDRRegionEx.h>
 #import <IndoorunMap_Core/IDRFloor.h>
 #import <IndoorunMap_Core/IDRUnit.h>
 #import <IndoorunMap_Core/IDRExtInfo.h>
-#import <IndoorunMap_Core/IDRPassData.h>
+#import <IndoorunMap_Core/IDRRegionPath.h>
+#import <IndoorunMap_Core/IDRRouteResult.h>
+#import <IndoorunMap_Core/IDRFloorPath.h>
+
+//-------
+#import <IndoorunMap_Core/IDRFence.h>
+#import <IndoorunMap_Core/IDRCircleFence.h>
+#import <IndoorunMap_Core/IDRRectangleFence.h>
+#import <IndoorunMap_Core/IDRLogManager.h>
+#import <IndoorunMap_Core/IDRNetworkManager.h>
+#import <IndoorunMap_Core/IDRMap.h>
+#import <IndoorunMap_Core/IDRLine.h>
+#import <IndoorunMap_Core/IDRBaseLocationServer.h>
+#import <IndoorunMap_Core/IDRDebugManager.h>
+#import <IndoorunMap_Core/IDREnum.h>
+#import <IndoorunMap_Core/IDRUserPointMarker.h>
+#import <IndoorunMap_Core/IDRDownLoadManager.h>
+#import <IndoorunMap_Core/IDRLocationSimulateManager.h>
+#import <IndoorunMap_Core/IDRMultiLocateModul.h>
+#import <IndoorunMap_Core/IDRCalculate.h>
+#import <IndoorunMap_Core/IDRDataDefine.h>
 
 //! Project version number for IndoorunMap_Core.
 FOUNDATION_EXPORT double IndoorunMap_CoreVersionNumber;

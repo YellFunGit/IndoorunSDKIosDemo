@@ -13,8 +13,12 @@
  */
 @interface IDRExtInfo : NSObject
 
-@property (nonatomic) BOOL outerExit;
-@property (nonatomic) NSString * outerLink;
-@property (nonatomic) NSString * exitName;
+- (id)initWithJson:(NSDictionary*)jsonData;
+
+@property (nonatomic, assign) BOOL outerExit;
+
+@property (nonatomic, copy) NSString * outerLink;
+
+@property (nonatomic, copy) NSString * exitName;
 
 @end

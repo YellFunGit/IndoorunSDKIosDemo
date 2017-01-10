@@ -7,13 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "IDRDataDefine.h"
 
-#import "IDRRegion.h"
-#import "IDRFloor.h"
-#import "IDRUnit.h"
-#import "IDRPath.h"
-#import "IDRLine.h"
-#import "IDRPosition.h"
 
 @interface IDRCalculate : NSObject
 

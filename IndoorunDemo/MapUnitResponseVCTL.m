@@ -28,7 +28,7 @@
     
     _mapView = [[IDRMapView alloc] init];
     
-    [_mapView loadMap:_region floor:_region.defaultFloor];
+    [_mapView loadMap:_region];
     
     _mapView.delegate = self;
     
@@ -57,6 +57,14 @@
 }
 
 #pragma mark --MapView Delegate
+- (void)mapViewDidFinishLoading:(IDRMapView *)mapView region:(IDRRegionEx *)regionEx {
+    
+    NSLog(@"加载地图%@成功", regionEx.name);
+    
+    [_mapView addDefaultFloorListView];
+    
+    [_mapView changeFloor:regionEx.defaultFloorId];
+}
 
 - (BOOL)mapview:(IDRMapView *)mapView onClickUnit:(IDRUnit *)unit {
     

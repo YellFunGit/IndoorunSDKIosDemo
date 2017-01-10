@@ -12,7 +12,6 @@
 #import "IDRRegion.h"
 #import "IDRFloor.h"
 #import "IDRUnit.h"
-#import "IDRPath.h"
 #import "IDRPosition.h"
 
 @class IDRLocationServer;
@@ -54,13 +53,6 @@ typedef float(^CalcDistance)(CLLocationCoordinate2D pos1, CLLocationCoordinate2D
  *  @param appkey
  */
 - (void)initWith:(NSString*)appId appkey:(NSString*)appkey;
-
-/**
- *  启动服务(deprecated, please use initWith::)
- *  @param account  账号
- *  @param password 密码
- */
-- (void)initServer:(NSString*)account password:(NSString*)password;
 
 /**
  *  进入region

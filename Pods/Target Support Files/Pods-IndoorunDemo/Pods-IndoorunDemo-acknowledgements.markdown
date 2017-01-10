@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## IndoorunMap_Core
 
-Copyright 2013 - 2016 Indoorun.com. All rights reserved
+Copyright 2013 - 2017 Indoorun.com. All rights reserved
 
 ## SSZipArchive
 

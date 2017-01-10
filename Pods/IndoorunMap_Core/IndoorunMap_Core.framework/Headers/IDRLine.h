@@ -18,6 +18,8 @@
 
 - (NSDictionary*)JSONDict;
 
+- (CGFloat)length;
+
 @property (nonatomic, retain, readonly) IDRPosition *sPoint;
 
 @property (nonatomic, retain, readonly) IDRPosition *ePoint;

@@ -4,3 +4,7 @@ framework module IndoorunMap_Core {
   export *
   module * { export * }
 }
+
+module IndoorunMap_Core.Swift {
+    header "IndoorunMap_Core-Swift.h"
+}

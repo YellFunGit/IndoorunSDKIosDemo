@@ -8,10 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
-#define IDR_VERSION 2.1.0
+#define IDR_VERSION 2.3.0
+
+#define IDRRegionData IDRRegionEx
 
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
+
+#define PhoneUUID [[[UIDevice currentDevice] identifierForVendor] UUIDString]
 
 typedef NS_ENUM(NSInteger, IDRMapMode) {
     
@@ -54,9 +58,15 @@ typedef NS_ENUM(NSInteger, UnitType) {
     
     UnitType_RuKou        = 7,//入口
     
+    UnitType_AnQuanChuKou = 8,//安全出口
+    
     UnitType_LouTi        = 9,//楼梯
     
+    UnitType_XiCheChu     = 10,//洗车处
+    
     UnitType_ShouFeiChu   = 11,//收费处
+    
+    UnitType_QuYu         = 12,//区域
 };
 
 typedef NS_ENUM(NSInteger, OfflineDataStatus) {
@@ -72,19 +82,32 @@ typedef NS_ENUM(NSInteger, OfflineDataStatus) {
 
 + (instancetype)sharedInstance;
 
-/**
- *  定位方式
- */
-@property (nonatomic, assign) LocateType locateType;
+@property (nonatomic, assign) LocateType locateType;//定位方式
 
-/**
- *  显示导航直线
- */
-@property (nonatomic, assign) BOOL showNaviLine;
+@property (nonatomic, assign) BOOL showNaviLine;//显示导航直线
 
-/**
- *  是否打印log
- */
-@property (nonatomic, assign) BOOL enableLog;
+@property (nonatomic, assign) BOOL enableLog;//是否打印log
+
+//-------以下为url地址，不建议自行改动
+@property (nonatomic, assign) BOOL formalServer;//是否正式服务器
+
+@property (nonatomic, copy) NSString *session_url;
+
+@property (nonatomic, copy) NSString *login_url;
+
+@property (nonatomic, copy) NSString *regionsOfUser_url;
+
+@property (nonatomic, copy) NSString *locate_url;
+
+@property (nonatomic, copy) NSString *stopLocate_url;
+
+@property (nonatomic, copy) NSString *preLocate_url;
+
+@property (nonatomic, copy) NSString *mutilocating_url;
+
+@property (nonatomic, copy) NSString *regionZip_url;
+
+@property (nonatomic, copy) NSString *appBoundleId;
+//--------
 
 @end
