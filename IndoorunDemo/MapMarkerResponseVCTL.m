@@ -37,8 +37,6 @@
     
     [self.view sendSubviewToBack:_mapView];
     
-    [_mapView addDefaultFloorListView];
-    
     [_mapView addDefaultMapModeBtn];
 }
 
@@ -54,6 +52,8 @@
 
 - (void)mapview:(IDRMapView *)mapView onClickMap:(IDRPosition *)pos {
     
+    NSLog(@"加了marker");
+    
     MyMapMarker *marker = [[MyMapMarker alloc] initWithPos:pos];
     
     [_mapView addMarker:marker];
@@ -61,12 +61,16 @@
 
 - (BOOL)mapView:(IDRMapView *)mapView onClickMarker:(id<IDRMapMarkerProtocal>)marker {
     
+    NSLog(@"加了marker");
+    
     [_mapView removeMarker:marker];
     
     return YES;
 }
 
 - (BOOL)mapView:(IDRMapView *)mapView onLongPressMarker:(id<IDRMapMarkerProtocal>)marker {
+    
+    NSLog(@"移除了marker");
     
     [_mapView removeMarker:marker];
     

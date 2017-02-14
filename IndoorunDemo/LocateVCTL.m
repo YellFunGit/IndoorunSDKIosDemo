@@ -34,10 +34,6 @@
     [_mapView setDelegate:self];
     
     [self.view addSubview:_mapView];
-    
-    [_mapView addDefaultFloorListView];
-
-    [_mapView addDefaultMapModeBtn];
 }
 
 - (void)locate {
@@ -69,6 +65,8 @@
     
     NSLog(@"加载地图%@成功", regionEx.name);
     
+    [_mapView addDefaultMapModeBtn];
+    
     [_mapView addDefaultFloorListView];
     
     [_mapView changeFloor:regionEx.defaultFloorId];
@@ -76,9 +74,16 @@
     [self locate];
 }
 
+- (void)mapViewFinishChangeFloor:(IDRMapView *)mapView floor:(IDRFloor *)floor {
+    
+    
+}
+
 - (void)location:(IDRLocationServer*)locationServer didLocationSuccess:(IDRUserLocation*)userLocation {
     
     [_mapView setUserLocation:userLocation];
+    
+    [_mapView setMapMode:IDRMapMode_ModeFollowing];
     
     //是否显示罗盘
     [_mapView showComposs:YES];

@@ -37,6 +37,10 @@
 #import <IndoorunMap_Core/IDRLogManager.h>
 #import <IndoorunMap_Core/IDRNetworkManager.h>
 #import <IndoorunMap_Core/IDRMap.h>
+#import <IndoorunMap_Core/IDR3DMap.h>
+#import <IndoorunMap_Core/IDRGlesMap.h>
+#import <IndoorunMap_Core/IDRWalkInsManager.h>
+
 #import <IndoorunMap_Core/IDRLine.h>
 #import <IndoorunMap_Core/IDRBaseLocationServer.h>
 #import <IndoorunMap_Core/IDRDebugManager.h>

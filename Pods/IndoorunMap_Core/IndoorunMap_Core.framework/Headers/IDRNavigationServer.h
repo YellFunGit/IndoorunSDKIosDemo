@@ -124,7 +124,7 @@ typedef NS_ENUM(NSInteger, NaviServerStartStatus) {
  *
  *  @return IDRPosition数组
  */
-- (NSArray*)retriveNaviPath:(IDRFloor*)floor;
+- (NSArray*)retriveNaviPath;
 
 /**
  更新终点位置

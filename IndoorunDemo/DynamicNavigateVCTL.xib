@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,11 +21,13 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="点击地图，选择终点" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7i0-cL-GJe">
+                    <rect key="frame" x="0.0" y="64" width="375" height="18"/>
                     <fontDescription key="fontDescription" type="system" pointSize="15"/>
                     <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXu-Z0-TOb">
+                    <rect key="frame" x="313" y="623" width="62" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="9DC-Kj-dFQ"/>
                     </constraints>
@@ -31,14 +36,23 @@
                         <action selector="onStopNavigation:" destination="-1" eventType="touchUpInside" id="VJe-T9-VXq"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rul-CY-9iN">
+                    <rect key="frame" x="0.0" y="637" width="62" height="30"/>
+                    <state key="normal" title="切换地图"/>
+                    <connections>
+                        <action selector="onChangeMap:" destination="-1" eventType="touchUpInside" id="iNm-Fd-ILj"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="FXu-Z0-TOb" secondAttribute="bottom" id="3cf-4X-HTc"/>
+                <constraint firstItem="Rul-CY-9iN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TuN-zV-2ol"/>
                 <constraint firstAttribute="trailing" secondItem="7i0-cL-GJe" secondAttribute="trailing" id="Z61-A8-TZS"/>
                 <constraint firstAttribute="trailing" secondItem="FXu-Z0-TOb" secondAttribute="trailing" id="axn-3I-zDU"/>
                 <constraint firstItem="7i0-cL-GJe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kaw-1O-7kY"/>
                 <constraint firstItem="7i0-cL-GJe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xKB-xn-lTP"/>
+                <constraint firstAttribute="bottom" secondItem="Rul-CY-9iN" secondAttribute="bottom" id="xUa-zL-4t5"/>
             </constraints>
             <point key="canvasLocation" x="-97" y="-131"/>
         </view>

@@ -8,10 +8,13 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <CoreMotion/CoreMotion.h>
 
 @interface IDRWalkInsManager : NSObject
 
 @property (nonatomic, assign) BOOL disable;
+
+@property (nonatomic, assign) CMQuaternion quaternion;
 
 + (instancetype)sharedInstance;
 

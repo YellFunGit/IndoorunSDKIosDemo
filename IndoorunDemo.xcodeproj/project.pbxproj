@@ -19,6 +19,8 @@
 		2C032F941DACE07000EF56FA /* RegionDetailVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C032F931DACE07000EF56FA /* RegionDetailVCTL.xib */; };
 		2C032F971DACE4DB00EF56FA /* LocateVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C032F961DACE4DB00EF56FA /* LocateVCTL.m */; };
 		2C0DFC421D9A6FC800125C09 /* IndoorunDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DFC411D9A6FC800125C09 /* IndoorunDemoUITests.m */; };
+		2C1338571E2727F2000CC2F2 /* ARMapVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1338551E2727F2000CC2F2 /* ARMapVCTL.m */; };
+		2C1338581E2727F2000CC2F2 /* ARMapVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1338561E2727F2000CC2F2 /* ARMapVCTL.xib */; };
 		2C4F06D51D3332150012BAEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06D41D3332150012BAEB /* main.m */; };
 		2C4F06D81D3332150012BAEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06D71D3332150012BAEB /* AppDelegate.m */; };
 		2C4F06DB1D3332150012BAEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06DA1D3332150012BAEB /* ViewController.m */; };
@@ -83,6 +85,9 @@
 		2C0DFC3F1D9A6FC800125C09 /* IndoorunDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IndoorunDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C0DFC411D9A6FC800125C09 /* IndoorunDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IndoorunDemoUITests.m; sourceTree = "<group>"; };
 		2C0DFC431D9A6FC800125C09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C1338541E2727F2000CC2F2 /* ARMapVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMapVCTL.h; sourceTree = "<group>"; };
+		2C1338551E2727F2000CC2F2 /* ARMapVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMapVCTL.m; sourceTree = "<group>"; };
+		2C1338561E2727F2000CC2F2 /* ARMapVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARMapVCTL.xib; sourceTree = "<group>"; };
 		2C4F06D01D3332150012BAEB /* IndoorunDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorunDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4F06D41D3332150012BAEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C4F06D61D3332150012BAEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -220,6 +225,9 @@
 				2CAF866A1DADE7A80036D7BD /* MapUnitResponseVCTL.m */,
 				2CAF866B1DADE7A80036D7BD /* MapUnitResponseVCTL.xib */,
 				2CAF866E1DADEAF20036D7BD /* LocateVCTL.xib */,
+				2C1338541E2727F2000CC2F2 /* ARMapVCTL.h */,
+				2C1338551E2727F2000CC2F2 /* ARMapVCTL.m */,
+				2C1338561E2727F2000CC2F2 /* ARMapVCTL.xib */,
 			);
 			path = IndoorunDemo;
 			sourceTree = "<group>";
@@ -342,6 +350,7 @@
 				2C0244401DACE87700999402 /* NavigateVCTL.xib in Resources */,
 				2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */,
 				2CAF866D1DADE7A80036D7BD /* MapUnitResponseVCTL.xib in Resources */,
+				2C1338581E2727F2000CC2F2 /* ARMapVCTL.xib in Resources */,
 				2C032F941DACE07000EF56FA /* RegionDetailVCTL.xib in Resources */,
 				2C4F06E01D3332150012BAEB /* Assets.xcassets in Resources */,
 				2C4F06DE1D3332150012BAEB /* Main.storyboard in Resources */,
@@ -425,6 +434,7 @@
 				2C032F971DACE4DB00EF56FA /* LocateVCTL.m in Sources */,
 				2C032F8F1DACDE4700EF56FA /* LoadMapVCTL.m in Sources */,
 				2CB2A1CF1DA8D40100A24A52 /* MyMapMarker.m in Sources */,
+				2C1338571E2727F2000CC2F2 /* ARMapVCTL.m in Sources */,
 				2C032F891DACDB8400EF56FA /* UIColor+YFHexColor.m in Sources */,
 				2C4F06D51D3332150012BAEB /* main.m in Sources */,
 			);
@@ -576,7 +586,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YKB66Z3T3Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -613,7 +623,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_MODULES_AUTOLINK = YES;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = YKB66Z3T3Q;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (

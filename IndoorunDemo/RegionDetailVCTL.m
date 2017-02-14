@@ -14,6 +14,7 @@
 #import "MapResponseVCTL.h"
 #import "MapMarkerResponseVCTL.h"
 #import "MapUnitResponseVCTL.h"
+#import "ARMapVCTL.h"
 
 typedef NS_ENUM(NSInteger, FunctionType) {
     
@@ -30,6 +31,8 @@ typedef NS_ENUM(NSInteger, FunctionType) {
     onStaticNavigate,//静态导航
     
     onDynamicNavigate,//动态导航
+    
+    onAR,//AR导航
     
     FunctionType_Max
 };
@@ -71,7 +74,9 @@ typedef NS_ENUM(NSInteger, FunctionType) {
     
     NSString *enableLocateStr = [NSString stringWithFormat:@"是否支持定位:%@", endy];
     
-    NSString *detail = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n详细功能请点击点击下面列表", name, regionId, floorCount, floorDetail, enableLocateStr];
+    NSString *beaconUUID = [NSString stringWithFormat:@"服务器UUID:%@", _region.beaconUUID];
+    
+    NSString *detail = [NSString stringWithFormat:@"%@\n%@\n%@\n%@\n%@\n\%@\n详细功能请点击点击下面列表", name, regionId, floorCount, floorDetail, enableLocateStr, beaconUUID];
     
     [_ibRegionDetail setText:detail];
 }
@@ -93,6 +98,8 @@ typedef NS_ENUM(NSInteger, FunctionType) {
             return @"静态导航";
         case onDynamicNavigate:
             return @"动态导航";
+        case onAR:
+            return @"AR模式切换";
         
         default:
             return @"";
@@ -123,6 +130,15 @@ typedef NS_ENUM(NSInteger, FunctionType) {
     if (indexPath.row == onLoadMap) {
         
         LoadMapVCTL *vctl = [[LoadMapVCTL alloc] init];
+        
+        vctl.region = _region;
+        
+        [self.navigationController pushViewController:vctl animated:YES];
+    }
+    
+    if (indexPath.row == onAR) {
+        
+        ARMapVCTL *vctl = [[ARMapVCTL alloc] init];
         
         vctl.region = _region;
         

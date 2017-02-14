@@ -28,6 +28,8 @@
     
 //    [[IDRCoreManager sharedInstance] initWith:@"yf645309714" appkey:@"Y4rSCI27NF3t7Ru76KNq60PQIjgP06L4"];
     
+    [IDRMapKitConfig sharedInstance].enableLog = YES;
+    
     [[IDRMapKitConfig sharedInstance] setFormalServer:NO];//使用测试服
     
     [[IDRMapKitConfig sharedInstance] setAppBoundleId:@"com.Yellfun.Cars"];

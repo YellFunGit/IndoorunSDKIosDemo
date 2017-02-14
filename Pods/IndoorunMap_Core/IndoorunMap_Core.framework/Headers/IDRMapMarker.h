@@ -15,11 +15,15 @@
  */
 @protocol IDRMapMarkerProtocal <NSObject>
 
+@property (nonatomic, copy) NSString *iconName;
+
 @property (nonatomic, retain) UIImage *icon;
 
 @property (nonatomic, retain) IDRPosition *pos;
 
 @property (nonatomic, assign) NSInteger Id;
+
+@property (nonatomic, assign) BOOL alwaysShow;
 
 @end
 
@@ -28,6 +32,10 @@
  *
  */
 @interface IDRMapMarker : NSObject<IDRMapMarkerProtocal>
+
+@property (nonatomic, copy) NSString *iconName;
+
+@property (nonatomic, assign) BOOL alwaysShow;
 
 @property (nonatomic, retain) UIImage *icon;
 

@@ -35,6 +35,10 @@
  */
 - (IDRFloor*)getFloorWithFloorId:(NSString*)floorId;
 
+- (IDRFloor*)getFloorWithFloorIndex:(NSInteger)floorIndex;
+
+
+
 /**
  获取围栏信息
  */

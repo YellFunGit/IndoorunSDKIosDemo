@@ -53,6 +53,8 @@ typedef NS_ENUM(NSInteger, LocateStartResult) {
  */
 - (LocateStartResult)startServer:(IDRMapView*)map;
 
+- (LocateStartResult)startServer:(IDRMapView*)map withUUID:(NSString*)uuid;
+
 /*
  *  停止定位
  */

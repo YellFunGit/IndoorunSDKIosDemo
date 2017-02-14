@@ -40,8 +40,6 @@
     
     [self.view sendSubviewToBack:_mapView];
     
-    [_mapView addDefaultFloorListView];
-    
     [_mapView addDefaultMapModeBtn];
 }
 
@@ -55,6 +53,11 @@
     [_locator startServer:_mapView];
     
     [_locator setDelegate:self];
+}
+
+- (IBAction)onChangeMap:(id)sender {
+    
+    _mapView.ar3DMap = !_mapView.ar3DMap;
 }
 
 - (IBAction)onStopNavigation:(id)sender {

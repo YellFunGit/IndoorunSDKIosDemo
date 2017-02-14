@@ -21,6 +21,8 @@
 @class CLHeading;
 @class IDRUnit;
 @class IDRMap;
+@class IDRGlesMap;
+@class IDR3DMap;
 @class IDRUnit;
 @class IDRNaviSuggestion;
 @class IDRFloorView;
@@ -31,6 +33,8 @@
 @protocol IDRMapViewDelegate <NSObject>
 
 @optional
+
+- (void)mapView:(IDRMapView*)map didChangeState:(NSInteger)state;
 
 /**
  地图加载成功
@@ -143,12 +147,21 @@
  */
 - (void)mapview:(IDRMapView *)mapView onLocateClick:(IDRMapModeBtn*)sender;
 
+/**
+ 点击AR小地图
+
+ @param mapView 地图view
+ */
+- (void)clickMiniMap:(IDRMapView *)mapView;
+
 @end
 
 /**
  *  地图View类，使用此View可以显示地图窗口，并且对地图进行相关的操作
  */
 @interface IDRMapView : UIView
+
+@property (nonatomic, assign) BOOL ar3DMap;//ar3d地图
 
 @property (nonatomic, assign) IDRMapMode mapMode;//地图当前mode(自由，定位，跟随)
 
@@ -170,7 +183,11 @@
 
 @property (nonatomic, retain) IDRPosition *userPos;//定位点位置
 
-@property (nonatomic, retain) IDRMap *glesMap;//opengles地图
+@property (nonatomic, readonly) IDRGlesMap *glesMap;//opengles地图
+
+@property (nonatomic, assign) CGRect miniMapFrame;//仅在AR模式下有效
+
+- (void)onMapStateChange:(NSInteger)state;
 
 /**
  设置当前的位置与方向
@@ -269,6 +286,8 @@
 
 - (void)mapOnTranform;
 
+- (void)mapDidChangeTo2DScene:(NSInteger)floorIndex;
+
 /**
  平移
  @param x x平移量(屏幕坐标)
@@ -296,6 +315,16 @@
  鸟瞰地图（缩放地图以至能完全显示导航线）
  */
 - (void)birdLook;
+
+/**
+ 设置鸟瞰地图边距
+ 
+ @param left 左边距
+ @param top 上边距
+ @param right 右边距
+ @param bottom 下边距
+ */
+- (void)setBirdLookMargin:(CGFloat)left top:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom;
 
 /**
  居中pos，同时进行缩放
@@ -381,15 +410,19 @@
 
 @property (nonatomic) CGPoint compassBtnCenter;//左上角的指南针按钮坐标
 
-@property (nonatomic) IDRMapModeBtn *mapModeBtn;//左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
+@property (nonatomic, strong) IDRMapModeBtn *mapModeBtn;//左下角的地图状态按钮，默认不显示，需要主动调用addDefaultMapModeBtn;
 
-@property (nonatomic) IDRFloorView *floorListView;//右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
+@property (nonatomic, strong) IDRFloorView *floorListView;//右上角的楼层列表控件，默认不显示，需要主动调用addDefaultFloorListView;
 
-@property (nonatomic) UIView *compassBtn;//左上角的指南针按钮，默认添加，如用户需要修改，则请自行添加并调用addNorthAngleBtn
+@property (nonatomic, strong) UIView *compassBtn;//左上角的指南针按钮，默认添加，如用户需要修改，则请自行添加并调用addNorthAngleBtn
 
 @property (nonatomic) BOOL enableChangeFloor;//是否能切换楼层
 
-@property (nonatomic) UIColor *backColor;//地图背景色
+@property (nonatomic, strong) UIColor *backColor;//地图背景色
+
+- (void)doAddMarker:(id<IDRMapMarkerProtocal>)marker;
+
+- (void)doRemoveMarker:(id<IDRMapMarkerProtocal>)marker;
 
 /**
  添加指南针按钮
@@ -497,6 +530,7 @@
 @end
 
 //---------------------------------------------------------------------
+///
 @interface IDRMapView (UnitAPI)
 
 /**
