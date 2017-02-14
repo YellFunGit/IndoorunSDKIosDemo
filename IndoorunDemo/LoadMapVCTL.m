@@ -43,6 +43,8 @@
     [_mapView addDefaultFloorListView];
     
     [_mapView changeFloor:regionEx.defaultFloorId];
+    
+    [_mapView setShowPlotingScale:YES];
 }
 
 @end
