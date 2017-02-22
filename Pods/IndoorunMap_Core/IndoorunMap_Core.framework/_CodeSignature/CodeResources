@@ -70,7 +70,7 @@
 		</data>
 		<key>Headers/IDRGlesMap.h</key>
 		<data>
-		lVj7KcimMa/2u2iIQHQT55IAF0o=
+		hdJVW8BmNoHC1dhPF3GI3Mhj8q0=
 		</data>
 		<key>Headers/IDRLine.h</key>
 		<data>
@@ -82,7 +82,7 @@
 		</data>
 		<key>Headers/IDRLocationServer.h</key>
 		<data>
-		9qedRyZEoUewO7Cz/bg1pUoHBys=
+		GJUbe2CcHXSgOscL/BJYp2L2S+E=
 		</data>
 		<key>Headers/IDRLocationSimulateManager.h</key>
 		<data>
@@ -102,7 +102,7 @@
 		</data>
 		<key>Headers/IDRMapMarker.h</key>
 		<data>
-		uqPrKouFzorF16lvU48AzmdiuNw=
+		SfAV8eQxmJBR3VMyRJowOGn0Djw=
 		</data>
 		<key>Headers/IDRMapModeBtn.h</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Headers/IDRMapView.h</key>
 		<data>
-		gyW+Zu1rQAXfBwGGu9ulin9p5Bk=
+		x6Et/syfWoddkP8dU87Kl2sypd4=
 		</data>
 		<key>Headers/IDRMultiLocateModul.h</key>
 		<data>
@@ -162,7 +162,7 @@
 		</data>
 		<key>Headers/IDRRegionEx.h</key>
 		<data>
-		wvHXaHaHuy7cJARRyG48qjbfEHw=
+		jbcPpGd9h60Y0OGsIw+s5Ig+iMI=
 		</data>
 		<key>Headers/IDRRegionPath.h</key>
 		<data>
@@ -200,37 +200,17 @@
 		<data>
 		DdMtXslMLZWp+tw9oA3I8gbSa4E=
 		</data>
-		<key>Headers/IndoorunMap_Core-Swift.h</key>
-		<data>
-		zyICt/PoqcZLOmOk1zRdVdSbmHg=
-		</data>
 		<key>Headers/IndoorunMap_Core.h</key>
 		<data>
 		uIFTf89/zPruxBDn7Lli/xbYdTY=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ZKnbg/H71aa+ELRyM+TSar8pSYc=
-		</data>
-		<key>Modules/IndoorunMap_Core.swiftmodule/i386.swiftdoc</key>
-		<data>
-		Tbhs8eFxErv7MOCqj4qdJQhoHpE=
-		</data>
-		<key>Modules/IndoorunMap_Core.swiftmodule/i386.swiftmodule</key>
-		<data>
-		9BP/HbqEheQO9EOEVEh12/8IIKU=
-		</data>
-		<key>Modules/IndoorunMap_Core.swiftmodule/x86_64.swiftdoc</key>
-		<data>
-		rO8rJpnnw0UVBZQvUMwXbtnpXoA=
-		</data>
-		<key>Modules/IndoorunMap_Core.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		7CT6Hl0p4cS++lqS1/ULGE70dg4=
+		u6BAJ6nWBahPebzrQAQxsm5a9tQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		WF5T5OdE6EOc3jaf/2xkp3k9o2k=
+		9mISAkfrGpd4KXlOCCYmQ/lfW/0=
 		</data>
 		<key>README</key>
 		<data>
@@ -419,11 +399,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			lVj7KcimMa/2u2iIQHQT55IAF0o=
+			hdJVW8BmNoHC1dhPF3GI3Mhj8q0=
 			</data>
 			<key>hash2</key>
 			<data>
-			wYT9sunu1cjj7RHFt3f66mutHIWZniDFA2RclKafbYY=
+			QGOqvPa+aVHquUd4+Sqamax17dGdJo8swws15KIZHG0=
 			</data>
 		</dict>
 		<key>Headers/IDRLine.h</key>
@@ -452,11 +432,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			9qedRyZEoUewO7Cz/bg1pUoHBys=
+			GJUbe2CcHXSgOscL/BJYp2L2S+E=
 			</data>
 			<key>hash2</key>
 			<data>
-			qS6nTXuTYuA8h/VLlnGpTlDZIJzBGaUZKn+NpZOCyLs=
+			ZgCEoZNhqaKSeUx+4ZKWlp5AS3dCaRABUuL9Ln1gBvU=
 			</data>
 		</dict>
 		<key>Headers/IDRLocationSimulateManager.h</key>
@@ -507,11 +487,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			uqPrKouFzorF16lvU48AzmdiuNw=
+			SfAV8eQxmJBR3VMyRJowOGn0Djw=
 			</data>
 			<key>hash2</key>
 			<data>
-			JF1qf9fnVtueiZW2HWJ9ja+rilE3CAwXTw9OveWg3L0=
+			quSM3XG+Uvdlqm4+s7bJdWytLBdcpJ834RqnqWeW2F8=
 			</data>
 		</dict>
 		<key>Headers/IDRMapModeBtn.h</key>
@@ -529,11 +509,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			gyW+Zu1rQAXfBwGGu9ulin9p5Bk=
+			x6Et/syfWoddkP8dU87Kl2sypd4=
 			</data>
 			<key>hash2</key>
 			<data>
-			rt5wLZG5j5v5diDxHUhnlOU+gXFckLT72044nejsy6Q=
+			IK1EKJF4iAUDJu3kPFWfryZ9vq047siRCv5GlgQksRM=
 			</data>
 		</dict>
 		<key>Headers/IDRMultiLocateModul.h</key>
@@ -672,11 +652,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			wvHXaHaHuy7cJARRyG48qjbfEHw=
+			jbcPpGd9h60Y0OGsIw+s5Ig+iMI=
 			</data>
 			<key>hash2</key>
 			<data>
-			oIu6SmDbuzmXJTRzXebuW6LRDmEUNKx5YWTZeaC3sms=
+			EHdPH5xbzzriNwQwkDHC/OhU+EnJOcI5LXP4UNCi9lM=
 			</data>
 		</dict>
 		<key>Headers/IDRRegionPath.h</key>
@@ -778,17 +758,6 @@
 			fdaJwctJRHYejKi27LktKzDMCOXtKJx87hk+6Ffir6Y=
 			</data>
 		</dict>
-		<key>Headers/IndoorunMap_Core-Swift.h</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			zyICt/PoqcZLOmOk1zRdVdSbmHg=
-			</data>
-			<key>hash2</key>
-			<data>
-			Hgs1B4rj5zixopJj7Vr/AuNauVa62CGDaySM1anDoGU=
-			</data>
-		</dict>
 		<key>Headers/IndoorunMap_Core.h</key>
 		<dict>
 			<key>hash</key>
@@ -800,59 +769,15 @@
 			7mO5+IVdOCquWQGjWyIfz0SrKc4dnknxCmLnjYXAgjk=
 			</data>
 		</dict>
-		<key>Modules/IndoorunMap_Core.swiftmodule/i386.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			Tbhs8eFxErv7MOCqj4qdJQhoHpE=
-			</data>
-			<key>hash2</key>
-			<data>
-			wxgYACGVY/PV4uI+LVkazZEwhsuIfFTji2khVNyPp9I=
-			</data>
-		</dict>
-		<key>Modules/IndoorunMap_Core.swiftmodule/i386.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			9BP/HbqEheQO9EOEVEh12/8IIKU=
-			</data>
-			<key>hash2</key>
-			<data>
-			OM6d/IPTHrO4h+P+VbiteS5/nwx65v236i/pHpLcglc=
-			</data>
-		</dict>
-		<key>Modules/IndoorunMap_Core.swiftmodule/x86_64.swiftdoc</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			rO8rJpnnw0UVBZQvUMwXbtnpXoA=
-			</data>
-			<key>hash2</key>
-			<data>
-			FhdqhxvD2UIomsI/V6UGV9u3Fud9RP4NZKR0e7jL388=
-			</data>
-		</dict>
-		<key>Modules/IndoorunMap_Core.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			7CT6Hl0p4cS++lqS1/ULGE70dg4=
-			</data>
-			<key>hash2</key>
-			<data>
-			uEf3GE3g0vGZrAKnUpADg2xDLLIxr2o7zl+O8cJ0YfI=
-			</data>
-		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			WF5T5OdE6EOc3jaf/2xkp3k9o2k=
+			9mISAkfrGpd4KXlOCCYmQ/lfW/0=
 			</data>
 			<key>hash2</key>
 			<data>
-			3UuqvEkFY5zznLuM0j9Xtg9Ict8yuGaaxPK1qBGRG+E=
+			smysjKx3BclEVxMtEwN+hByr+iq+zcRfJKneZ34C7ok=
 			</data>
 		</dict>
 		<key>README</key>

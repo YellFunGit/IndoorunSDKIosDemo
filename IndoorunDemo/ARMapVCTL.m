@@ -17,7 +17,6 @@
 @property (nonatomic, retain) IDRCarMarker *carMarker;
 @property (nonatomic, strong) IDRNavigationServer *navigator;
 
-
 @end
 
 @implementation ARMapVCTL
@@ -77,5 +76,7 @@
     
     [_mapView setUserLocation:userLocation];
 }
+
+
 
 @end

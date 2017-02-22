@@ -104,6 +104,8 @@
         
         //动态导航需设置定位器
         [_navigator setLocater:_locator];
+        
+        [_mapView setBirdLookMargin:200 top:200 right:200 bottom:200];
         //动态导航，起点设置为nil
         [_navigator startServer:_mapView navi:[IDRNaviParm createWith:nil end:_ep car:NO]];
     }
@@ -137,6 +139,8 @@
         
         [_ibDebug setText:@"楼层之间没有连通性，动态导航启动失败"];
     }
+    
+    [_mapView birdLook];
 }
 
 - (void)navigation:(IDRNavigationServer *)sender didUpdateSuggestion:(IDRNaviSuggestion *)naviSuggestion {

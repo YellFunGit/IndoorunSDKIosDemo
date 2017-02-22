@@ -34,7 +34,7 @@
 
 - (void)updateMarker:(id<IDRMapMarkerProtocal>)overlay;
 
-- (NSInteger)addMarker:(id<IDRMapMarkerProtocal>)overlay;
+- (void)addMarker:(id<IDRMapMarkerProtocal>)overlay;
 
 - (void)removeMarker:(id<IDRMapMarkerProtocal>)overlay;
 

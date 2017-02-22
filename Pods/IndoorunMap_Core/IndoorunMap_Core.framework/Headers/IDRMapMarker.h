@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "IDRPosition.h"
+#import "IDRMapKitConfig.h"
 
 /**
  *  IDRMapMarkerProtocal,自定义marker必须实现此协议
@@ -17,11 +18,13 @@
 
 @property (nonatomic, copy) NSString *iconName;
 
-@property (nonatomic, retain) UIImage *icon;
+//@property (nonatomic, retain) UIImage *icon;
 
 @property (nonatomic, retain) IDRPosition *pos;
 
-@property (nonatomic, assign) NSInteger Id;
+@property (nonatomic, readonly) NSInteger Id;
+
+@property (nonatomic, readonly) NSInteger Id_AR;
 
 @property (nonatomic, assign) BOOL alwaysShow;
 
@@ -37,11 +40,13 @@
 
 @property (nonatomic, assign) BOOL alwaysShow;
 
-@property (nonatomic, retain) UIImage *icon;
+//@property (nonatomic, retain) UIImage *icon;
 
 @property (nonatomic, retain) IDRPosition *pos;
 
-@property (nonatomic, assign) NSInteger Id;
+@property (nonatomic, readonly) NSInteger Id;
+
+@property (nonatomic, readonly) NSInteger Id_AR;
 
 @end
 
@@ -69,7 +74,9 @@
  */
 @interface IDRFacilitiesMarker : IDRMapMarker
 
-- (instancetype)initWith:(IDRPosition *)pos;
+@property (nonatomic) UnitType type;
+
+- (instancetype)initWith:(IDRPosition *)pos type:(UnitType)type;
 
 @end
 

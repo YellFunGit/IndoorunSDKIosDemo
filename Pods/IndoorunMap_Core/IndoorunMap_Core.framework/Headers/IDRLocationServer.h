@@ -48,11 +48,14 @@ typedef NS_ENUM(NSInteger, LocateStartResult) {
 
 @property (nonatomic, weak) id<IDRLocationServerDelegate> delegate;
 
-/*
- *  开始定位
+/**
+ 开启定位
  */
 - (LocateStartResult)startServer:(IDRMapView*)map;
 
+/**
+ 开启定位
+*/
 - (LocateStartResult)startServer:(IDRMapView*)map withUUID:(NSString*)uuid;
 
 /*

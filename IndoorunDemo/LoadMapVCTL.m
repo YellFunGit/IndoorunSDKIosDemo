@@ -7,10 +7,14 @@
 //
 
 #import "LoadMapVCTL.h"
+#import "MyMapMarker.h"
 
-@interface LoadMapVCTL ()<IDRMapViewDelegate>
+@interface LoadMapVCTL ()<IDRMapViewDelegate, IDRLocationServerDelegate>
 
+@property (nonatomic) IDRLocationServer *server;
 @property (nonatomic) IDRMapView *mapView;
+
+@property (nonatomic) BOOL show;
 
 @end
 
@@ -45,6 +49,30 @@
     [_mapView changeFloor:regionEx.defaultFloorId];
     
     [_mapView setShowPlotingScale:YES];
+    
+    IDRPosition *p = [[IDRPosition alloc] initWithX:0 Y:0 floor:@"14557583851000004"];
+    
+    IDRCarMarker *carMarker = [[IDRCarMarker alloc] initWith:p];
+    
+    [_mapView centerPos:p];
+}
+
+- (BOOL)mapview:(IDRMapView *)mapView onClickUnit:(IDRUnit *)unit {
+    
+    IDRPosition *p = unit.getUnitPos;
+    
+    MyMapMarker *marker = [[MyMapMarker alloc] initWithPos:p];
+    
+    [_mapView addMarker:marker];
+    
+    [_mapView centerPos:p];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        
+        [_mapView zoom:1.2 anchor:p.point anim:YES];
+    });
+    
+    return YES;
 }
 
 @end

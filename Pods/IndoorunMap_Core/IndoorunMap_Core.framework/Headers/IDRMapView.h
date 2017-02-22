@@ -27,6 +27,7 @@
 @class IDRNaviSuggestion;
 @class IDRFloorView;
 @class IDRNavigationServer;
+@class IDRLocationServer;
 @class IDRRouteResult;
 @class IDRLine;
 
@@ -460,9 +461,9 @@
 @property (nonatomic, assign) BOOL autoChangeToUserFloor;
 
 /**
- 当前mapView中所有的marker{floorId:markerarray, ...}
+ 当前mapView中所有的marker
  */
-@property (nonatomic, retain) NSMutableDictionary *markers;
+@property (nonatomic, retain) NSMutableArray *markers;
 
 /**
  NavState:地图的导航状态（普通状态、导航状态）
@@ -475,6 +476,11 @@
  导航器
  */
 @property (nonatomic, weak) IDRNavigationServer *navigator;
+
+/**
+ 定位器
+ */
+@property (nonatomic, weak) IDRLocationServer *locator;
 
 @end
 

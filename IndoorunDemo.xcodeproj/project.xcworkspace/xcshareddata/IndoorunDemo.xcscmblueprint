@@ -1,16 +1,18 @@
 {
-  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "690775FE5C0CEEC71A1777D6459507A4C94E1CCF",
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "76F9D9E31E51666843FD30C2F5692E6032259ABC",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
 
   },
   "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
     "7F7ED70E752DF06CA6B8D0BFD18A88E407AFD241" : 0,
-    "690775FE5C0CEEC71A1777D6459507A4C94E1CCF" : 0
+    "690775FE5C0CEEC71A1777D6459507A4C94E1CCF" : 0,
+    "76F9D9E31E51666843FD30C2F5692E6032259ABC" : 9223372036854775807
   },
   "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "500EC015-55A5-4B8E-A5A5-9E165B4290A5",
   "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
     "7F7ED70E752DF06CA6B8D0BFD18A88E407AFD241" : "libidrn\/",
-    "690775FE5C0CEEC71A1777D6459507A4C94E1CCF" : "IndoorunMap_Demo\/"
+    "690775FE5C0CEEC71A1777D6459507A4C94E1CCF" : "IndoorunMap_Demo\/",
+    "76F9D9E31E51666843FD30C2F5692E6032259ABC" : "IndoorunSDKIosDemo\/"
   },
   "DVTSourceControlWorkspaceBlueprintNameKey" : "IndoorunDemo",
   "DVTSourceControlWorkspaceBlueprintVersion" : 204,
@@ -20,6 +22,11 @@
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.1.100:ios\/IndoorunMap_Demo.git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "690775FE5C0CEEC71A1777D6459507A4C94E1CCF"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/YellFunGit\/IndoorunSDKIosDemo.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "76F9D9E31E51666843FD30C2F5692E6032259ABC"
     },
     {
       "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "192.168.1.100:android\/libidrn.git",

@@ -37,6 +37,7 @@
 
 - (IDRFloor*)getFloorWithFloorIndex:(NSInteger)floorIndex;
 
+- (BOOL)containedPos:(IDRPosition*)pos;
 
 
 /**

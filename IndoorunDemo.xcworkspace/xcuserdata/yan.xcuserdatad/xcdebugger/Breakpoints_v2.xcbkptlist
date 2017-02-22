@@ -100,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../indoorun/IndoorunMap_Core/YFMapKit/IDRMapView.m"
-            timestampString = "508750343.732802"
+            timestampString = "509255415.252898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "615"
@@ -115,13 +115,13 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "../../indoorun/IndoorunMap_Core/YFMapKit/IDRPlotScaleView.m"
-            timestampString = "508752505.300082"
+            filePath = "../../indoorun/IndoorunMap_Core/YFMapKit/IDR3DMap.m"
+            timestampString = "509352400.620572"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "97"
-            endingLineNumber = "97"
-            landmarkName = "-updateScale:"
+            startingLineNumber = "808"
+            endingLineNumber = "808"
+            landmarkName = "-removeMarker:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

@@ -71,6 +71,8 @@
     
     [_mapView changeFloor:regionEx.defaultFloorId];
     
+    [_mapView setShowPlotingScale:YES];
+    
     [self locate];
 }
 
@@ -82,8 +84,6 @@
 - (void)location:(IDRLocationServer*)locationServer didLocationSuccess:(IDRUserLocation*)userLocation {
     
     [_mapView setUserLocation:userLocation];
-    
-    [_mapView setMapMode:IDRMapMode_ModeFollowing];
     
     //是否显示罗盘
     [_mapView showComposs:YES];
