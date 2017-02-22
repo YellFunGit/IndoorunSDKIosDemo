@@ -35,8 +35,6 @@
     _mapView.delegate = self;
     
     [self.view addSubview:_mapView];
-    
-    [_mapView addDefaultFloorListView];
 }
 
 #pragma mark --MapView Delegate

@@ -40,8 +40,6 @@
     [self.view addSubview:_mapView];
     
     [self.view sendSubviewToBack:_mapView];
-    
-    [_mapView addDefaultFloorListView];
 }
 
 - (IBAction)onStopNavigation:(id)sender {

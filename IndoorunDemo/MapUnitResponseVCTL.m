@@ -36,8 +36,6 @@
     
     [self.view sendSubviewToBack:_mapView];
     
-    [_mapView addDefaultFloorListView];
-    
     [_mapView addDefaultMapModeBtn];
 }
 
