@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define IDR_VERSION 2.3.0
+#define IDR_VERSION 2.4.0
 
 #define IDRRegionData IDRRegionEx
 
@@ -19,18 +19,20 @@
 
 typedef NS_ENUM(NSInteger, IDRMapMode) {
     
-    /**
-     *  自由模式，不跟随userlocation
-     */
-    IDRMapMode_ModeFree,
-    /**
-     *  定位模式，跟随userlocation，自动切换楼层，userlocation跑出屏幕，地图会自动调整
-     */
-    IDRMapMode_ModeTrace,
-    /**
-     *  跟随模式(1:非导航时地图随方位角旋转；2:导航时地图随导航线旋转)
-     */
-    IDRMapMode_ModeFollowing,
+    IDRMapMode_ModeFree,//自由模式，不跟随userlocation
+    
+    IDRMapMode_ModeTrace,//定位模式，跟随userlocation，自动切换楼层，userlocation跑出屏幕，地图会自动调整
+    
+    IDRMapMode_ModeFollowing,//跟随模式(1:非导航时地图随方位角旋转；2:导航时地图随导航线旋转)
+};
+
+typedef NS_ENUM(NSInteger, IDRMapDisplayMode) {
+    
+    IDRMap_2D,//普通2d地图
+    
+    IDRMap_3D,//地图3d显示
+    
+    IDRMap_AR,//地图3d && ar显示
 };
 
 typedef NS_ENUM(NSInteger, LocateType){

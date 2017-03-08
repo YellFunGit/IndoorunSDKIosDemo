@@ -19,18 +19,45 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzz-rk-lXH">
-                    <rect key="frame" x="275" y="465" width="92" height="30"/>
-                    <state key="normal" title="切换地图模式"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pbp-o3-ZU3">
+                    <rect key="frame" x="329" y="461" width="30" height="30"/>
+                    <state key="normal" title="2D"/>
                     <connections>
-                        <action selector="onChangeMap:" destination="-1" eventType="touchUpInside" id="5Tq-Wn-UWX"/>
+                        <action selector="onChangeTo2dMap:" destination="-1" eventType="touchUpInside" id="Eur-Zy-LWO"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wGv-VW-7si">
+                    <rect key="frame" x="329" y="515" width="30" height="30"/>
+                    <state key="normal" title="3D"/>
+                    <connections>
+                        <action selector="onChangeTo3dMap:" destination="-1" eventType="touchUpInside" id="p2O-Zi-Avl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JEe-d1-ooH">
+                    <rect key="frame" x="329" y="567" width="30" height="30"/>
+                    <state key="normal" title="AR"/>
+                    <connections>
+                        <action selector="onChangeToArMap:" destination="-1" eventType="touchUpInside" id="QVG-9a-Wyu"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHP-xl-G6o">
+                    <rect key="frame" x="16" y="622" width="30" height="30"/>
+                    <state key="normal" title="Add"/>
+                    <connections>
+                        <action selector="addMarker:" destination="-1" eventType="touchUpInside" id="pZU-F5-PuZ"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="kzz-rk-lXH" secondAttribute="bottom" constant="172" id="UpR-fC-zMe"/>
-                <constraint firstAttribute="trailing" secondItem="kzz-rk-lXH" secondAttribute="trailing" constant="8" id="eTY-Wm-lOh"/>
+                <constraint firstItem="mHP-xl-G6o" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="4ae-bz-7RD"/>
+                <constraint firstAttribute="trailing" secondItem="JEe-d1-ooH" secondAttribute="trailing" constant="16" id="AtA-Qi-87q"/>
+                <constraint firstAttribute="bottom" secondItem="JEe-d1-ooH" secondAttribute="bottom" constant="70" id="BMh-6i-iVg"/>
+                <constraint firstAttribute="bottom" secondItem="mHP-xl-G6o" secondAttribute="bottom" constant="15" id="NaV-wY-z3C"/>
+                <constraint firstAttribute="trailing" secondItem="wGv-VW-7si" secondAttribute="trailing" constant="16" id="S1c-MG-FfX"/>
+                <constraint firstAttribute="trailing" secondItem="Pbp-o3-ZU3" secondAttribute="trailing" constant="16" id="ku5-pW-kEw"/>
+                <constraint firstItem="wGv-VW-7si" firstAttribute="top" secondItem="Pbp-o3-ZU3" secondAttribute="bottom" constant="24" id="pbg-Mj-ULk"/>
+                <constraint firstItem="JEe-d1-ooH" firstAttribute="top" secondItem="wGv-VW-7si" secondAttribute="bottom" constant="22" id="sCv-dk-sNx"/>
             </constraints>
             <point key="canvasLocation" x="-24" y="-14"/>
         </view>

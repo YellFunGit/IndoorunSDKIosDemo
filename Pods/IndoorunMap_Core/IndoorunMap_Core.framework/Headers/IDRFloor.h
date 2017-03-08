@@ -54,4 +54,18 @@
  */
 - (NSArray*)getUnitsWithUnitType:(UnitType)typeId;
 
+/**
+ 获取公共设施unit
+ 
+ @return unit数组
+ */
+- (NSArray*)getFaciUnits;
+
+/**
+ 获取所有公共设施类型
+ 
+ @return unit类型数组
+ */
+- (NSArray*)getTotalFaciTypes;
+
 @end

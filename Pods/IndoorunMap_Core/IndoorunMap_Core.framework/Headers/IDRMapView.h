@@ -162,7 +162,7 @@
  */
 @interface IDRMapView : UIView
 
-@property (nonatomic, assign) BOOL ar3DMap;//ar3d地图
+@property (nonatomic, assign) IDRMapDisplayMode mapDisplayMode;//设置2d,3d,ar地图
 
 @property (nonatomic, assign) IDRMapMode mapMode;//地图当前mode(自由，定位，跟随)
 
@@ -187,6 +187,8 @@
 @property (nonatomic, readonly) IDRGlesMap *glesMap;//opengles地图
 
 @property (nonatomic, assign) CGRect miniMapFrame;//仅在AR模式下有效
+
+@property (nonatomic, assign) CGFloat eyeDistanceScale;//眼睛距离因子(3D模式下有用)
 
 - (void)onMapStateChange:(NSInteger)state;
 

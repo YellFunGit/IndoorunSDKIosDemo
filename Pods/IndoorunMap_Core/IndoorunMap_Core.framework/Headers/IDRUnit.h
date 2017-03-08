@@ -14,6 +14,8 @@
 /**
  *  单元数据
  */
+NS_ASSUME_NONNULL_BEGIN
+
 @interface IDRUnit : NSObject
 
 - (id)initWithJson:(NSDictionary*)unitDict;
@@ -26,27 +28,27 @@
 
 @property (nonatomic, strong) NSNumber * unitTypeId;//类型编号
 
-@property (nonatomic, copy) NSString * aDescription;//详细信息
+@property (nonatomic, copy, nullable) NSString * aDescription;//详细信息
 
-@property (nonatomic, strong) NSNumber * boundLeft;//左边界距离地图左边界的距离
+@property (nonatomic, strong, nullable) NSNumber * boundLeft;//左边界距离地图左边界的距离
 
-@property (nonatomic, strong) NSNumber * boundTop;//顶部距离地图顶部的距离
+@property (nonatomic, strong, nullable) NSNumber * boundTop;//顶部距离地图顶部的距离
 
-@property (nonatomic, strong) NSNumber * boundRight;//右边界距离截图左边界的距离
+@property (nonatomic, strong, nullable) NSNumber * boundRight;//右边界距离截图左边界的距离
 
-@property (nonatomic, strong) NSNumber * boundBottom;//底部距离地图顶部的距离
+@property (nonatomic, strong, nullable) NSNumber * boundBottom;//底部距离地图顶部的距离
 
-@property (nonatomic, copy) NSString * status;//unit状态
+@property (nonatomic, copy, nullable) NSString * status;//unit状态
 
-@property (nonatomic, copy) NSString *creator;//unit编辑人
+@property (nonatomic, copy, nullable) NSString *creator;//unit编辑人
 
-@property (nonatomic, copy) NSString *points;//unit的形状(x0,y0 x1,y1, ....)
+@property (nonatomic, copy, nullable) NSString *points;//unit的形状(x0,y0 x1,y1, ....)
 
-@property (nonatomic, strong) NSDate *gmtCreate;//unit创建时间
+@property (nonatomic, strong, nullable) NSDate *gmtCreate;//unit创建时间
 
-@property (nonatomic, strong) IDRExtInfo * extInfo;
+@property (nonatomic, strong, nullable) NSDictionary * extInfo;
 
-@property (nonatomic, strong) UIColor *color;//unit颜色
+@property (nonatomic, strong, nullable) UIColor *color;//unit颜色
 
 /**
  获取unit的poly形状
@@ -59,4 +61,12 @@
 
 - (NSString*)unitType;
 
+- (BOOL)outerExit;
+
+- (NSString*)outerLink;
+
+- (NSString*)exitName;
+
 @end
+
+NS_ASSUME_NONNULL_END

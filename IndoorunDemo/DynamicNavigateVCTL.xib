@@ -36,23 +36,41 @@
                         <action selector="onStopNavigation:" destination="-1" eventType="touchUpInside" id="VJe-T9-VXq"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rul-CY-9iN">
-                    <rect key="frame" x="0.0" y="637" width="62" height="30"/>
-                    <state key="normal" title="切换地图"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sl4-aB-zfY">
+                    <rect key="frame" x="16" y="461" width="30" height="30"/>
+                    <state key="normal" title="2D"/>
                     <connections>
-                        <action selector="onChangeMap:" destination="-1" eventType="touchUpInside" id="iNm-Fd-ILj"/>
+                        <action selector="onChangeTo2dMap:" destination="-1" eventType="touchUpInside" id="jrd-Yb-3PI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rab-MK-859">
+                    <rect key="frame" x="16" y="517" width="30" height="30"/>
+                    <state key="normal" title="3D"/>
+                    <connections>
+                        <action selector="onChangeTo3dMap:" destination="-1" eventType="touchUpInside" id="zRF-fc-NPn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQm-dz-Ufs">
+                    <rect key="frame" x="16" y="570" width="30" height="30"/>
+                    <state key="normal" title="AR"/>
+                    <connections>
+                        <action selector="onChangeToArMap:" destination="-1" eventType="touchUpInside" id="TYu-Xe-adX"/>
                     </connections>
                 </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="FXu-Z0-TOb" secondAttribute="bottom" id="3cf-4X-HTc"/>
-                <constraint firstItem="Rul-CY-9iN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TuN-zV-2ol"/>
+                <constraint firstItem="sl4-aB-zfY" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="Cqq-0o-mLi"/>
+                <constraint firstItem="Rab-MK-859" firstAttribute="top" secondItem="sl4-aB-zfY" secondAttribute="bottom" constant="26" id="PEC-2E-cDY"/>
                 <constraint firstAttribute="trailing" secondItem="7i0-cL-GJe" secondAttribute="trailing" id="Z61-A8-TZS"/>
                 <constraint firstAttribute="trailing" secondItem="FXu-Z0-TOb" secondAttribute="trailing" id="axn-3I-zDU"/>
+                <constraint firstAttribute="bottom" secondItem="tQm-dz-Ufs" secondAttribute="bottom" constant="67" id="crp-IW-rOm"/>
+                <constraint firstItem="Rab-MK-859" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="dZu-nD-SH2"/>
+                <constraint firstItem="tQm-dz-Ufs" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="eoo-y7-Ami"/>
                 <constraint firstItem="7i0-cL-GJe" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="kaw-1O-7kY"/>
+                <constraint firstItem="tQm-dz-Ufs" firstAttribute="top" secondItem="Rab-MK-859" secondAttribute="bottom" constant="23" id="uGk-KK-Htj"/>
                 <constraint firstItem="7i0-cL-GJe" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="xKB-xn-lTP"/>
-                <constraint firstAttribute="bottom" secondItem="Rul-CY-9iN" secondAttribute="bottom" id="xUa-zL-4t5"/>
             </constraints>
             <point key="canvasLocation" x="-97" y="-131"/>
         </view>

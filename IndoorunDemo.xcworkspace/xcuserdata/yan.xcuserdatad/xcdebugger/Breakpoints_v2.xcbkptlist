@@ -74,11 +74,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "IndoorunDemo/ViewController.m"
-            timestampString = "508649722.987791"
+            timestampString = "509859583.728178"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59">
+            startingLineNumber = "61"
+            endingLineNumber = "61">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -100,7 +100,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../indoorun/IndoorunMap_Core/YFMapKit/IDRMapView.m"
-            timestampString = "509255415.252898"
+            timestampString = "509599058.182295"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "615"
@@ -116,12 +116,28 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../indoorun/IndoorunMap_Core/YFMapKit/IDR3DMap.m"
-            timestampString = "509352400.620572"
+            timestampString = "509614449.185137"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "808"
-            endingLineNumber = "808"
-            landmarkName = "-removeMarker:"
+            startingLineNumber = "840"
+            endingLineNumber = "840"
+            landmarkName = "+convertUIImageToBitmapRGBA8:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "IndoorunDemo/MapUnitResponseVCTL.m"
+            timestampString = "509860219.022485"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
+            landmarkName = "-mapview:onClickUnit:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

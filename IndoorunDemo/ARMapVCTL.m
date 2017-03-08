@@ -48,9 +48,28 @@
     [self loadMap];
 }
 
-- (IBAction)onChangeMap:(id)sender {
+- (IBAction)addMarker:(id)sender {
     
-    [_mapView setAr3DMap:!_mapView.ar3DMap];
+    _carMarker = [[IDRCarMarker alloc] initWith:[[IDRPosition alloc] initWithX:606 Y:192 floor:@"14557583851000004"]];
+    
+    [_mapView addMarker:_carMarker];
+}
+
+- (IBAction)onChangeTo3dMap:(id)sender {
+    
+    _mapView.eyeDistanceScale = 0.5;
+    
+    _mapView.mapDisplayMode = IDRMap_3D;
+}
+
+- (IBAction)onChangeTo2dMap:(id)sender {
+    
+    _mapView.mapDisplayMode = IDRMap_2D;
+}
+
+- (IBAction)onChangeToArMap:(id)sender {
+    
+    _mapView.mapDisplayMode = IDRMap_AR;
 }
 
 #pragma mark --mapviewdelegate
@@ -64,6 +83,8 @@
     [_mapView changeFloor:regionEx.defaultFloorId];
     
     _locator = [[IDRLocationServer alloc] init];
+    
+    [IDRMapKitConfig sharedInstance].locate_url = @"http://192.168.0.104:3000/users/locating";
     
     [_locator setDelegate:self];
     

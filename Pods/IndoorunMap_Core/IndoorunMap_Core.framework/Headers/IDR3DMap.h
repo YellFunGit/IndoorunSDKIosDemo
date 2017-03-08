@@ -9,14 +9,17 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "IDRMapMarker.h"
+#import "IDRMapKitConfig.h"
 #import "IDRLine.h"
 #import "IDRGlesMap.h"
 
 @interface IDR3DMap : IDRGlesMap
 
-@property (nonatomic, assign) BOOL normal2DMap;
+@property (nonatomic, assign) IDRMapDisplayMode mapDisplayMode;
 
 @property (nonatomic, assign) NSInteger floorIndex;
+
+@property (nonatomic, assign) CGFloat eyeDistanceFactor;
 
 - (void)setMiniMap:(CGRect)frame;
 

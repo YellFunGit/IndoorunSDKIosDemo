@@ -55,9 +55,19 @@
     [_locator setDelegate:self];
 }
 
-- (IBAction)onChangeMap:(id)sender {
+- (IBAction)onChangeTo3dMap:(id)sender {
     
-    _mapView.ar3DMap = !_mapView.ar3DMap;
+    _mapView.mapDisplayMode = IDRMap_3D;
+}
+
+- (IBAction)onChangeTo2dMap:(id)sender {
+    
+    _mapView.mapDisplayMode = IDRMap_2D;
+}
+
+- (IBAction)onChangeToArMap:(id)sender {
+    
+    _mapView.mapDisplayMode = IDRMap_AR;
 }
 
 - (IBAction)onStopNavigation:(id)sender {

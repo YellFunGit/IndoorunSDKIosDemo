@@ -19,4 +19,6 @@
 
 @property (nonatomic, strong) NSArray<IDRPosition*> *positions;// 路线点集
 
+- (void)print;
+
 @end
