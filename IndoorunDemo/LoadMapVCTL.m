@@ -8,6 +8,7 @@
 
 #import "LoadMapVCTL.h"
 #import "MyMapMarker.h"
+#import "IDRZoomView.h"
 
 @interface LoadMapVCTL ()<IDRMapViewDelegate, IDRLocationServerDelegate>
 
@@ -36,6 +37,12 @@
     [_mapView loadMap:_region];
     
     [self.view addSubview:_mapView];
+    
+    CGRect r = CGRectMake([UIScreen mainScreen].bounds.size.width-44, [UIScreen mainScreen].bounds.size.height - 165 , 35, 70);
+    
+    IDRZoomView *view = [[IDRZoomView alloc] initWithFrame:r];
+    
+    [self.view addSubview:view];
 }
 
 #pragma mark --mapviewdelegate

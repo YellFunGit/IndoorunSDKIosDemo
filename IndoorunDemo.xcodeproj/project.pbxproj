@@ -37,6 +37,7 @@
 		2CAF866C1DADE7A80036D7BD /* MapUnitResponseVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF866A1DADE7A80036D7BD /* MapUnitResponseVCTL.m */; };
 		2CAF866D1DADE7A80036D7BD /* MapUnitResponseVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF866B1DADE7A80036D7BD /* MapUnitResponseVCTL.xib */; };
 		2CAF866F1DADEAF20036D7BD /* LocateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF866E1DADEAF20036D7BD /* LocateVCTL.xib */; };
+		2CB09BC81E70E7AC00E4AB7D /* IDRZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB09BC71E70E7AC00E4AB7D /* IDRZoomView.m */; };
 		2CB2A1CF1DA8D40100A24A52 /* MyMapMarker.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CB2A1CE1DA8D40100A24A52 /* MyMapMarker.m */; };
 		58E04EDD86FF8B8279CE9438 /* libPods-IndoorunDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CAF8403AB216140F164C969 /* libPods-IndoorunDemo.a */; };
 /* End PBXBuildFile section */
@@ -113,6 +114,8 @@
 		2CAF866A1DADE7A80036D7BD /* MapUnitResponseVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapUnitResponseVCTL.m; sourceTree = "<group>"; };
 		2CAF866B1DADE7A80036D7BD /* MapUnitResponseVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapUnitResponseVCTL.xib; sourceTree = "<group>"; };
 		2CAF866E1DADEAF20036D7BD /* LocateVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocateVCTL.xib; sourceTree = "<group>"; };
+		2CB09BC61E70E7AC00E4AB7D /* IDRZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IDRZoomView.h; sourceTree = "<group>"; };
+		2CB09BC71E70E7AC00E4AB7D /* IDRZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IDRZoomView.m; sourceTree = "<group>"; };
 		2CB2A1CD1DA8D40100A24A52 /* MyMapMarker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyMapMarker.h; sourceTree = "<group>"; };
 		2CB2A1CE1DA8D40100A24A52 /* MyMapMarker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyMapMarker.m; sourceTree = "<group>"; };
 		2CC78A711D952982003B0687 /* IndoorunDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IndoorunDemo-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -180,6 +183,8 @@
 		2C4F06D21D3332150012BAEB /* IndoorunDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2CB09BC61E70E7AC00E4AB7D /* IDRZoomView.h */,
+				2CB09BC71E70E7AC00E4AB7D /* IDRZoomView.m */,
 				2C032F871DACDB8400EF56FA /* UIColor+YFHexColor.h */,
 				2C032F881DACDB8400EF56FA /* UIColor+YFHexColor.m */,
 				2C4F06D61D3332150012BAEB /* AppDelegate.h */,
@@ -423,6 +428,7 @@
 				2C0244431DACEAA500999402 /* DemoCommon.m in Sources */,
 				2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */,
 				2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */,
+				2CB09BC81E70E7AC00E4AB7D /* IDRZoomView.m in Sources */,
 				2CAF866C1DADE7A80036D7BD /* MapUnitResponseVCTL.m in Sources */,
 				2C02444A1DACECF600999402 /* MapResponseVCTL.m in Sources */,
 				2C032F921DACE04100EF56FA /* RegionDetailVCTL.m in Sources */,

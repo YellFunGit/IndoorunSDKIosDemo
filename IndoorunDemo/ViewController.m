@@ -32,7 +32,7 @@
     
     [[IDRMapKitConfig sharedInstance] setFormalServer:NO];//使用测试服
     
-    [IDRMapKitConfig sharedInstance].locate_url = @"http://192.168.0.104:3000/users/locating";
+//    [IDRMapKitConfig sharedInstance].locate_url = @"http://192.168.0.104:3000/users/locating";
     
     [[IDRMapKitConfig sharedInstance] setAppBoundleId:@"com.Yellfun.Cars"];
     
