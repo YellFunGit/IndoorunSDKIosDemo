@@ -54,14 +54,6 @@
     [_mapView addDefaultFloorListView];
     
     [_mapView changeFloor:regionEx.defaultFloorId];
-    
-    [_mapView setShowPlotingScale:YES];
-    
-    IDRPosition *p = [[IDRPosition alloc] initWithX:0 Y:0 floor:@"14557583851000004"];
-    
-    IDRCarMarker *carMarker = [[IDRCarMarker alloc] initWith:p];
-    
-    [_mapView centerPos:p];
 }
 
 - (BOOL)mapview:(IDRMapView *)mapView onClickUnit:(IDRUnit *)unit {
