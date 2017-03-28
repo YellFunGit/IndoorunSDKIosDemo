@@ -21,6 +21,8 @@
 		2C0DFC421D9A6FC800125C09 /* IndoorunDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C0DFC411D9A6FC800125C09 /* IndoorunDemoUITests.m */; };
 		2C1338571E2727F2000CC2F2 /* ARMapVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C1338551E2727F2000CC2F2 /* ARMapVCTL.m */; };
 		2C1338581E2727F2000CC2F2 /* ARMapVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C1338561E2727F2000CC2F2 /* ARMapVCTL.xib */; };
+		2C38EB7F1E8917F60093F7E5 /* MultiplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C38EB7D1E8917F60093F7E5 /* MultiplayerViewController.m */; };
+		2C38EB801E8917F60093F7E5 /* MultiplayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C38EB7E1E8917F60093F7E5 /* MultiplayerViewController.xib */; };
 		2C4F06D51D3332150012BAEB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06D41D3332150012BAEB /* main.m */; };
 		2C4F06D81D3332150012BAEB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06D71D3332150012BAEB /* AppDelegate.m */; };
 		2C4F06DB1D3332150012BAEB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06DA1D3332150012BAEB /* ViewController.m */; };
@@ -30,6 +32,8 @@
 		2C4F06EC1D3334850012BAEB /* RegionListVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F06EB1D3334850012BAEB /* RegionListVCTL.m */; };
 		2C4F06EE1D3334980012BAEB /* RegionListVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C4F06ED1D3334980012BAEB /* RegionListVCTL.xib */; };
 		2C4F07011D33423B0012BAEB /* GCFloatedLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C4F07001D33423B0012BAEB /* GCFloatedLabelView.m */; };
+		2C92CB631E89F1C500140831 /* UploadWithMessageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C92CB621E89F1C500140831 /* UploadWithMessageView.m */; };
+		2C92CB651E89F1D400140831 /* UploadWithMessageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2C92CB641E89F1D300140831 /* UploadWithMessageView.xib */; };
 		2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF86541DADC5710036D7BD /* DynamicNavigateVCTL.m */; };
 		2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2CAF86551DADC5710036D7BD /* DynamicNavigateVCTL.xib */; };
 		2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */ = {isa = PBXBuildFile; fileRef = 2CAF86591DADC8C90036D7BD /* MapMarkerResponseVCTL.m */; };
@@ -89,6 +93,9 @@
 		2C1338541E2727F2000CC2F2 /* ARMapVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ARMapVCTL.h; sourceTree = "<group>"; };
 		2C1338551E2727F2000CC2F2 /* ARMapVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ARMapVCTL.m; sourceTree = "<group>"; };
 		2C1338561E2727F2000CC2F2 /* ARMapVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ARMapVCTL.xib; sourceTree = "<group>"; };
+		2C38EB7C1E8917F60093F7E5 /* MultiplayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiplayerViewController.h; path = ../MultiplayerViewController.h; sourceTree = "<group>"; };
+		2C38EB7D1E8917F60093F7E5 /* MultiplayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiplayerViewController.m; path = ../MultiplayerViewController.m; sourceTree = "<group>"; };
+		2C38EB7E1E8917F60093F7E5 /* MultiplayerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MultiplayerViewController.xib; path = ../MultiplayerViewController.xib; sourceTree = "<group>"; };
 		2C4F06D01D3332150012BAEB /* IndoorunDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IndoorunDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C4F06D41D3332150012BAEB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2C4F06D61D3332150012BAEB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -104,6 +111,9 @@
 		2C4F06ED1D3334980012BAEB /* RegionListVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RegionListVCTL.xib; sourceTree = "<group>"; };
 		2C4F06FF1D33423B0012BAEB /* GCFloatedLabelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCFloatedLabelView.h; sourceTree = "<group>"; };
 		2C4F07001D33423B0012BAEB /* GCFloatedLabelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCFloatedLabelView.m; sourceTree = "<group>"; };
+		2C92CB611E89F1C500140831 /* UploadWithMessageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadWithMessageView.h; sourceTree = "<group>"; };
+		2C92CB621E89F1C500140831 /* UploadWithMessageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadWithMessageView.m; sourceTree = "<group>"; };
+		2C92CB641E89F1D300140831 /* UploadWithMessageView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = UploadWithMessageView.xib; sourceTree = "<group>"; };
 		2CAF86531DADC5710036D7BD /* DynamicNavigateVCTL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicNavigateVCTL.h; sourceTree = "<group>"; };
 		2CAF86541DADC5710036D7BD /* DynamicNavigateVCTL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicNavigateVCTL.m; sourceTree = "<group>"; };
 		2CAF86551DADC5710036D7BD /* DynamicNavigateVCTL.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicNavigateVCTL.xib; sourceTree = "<group>"; };
@@ -183,6 +193,9 @@
 		2C4F06D21D3332150012BAEB /* IndoorunDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2C38EB7C1E8917F60093F7E5 /* MultiplayerViewController.h */,
+				2C38EB7D1E8917F60093F7E5 /* MultiplayerViewController.m */,
+				2C38EB7E1E8917F60093F7E5 /* MultiplayerViewController.xib */,
 				2CB09BC61E70E7AC00E4AB7D /* IDRZoomView.h */,
 				2CB09BC71E70E7AC00E4AB7D /* IDRZoomView.m */,
 				2C032F871DACDB8400EF56FA /* UIColor+YFHexColor.h */,
@@ -233,6 +246,9 @@
 				2C1338541E2727F2000CC2F2 /* ARMapVCTL.h */,
 				2C1338551E2727F2000CC2F2 /* ARMapVCTL.m */,
 				2C1338561E2727F2000CC2F2 /* ARMapVCTL.xib */,
+				2C92CB611E89F1C500140831 /* UploadWithMessageView.h */,
+				2C92CB621E89F1C500140831 /* UploadWithMessageView.m */,
+				2C92CB641E89F1D300140831 /* UploadWithMessageView.xib */,
 			);
 			path = IndoorunDemo;
 			sourceTree = "<group>";
@@ -351,6 +367,7 @@
 				2C4F06E31D3332150012BAEB /* LaunchScreen.storyboard in Resources */,
 				2CAF865C1DADC8C90036D7BD /* MapMarkerResponseVCTL.xib in Resources */,
 				2C0244591DACF06800999402 /* StaticNavigationVCTL.xib in Resources */,
+				2C92CB651E89F1D400140831 /* UploadWithMessageView.xib in Resources */,
 				2C02444B1DACECF600999402 /* MapResponseVCTL.xib in Resources */,
 				2C0244401DACE87700999402 /* NavigateVCTL.xib in Resources */,
 				2CAF86571DADC5710036D7BD /* DynamicNavigateVCTL.xib in Resources */,
@@ -359,6 +376,7 @@
 				2C032F941DACE07000EF56FA /* RegionDetailVCTL.xib in Resources */,
 				2C4F06E01D3332150012BAEB /* Assets.xcassets in Resources */,
 				2C4F06DE1D3332150012BAEB /* Main.storyboard in Resources */,
+				2C38EB801E8917F60093F7E5 /* MultiplayerViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +447,7 @@
 				2CAF865B1DADC8C90036D7BD /* MapMarkerResponseVCTL.m in Sources */,
 				2CAF86561DADC5710036D7BD /* DynamicNavigateVCTL.m in Sources */,
 				2CB09BC81E70E7AC00E4AB7D /* IDRZoomView.m in Sources */,
+				2C38EB7F1E8917F60093F7E5 /* MultiplayerViewController.m in Sources */,
 				2CAF866C1DADE7A80036D7BD /* MapUnitResponseVCTL.m in Sources */,
 				2C02444A1DACECF600999402 /* MapResponseVCTL.m in Sources */,
 				2C032F921DACE04100EF56FA /* RegionDetailVCTL.m in Sources */,
@@ -443,6 +462,7 @@
 				2C1338571E2727F2000CC2F2 /* ARMapVCTL.m in Sources */,
 				2C032F891DACDB8400EF56FA /* UIColor+YFHexColor.m in Sources */,
 				2C4F06D51D3332150012BAEB /* main.m in Sources */,
+				2C92CB631E89F1C500140831 /* UploadWithMessageView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

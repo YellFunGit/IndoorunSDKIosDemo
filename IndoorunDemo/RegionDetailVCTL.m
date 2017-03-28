@@ -15,6 +15,7 @@
 #import "MapMarkerResponseVCTL.h"
 #import "MapUnitResponseVCTL.h"
 #import "ARMapVCTL.h"
+#import "MultiplayerViewController.h"
 
 typedef NS_ENUM(NSInteger, FunctionType) {
     
@@ -33,6 +34,8 @@ typedef NS_ENUM(NSInteger, FunctionType) {
     onDynamicNavigate,//动态导航
     
     onAR,//AR导航
+    
+    onMultiLocate,//多点定位
     
     FunctionType_Max
 };
@@ -100,6 +103,8 @@ typedef NS_ENUM(NSInteger, FunctionType) {
             return @"动态导航";
         case onAR:
             return @"AR模式切换";
+        case onMultiLocate:
+            return @"多点定位";
         
         default:
             return @"";
@@ -193,6 +198,15 @@ typedef NS_ENUM(NSInteger, FunctionType) {
     if (indexPath.row == onDynamicNavigate) {
         
         DynamicNavigateVCTL *vctl = [[DynamicNavigateVCTL alloc] init];
+        
+        vctl.region = _region;
+        
+        [self.navigationController pushViewController:vctl animated:YES];
+    }
+    
+    if (indexPath.row == onMultiLocate) {
+        
+        MultiplayerViewController *vctl = [[MultiplayerViewController alloc] init];
         
         vctl.region = _region;
         

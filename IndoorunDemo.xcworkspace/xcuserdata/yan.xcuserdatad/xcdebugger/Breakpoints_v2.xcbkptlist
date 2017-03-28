@@ -107,7 +107,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "840"
             endingLineNumber = "840"
-            landmarkName = "+convertUIImageToBitmapRGBA8:"
+            landmarkName = "-updateUnitsColor:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

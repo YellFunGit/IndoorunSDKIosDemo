@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-#define IDR_VERSION 2.4.0
+#define IDR_VERSION 2.5.0
 
 #define IDRRegionData IDRRegionEx
 

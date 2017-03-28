@@ -8,32 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
-@class IDRMapView;
+@class IDRMultiLocationInfo;
+@class IDRMultiLocationServer;
+
+@protocol IDRMultiLocationServerDelegate <NSObject>
+
+- (void)onMultilocateSuccess:(IDRMultiLocationServer*)sender success:(NSArray<IDRMultiLocationInfo*>*)locationInfos;
+
+@end
 
 @interface IDRMultiLocationServer : NSObject
 
-/**
- *  地图view
- */
-@property (nonatomic, weak) IDRMapView *mapView;
-
-/**
- *  请求所需要的uuid
- */
-@property (nonatomic, retain) NSArray *phoneUUIDs;
-
-+ (instancetype)sharedInstance;
+@property (nonatomic, weak) id<IDRMultiLocationServerDelegate> delegate;
 
 /**
  *  启动服务
  */
-- (void)startServer;
+- (void)startServer:(NSArray*)phoneUUIDs;
 
 /**
  *  停止服务
  */
 - (void)stopServer;
-
-- (void)serverCallLocation:(NSArray*)phoneUUIDs success:(void(^)(NSArray* locationInfos))success;
 
 @end

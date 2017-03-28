@@ -13,9 +13,9 @@
 
 - (id)initWithDictionary:(NSDictionary*)dic;
 
-@property (nonatomic, strong) NSNumber* x;
+@property (nonatomic) CGFloat x;
 
-@property (nonatomic, strong) NSNumber* y;
+@property (nonatomic) CGFloat y;
 
 @end
 
@@ -23,20 +23,20 @@
 
 - (id)initWithDictionary:(NSDictionary*)dic;
 
-@property (nonatomic, copy) NSString *phoneUUID;
+@property (nonatomic, copy) NSString *phoneUUID;//phoneuuid
 
-@property (nonatomic, strong) NSNumber *inLocating;
+@property (nonatomic, strong) NSNumber *inLocating;//对方是否在定位中
 
-@property (nonatomic, strong) NSNumber *lastLocatingTime;
+@property (nonatomic, strong) NSNumber *lastLocatingTime;//对方最后一次定位时间
 
-@property (nonatomic, copy) NSString *regionId;
+@property (nonatomic, copy) NSString *regionId;//所处的regionid
 
-@property (nonatomic, copy) NSString *regionName;
+@property (nonatomic, copy) NSString *regionName;//所处的region名称
 
-@property (nonatomic, strong) IDRMultiLocationPos *pos;
+@property (nonatomic, strong) IDRMultiLocationPos *pos;//定位坐标
 
-@property (nonatomic, copy) NSString *floorId;
+@property (nonatomic, copy) NSString *floorId;//定位楼层id
 
-@property (nonatomic, copy) NSString *floorName;
+@property (nonatomic, copy) NSString *floorName;//定位楼层名称
 
 @end
