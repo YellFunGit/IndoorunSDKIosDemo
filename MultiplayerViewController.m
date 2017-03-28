@@ -116,7 +116,7 @@
     
     for (IDRMultiLocationInfo *info in locationInfos) {
         
-        NSLog(@"对方位置%.2f, %.2f", info.pos.x, info.pos.y);
+        NSLog(@"对方位置%.2f, %.2f, %@", info.pos.x, info.pos.y, info.floorName);
     }
 }
 
