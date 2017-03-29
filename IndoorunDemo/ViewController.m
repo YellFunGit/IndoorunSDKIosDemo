@@ -26,7 +26,7 @@
 
 - (IBAction)onEnterClick:(id)sender {
     
-    [[IDRMapKitConfig sharedInstance] setFormalServer:NO];//使用测试服
+    [[IDRMapKitConfig sharedInstance] setFormalServer:YES];//使用测试服
     
     [[IDRMapKitConfig sharedInstance] setAppBoundleId:@"com.mobcb.watch"];
 
