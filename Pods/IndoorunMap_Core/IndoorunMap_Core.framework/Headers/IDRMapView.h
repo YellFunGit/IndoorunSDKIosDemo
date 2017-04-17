@@ -315,6 +315,12 @@
 - (void)resume;
 
 /**
+ 截屏
+ @Returns a UIImage of the resulting draw
+ */
+- (UIImage*)snapShot;
+
+/**
  鸟瞰地图（缩放地图以至能完全显示导航线）
  */
 - (void)birdLook;

@@ -25,4 +25,6 @@
 
 - (void)setBirdLookMargin:(CGFloat)left top:(CGFloat)top right:(CGFloat)right bottom:(CGFloat)bottom;
 
+- (UIImage *)snapShot;
+
 @end
