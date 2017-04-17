@@ -102,11 +102,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "../../indoorun/IndoorunMap_Core/YFMapKit/IDR3DMap.m"
-            timestampString = "509614449.185137"
+            timestampString = "513480615.90569"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "840"
-            endingLineNumber = "840"
+            startingLineNumber = "857"
+            endingLineNumber = "857"
             landmarkName = "-updateUnitsColor:"
             landmarkType = "7">
          </BreakpointContent>
@@ -203,7 +203,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "1017"
             endingLineNumber = "1017"
-            landmarkName = "-addDefaultFloorListView"
+            landmarkName = "-showComposs:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

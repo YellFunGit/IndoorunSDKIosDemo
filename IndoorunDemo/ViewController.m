@@ -28,9 +28,9 @@
     
     [[IDRMapKitConfig sharedInstance] setFormalServer:NO];//使用测试服
     
-    [[IDRMapKitConfig sharedInstance] setAppBoundleId:@"com.mobcb.watch"];
-
-    [[IDRCoreManager sharedInstance] initWith:@"yf939370706" appkey:@"Av3o9Uqze9NP93645kUx3AL2sROmV3xN"];
+    [[IDRMapKitConfig sharedInstance] setAppBoundleId:@"com.Yellfun.Cars"];
+    
+    [[IDRCoreManager sharedInstance] initWith:@"2b497ada3b2711e4b60500163e0e2e6b" appkey:@"3d256f0e0ebd51f6176358abd62c1ae0"];
 }
 
 - (void)idrCoreManager:(IDRCoreManager*)sender didServerStartSuccess:(BOOL)success regions:(NSArray*)regions {
